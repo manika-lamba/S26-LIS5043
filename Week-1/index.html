@@ -8,7 +8,7 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Manika Lamba">
   <title>Organization of Information: An Overview</title>
@@ -353,11 +353,10 @@ Dr.&nbsp;Manika Lamba
 </div><div class="column" style="width:50%;">
 <p><code>Dr. Manika Lamba</code></p>
 <p><code>Office:</code> Room 118E, Bizzell Library</p>
-<p><code>Office hours:</code> Tuesdays &amp; Thursdays (2:30-5 PM) or by appointment</p>
+<p><code>Office hours:</code> Wednesdays (12-5 PM) by appointment</p>
 <p><code>Email:</code> manika@ou.edu</p>
-<p><code>Research interests:</code> information organization, digital libraries, science of science using text mining, NLP, &amp; machine learning</p>
-</div>
-</div>
+<p><code>Research interests:</code> information retrieval and organization, computational social science, and critical data studies</p>
+</div></div>
 <div class="footer">
 <p><a href="https://manika-lamba.github.io/" class="uri">https://manika-lamba.github.io/</a></p>
 </div>
@@ -410,8 +409,7 @@ Dr.&nbsp;Manika Lamba
 <figcaption>Svenonius (2000)</figcaption>
 </figure>
 </div>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p><a href="https://mitpress.mit.edu/9780262512619/the-intellectual-foundation-of-information-organization/">Link to the Book</a></p>
 </div>
@@ -460,8 +458,7 @@ Dr.&nbsp;Manika Lamba
 </ul></li>
 </ul></li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>George A. Miller in 1983 coined the term “informavore”. Humans are by nature informavores, because it is our innate need to seek out and gather information. Once we “gather” information or knowledge, we need to be able to use it in an effective &amp; efficient manner, we have to organize it in some way.</p>
 <p>Thus, information organization is a creation of system that helps us to find, manage, select, locate and obtain things that carry information.</p>
@@ -581,8 +578,7 @@ Dr.&nbsp;Manika Lamba
 <figcaption>A model of information behavior by Wilson (1981)</figcaption>
 </figure>
 </div>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p><a href="https://doi.org/10.1108/eb026702" class="uri">https://doi.org/10.1108/eb026702</a></p>
 </div>
@@ -655,8 +651,7 @@ Dr.&nbsp;Manika Lamba
 <li>Computer</li>
 <li>Files</li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>HOW would you organize a blog? Or an mp3 file? Or a podcast?</p>
 <p>These are real issues that libraries and information organizations have to consider. We have good structures for organizing books or even maps, but what do we do with digital media?</p>
@@ -759,8 +754,7 @@ Dr.&nbsp;Manika Lamba
 <li>An <code>interaction component</code> - Allows iterative requests and responses</li>
 <li>A <code>set of messages</code> between the user and the system - Searches, results, error messages, etc</li>
 </ol>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>More specifically, we will address information retrieval systems and look closer at the components of information systems. Many of them are listed above in this slide. Spend some time as you do your readings for this module thinking about WHY these components are important to know.</p>
 <style type="text/css">
@@ -1089,18 +1083,7 @@ Dr.&nbsp;Manika Lamba
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1132,7 +1115,29 @@ Dr.&nbsp;Manika Lamba
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1140,7 +1145,7 @@ Dr.&nbsp;Manika Lamba
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
