@@ -243,89 +243,7 @@ You can see on the slide that three of the original objectives proposed by Cutte
 So, what needs to be present in a surrogate so that users can satisfy the FRBR tasks? Should the representation be more generic or specialized? Can you think of instances in which representations would be customized for specific user groups?
 :::
 
-## We are Data {.smaller}
 
-::::: columns
-::: {.column width="50%"}
-#### [***We are filled with data in today's networked society***]{style="color: blue;"}
-
--   through our web activity, we are assigned *gender, ethnicity, class, age, education level, and potential status of parent with x no. of children* ([digital trace data/digital footprint/digital breadcrumbs]{style="color: orange;"})
-
--   if internet metadata identifies a user as foreigner than they lose right to privacy afforded to U.S. citizens
-
--   who would have thought that [*class status, citizenship, ethnicity*]{.underline} could be algorithmically understood?
-:::
-
-::: {.column width="50%"}
-![](images/cover.jpeg){fig-align="center" width="50%"}
-:::
-:::::
-
-::: footer
-John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
-:::
-
-::: notes
-This book on "We are Data" by John Cheney-Lippold is a very interesting read which helps us to rethink what data and especially metadata means in our everyday lives.
-
-In this networked society, we’re not just producing content; we’re constantly generating metadata through our web activity. That includes things like time stamps, locations, device information, search histories, clicks, and patterns of interaction.
-
-From this metadata, online or information systems infer attributes about us, such as gender, ethnicity, class, age, education level, or even whether we are likely to be a parent. These inferences are not things we explicitly declare; they are derived from what’s often called our digital trace, digital footprint, or digital breadcrumbs.
-
-What’s important to emphasize here is that metadata is not neutral. When internet metadata identifies someone as a “foreigner,” that classification can have real consequences. In the U.S. context, for example, non-citizens do not receive the same privacy protections as citizens, which means metadata can become a basis for differential treatment and surveillance.
-
-This leads to the question: who would have imagined that class status, citizenship, or ethnicity could be understood algorithmically?
-
-Metadata enables these classifications to be automated, scaled, and embedded into systems—often without transparency or consent. This is why studying metadata is not just a technical issue, but also a social, political, and ethical one.
-:::
-
-## We are Data (Cont.) {.smaller}
-
-#### [***We live in a world of ubiquitous networked communication***]{style="color: blue;"}
-
--   technologies that constituent the Internet are so woven into the fabric of our daily lives, where for most of us, existing without seems unimaginable
-
-#### [***We also live in a world of ubiquitous surveillance***]{style="color: blue;"}
-
--   same technologies have helped spawn an impressive network of governmental, commercial, and unaffiliated infrastructures of mass observation and control
--   most of what we do in this world has at least the **capacity** to be *observed, recorded, analyzed, and stored* in a databank
-    -   HOW?
-        -   storage is cheap
-        -   computers are fast to analyze information in both real time & retrospective
-        -   our daily activities that are mediated with software can be easily configured to record and report everything it sees upstream
-
-::: footer
-John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
-:::
-
-## We are Data (Cont.) {.smaller}
-
-#### [***We call people 'terrorists' based on metadata***]{style="color: blue;"}*; [**We kill people based on metadata**]{style="color: blue;"}*
-
--   data-based attack is a *'signature strike'*
-
-    -   a strike that requires no *'target identification'* but rather an identification of groups of men who bear certain signatures or defining characteristics associated with terrorists activity but whose identities are unknown
-
--   US drone program in early 2000s, strikes were *"targeted"*
-
--   US does not publicly differentiate between its *"targeted"* and *"signature"* strikes
-
-    -   shift in spike in frequency of drone attacks from 49 between 2004 and 2008 to 372 between 2009 and 2015
-
-::: footer
-John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
-:::
-
-## Human Construct
-
--   Metadata is a human construct and not found in nature
--   It is designed to solve particular problem
--   Nothing objective about it
--   It makes subjective statement
-    -   what should be included
-    -   what should be omitted
-    -   where to draw boundaries
-    -   what terms can be used to describe it
 
 ## Metadata and Metadata Schemes {.smaller}
 
@@ -400,6 +318,67 @@ A simple web search from most unsophisticated smart phone generate lengthy recor
 We find present in some metadata schemes what is called "administrative metadata" or information that represents administrative activities associated with the object, such as when it was donated and by whom, who owns copyright and how might the object legally be used, any content ratings, what collection it is part of, etc. You might also find metadata specific to the digital capture of the object, such as scanner used, resolution of image(s), date scanned and by whom, etc.
 :::
 
+
+
+## Human Construct
+
+-   Metadata is a human construct and not found in nature
+-   It is designed to solve particular problem
+-   Nothing objective about it
+-   It makes subjective statement
+    -   what should be included
+    -   what should be omitted
+    -   where to draw boundaries
+    -   what terms can be used to describe it
+    
+:::notes
+Metadata does not exist naturally in the world. It is created by people to solve specific problems. Because of this, metadata is not objective. Every metadata system reflects human decisions about what information should be included, what should be left out, where boundaries are drawn, and which terms are used to describe things. In other words, metadata always makes subjective statements about data, even when it appears neutral or technical.
+
+To understand this more clearly, think about metadata as data about an entity. A familiar example is a library catalog. The catalog doesn’t contain the book itself. It contains information about the book, such as its title, author, subject, and publisher. This information tells us something beyond the data itself; it helps us understand, evaluate, and find the resource.
+
+Metadata always reflects its origins and intended use. If you look closely enough at any metadata system, you can see the assumptions and goals of the people who created it. This is why metadata created for one purpose may not work well in another context.
+
+Metadata is organized using metadata schemes, which are structured sets of metadata elements. For example, a library catalog uses the MARC metadata scheme, which includes elements like title, author, subject, and publisher. Each metadata element represents a specific attribute of the object being described.
+
+:::
+
+## We are Data {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+#### [***We are filled with data in today's networked society***]{style="color: blue;"}
+
+-   through our web activity, we are assigned *gender, ethnicity, class, age, education level, and potential status of parent with x no. of children* ([digital trace data/digital footprint/digital breadcrumbs]{style="color: orange;"})
+
+-   if internet metadata identifies a user as foreigner than they lose right to privacy afforded to U.S. citizens
+
+-   who would have thought that [*class status, citizenship, ethnicity*]{.underline} could be algorithmically understood?
+:::
+
+::: {.column width="50%"}
+![](images/cover.jpeg){fig-align="center" width="50%"}
+:::
+:::::
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
+:::
+
+::: notes
+This book on "We are Data" by John Cheney-Lippold is a very interesting read which helps us to rethink what data and especially metadata means in our everyday lives.
+
+In this networked society, we’re not just producing content; we’re constantly generating metadata through our web activity. That includes things like time stamps, locations, device information, search histories, clicks, and patterns of interaction.
+
+From this metadata, online systems infer attributes about us, such as gender, ethnicity, class, age, education level, or even whether we are likely to be a parent. These inferences are not things we explicitly declare; they are derived from what’s often called our digital trace, digital footprint, or digital breadcrumbs.
+
+What’s important to emphasize here is that metadata is not **neutral**. When internet metadata identifies someone as a “foreigner,” that classification can have real consequences. In the U.S. context, for example, non-citizens do not receive the same privacy protections as citizens, which means metadata can become a basis for differential treatment and surveillance.
+
+This leads to the question: **who would have imagined that class status, citizenship, or ethnicity could be understood algorithmically?**
+
+Metadata enables these classifications to be automated, scaled, and embedded into systems—often without transparency or consent. This is why studying metadata is not just a technical issue, but also a social, political, and ethical one.
+:::
+
+
 ## Metadata Examples {.smaller}
 
 ::: panel-tabset
@@ -437,7 +416,10 @@ https://dataedo.com/kb/data-glossary/what-is-metadata
 :::
 
 ::: notes
-On this slide, you will see examples of metadata from real-world sources like books, Word files, blogs, emails, and webpages. When you view the HTML version of the slides, take a moment to look at each example and check whether you would have recognized the metadata on your own.
+
+`*Click each tab shown on the screen in the HTML version of the slides*`
+
+On this slide, you will see examples of metadata from real-world sources like books, Word files, blogs, emails, and webpages. Take a moment to look at each example and check whether you would have recognized the metadata on your own.
 :::
 
 ## Representative Statements {.smaller}
@@ -474,6 +456,20 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
     -   Acquisition information
     -   Rights information
     -   Location information
+    
+:::notes
+Let's go through different types of Metadata starting with Administrative Metadata. 
+
+Administrative metadata refers to metadata used to manage and administer collections and information resources, rather than to describe their intellectual content. It helps organizations keep track of resources and ensures they are handled properly throughout their lifecycle.
+
+For example, acquisition information records how and when a resource was obtained, who acquired it, and under what conditions. This is especially important for budgeting, collection development, and accountability.
+
+Rights information is another key type of administrative metadata. It documents who owns the resource, how it can be used, and any legal or licensing restrictions. Without clear rights metadata, organizations risk misuse or legal violations.
+
+Finally, location information tells us where a resource is stored or how it can be accessed—whether that’s a physical shelf in a library, a server location, or a digital repository.
+
+Administrative metadata helps us to ensures that information resources are organized, controlled, legally compliant, and accessible, making it a critical part of effective data stewardship and information management.
+:::
 
 ## Descriptive Metadata
 
@@ -482,6 +478,14 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
 -   Examples
     -   Cataloging records
     -   Finding aids
+    
+:::notes
+The second type of metadata is descriptive metadata. It is used to identify and describe collections and information resources so that users can find and understand them. Descriptive metadata answers basic questions such as what is this resource, who created it, and what is it about?
+
+Common examples of descriptive metadata include cataloging records, such as those found in library catalogs, which provide information like title, author, subject, and publication details. Another example is finding aids, which are used to describe archival collections and help users understand the scope, structure, and contents of those collections.
+
+The main purpose of descriptive metadata is discovery. It helps users search for resources, recognize their relevance, and distinguish one item from another. Without descriptive metadata, even valuable collections can remain hidden or difficult to use.
+:::
 
 ## Preservation Metadata
 
@@ -490,6 +494,14 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
 -   Examples
     -   documentation of physical condition
     -   documentation of preservation actions
+    
+:::notes
+The third type of metadata is preservation metadata. It is used to support the long-term management and preservation of collections and information resources. Preservation metadata focuses on ensuring that materials remain usable, authentic, and accessible over time, even as technologies and formats change.
+
+Examples of preservation metadata include documentation of physical condition, which records the current state of an item, such as wear, damage, or degradation and helps guide conservation decisions. Another example is documentation of preservation actions, which records what has been done to preserve the resource, such as repairs, digitization, format migration, or environmental controls.
+
+Preservation metadata is essential for maintaining the integrity and authenticity of collections and ensuring that future users can trust and understand the preserved materials.
+:::
 
 ## Technical Metadata
 
@@ -499,6 +511,15 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
     -   Hardware and software documentation
     -   Technical details of digitization process
     -   Authentication and encryption information
+    
+:::notes
+
+The fourth kind of metadata is technical metadata. It is used to describe the technical characteristics of a resource and the systems used to create, manage, or deliver it. Technical metadata helps systems function correctly and ensures that digital objects can be rendered, processed, and preserved over time.
+
+Examples include hardware and software documentation, which records the systems, platforms, and versions required to access or run a resource. Another example is technical details of the digitization process, such as resolution, file formats, compression methods, or scanning equipment used, information that is crucial for quality control and future preservation decisions.
+
+Technical metadata also includes authentication and encryption information, which supports security, access control, and data integrity. Without technical metadata, digital resources may become unusable as systems evolve, making this type of metadata essential for reliable access and long-term management.
+:::
 
 ## Use Metadata
 
@@ -508,6 +529,14 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
     -   Circulation records
     -   Search logs
     -   User tracking
+    
+:::notes
+Finally, we have use metadata which captures information about how collections and information resources are used. Rather than describing what a resource is, use metadata tells us how often, in what ways, and by whom a resource is accessed or interacted with.
+
+Examples include circulation records, which show how often an item is checked out or accessed, helping institutions understand demand and make collection management decisions. Search logs record what users search for, revealing patterns in information needs and helping improve discovery systems. User tracking data can show how people navigate systems or interact with resources, though it also raises important privacy and ethical considerations.
+
+Use metadata is valuable for improving services, allocating resources, and evaluating impact, but it must be handled carefully to balance usefulness with user privacy and ethical data practices.
+:::
 
 ## User-Generated Metadata {.smaller}
 
@@ -527,6 +556,18 @@ Ackoff’s Pyramid helps us think about the difference between raw data, informa
 [![https://crowd.loc.gov/get-started/how-to-tag](images/tag.png){fig-align="center"}](https://crowd.loc.gov/get-started/how-to-tag)
 :::
 :::::
+
+:::notes
+User-generated metadata is the metadata that is generated by users online, rather than by professionals such as librarians, archivists, or system designers. People can create metadata by interacting with digital platforms by tagging, reviewing, bookmarking, or otherwise describing content in their own words. 
+
+Some common examples include social bookmarks, customer reviews on platforms like Amazon or Goodreads, and tags on sites like LibraryThing. These activities are often described using the term **folksonomy**, which refers to collaborative or social tagging. Unlike controlled vocabularies, folksonomies are informal, flexible, and evolve organically based on how users think and talk about content.
+
+Another important form of user-generated metadata is **crowdsourcing**, where large groups of users contribute descriptive information at scale. The image on the right shows an example from the Library of Congress’s crowdsourcing projects, where volunteers help tag and describe historical materials.
+
+User-generated metadata can greatly enhance discovery and engagement by reflecting real user language and perspectives. However, it can also be inconsistent or subjective. This contrast helps us see how metadata creation involves trade-offs between control and openness, and why different metadata approaches serve different purposes.
+
+:::
+
 
 ## Power of Metadata: Structure
 
@@ -549,6 +590,9 @@ The right hand side of the screen shows how the structured fields in the metadat
 -   Input rules associated with an element
 
 ::: notes
+
+`*Click each tab shown on the screen in the HTML version of the slides*`
+
 Let's break down the parts of a metadata scheme.
 
 Each scheme contains multiple elements. In MARC they are represented using numeric tags in the range of 0XX-9XX. We will examine the MARC structure in more depth in Week 9.
