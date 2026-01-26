@@ -1,0 +1,620 @@
+---
+title: "Week 2: Representation & Surrogation"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+---
+
+# Introduction {.smaller}
+
+-   Two central concepts in the organization of information are *`representation`* and *`surrogation`*
+-   `Representation` is a complex process. It is both the process and the product, depending on the context in which you are engaging with the concept
+-   `Surrogation` is related to representation but can be thought of more as a process with a surrogate being the result of the surrogation process
+-   `Surrogates` are objects that stand in place of something else, for example, a library card catalog record (MARC record) stands in place of the actual item in the library's collection (such as book, cd, dvd) etc.
+-   Whenever we create a surrogate, we have to decide what to represent (or to highlight) about the object and in the same instance, what NOT to represent about the object
+
+::: notes
+Two central concepts in the organization of information are representation and surrogation. In this lecture we will explore both within a library context first, and also in contexts outside of a library.\
+
+Representation, as hinted about in the Overview lecture, is a very complex concept, and one that you will read about a great deal in the literature of the organization of information.
+
+Surrogation is related to representation but can be thought of more as a process with a surrogate being the result of the surrogation process.
+
+Surrogates are objects that stand in place of something else, for example, a library card catalog record (MARC record) stands in place of the actual item in the library's collection, a book, cd, dvd, etc.
+
+Whenever we create a surrogate, we have to decide what to represent (or to highlight) about the object and in the same instance, what NOT to represent about the object.
+
+Representation is both the process and the product, depending on the context in which you are engaging with the concept.
+
+Let's take a closer look at the different forms of representation and how they relate to information organization.
+:::
+
+## Representation
+
+-   Many types and levels of representation:
+
+    -   Representation of `user's information needs`
+
+    -   Representations of `information objects`
+
+    -   Representations of `relationships among objects`
+
+    -   Representations `manipulated by systems`
+
+-   Ultimately, [*representations interact to connect users to information*]{style="color: orange;"}
+
+::: notes
+The main forms of representation within the organization of information include:
+
+1)  Representation of a user's information needs -- whenever a user comes to an information system with an information need in mind, or a question to answer, or just a curiosity, they have to somehow represent that need within the system's parameters. If they are using a library OPAC, they will have to know what fields are available to search. They will have to know how to enter the terms of their query into the system (what form of words to use, if truncation is possible, what punctuation to use, etc.). The search terms (query) that they enter into the system is a representation of their information need.
+
+2)  Representation of an information object -- when users interact with an information system, they are, for the most part, NOT going to go directly to the information object itself as a result of a search, they will instead, find a representation of the information object (the webpage describing a product, the bibliographic record in a library catalog, the person's human resources record, etc.) As noted on the slide, representations highlight certain aspects of an information object that we have decided are important or that are representative of the object.
+
+For example, on an e-commerce website for a coffee shop, the person who created the site, may decide that not only are name, quantity, and price important to represent the coffee shop, but including the farmer stories who plant those coffee beans in the particular part of world is also important.
+
+When we design information systems, we have to make choices about what to represent and what not to represent about the item.
+
+These choices are informed by what we know about the objects, the users of our collections/products, and in general how users look for and use information objects
+
+3)  Representation manipulated by systems - records in a database, webpages on an e-commerce site, digital library records are all representations that are manipulated by systems.
+
+As stated in item 2, when we design systems, we are informed by users and collections. We decide what fields to include in the database and records, what to display to our users on the pages, etc. We will talk more about this in the modules on users and systems.
+
+Ultimately, representations are created in order to interact to connect users with information surrogates and with the objects themselves.
+:::
+
+## Model of Information Retrieval {.smaller}
+
+![](images/1.png){fig-align="center" width="80%"}
+
+::: notes
+Here is a model to help you think through the idea of multiple representations and how they interact to connect users to information.
+
+Representation A is the user's information need, which the user enters into a system
+
+Representation B is the representation created as a surrogate for the information object
+
+Both are entered into a system.
+
+The retrieval component of the information system matches these two representations and bring back a subset of representations that the system contains that are representative of the words in the user queries.
+
+We will not go into the mechanics of searching at this point, or how the retrieval mechanisms work within various systems. We will leave that for the module on systems.
+
+The user then chooses a representation to review to see if it meets their information need or not.
+:::
+
+## Library Paradigm for Representation {.smaller}
+
+`Representation answers two questions`
+
+::::: columns
+::: {.column width="50%"}
+-   `What is the item?`
+    -   Represent the container
+    -   Bibliographic representation
+    -   Descriptive, not evaluative
+    -   Uniquely identify/describe an object
+    -   Distinguish one object from another through metadata
+:::
+
+::: {.column width="50%"}
+-   `What is the item about?`
+    -   Represent the content
+    -   Subject representation
+    -   Identify topics, concepts, perspectives, etc.
+    -   *Adequately* represent object's content so user can find the object based on search topic
+    -   CONTEXT??
+:::
+:::::
+
+Other questions...*How good is it? How will it be useful to me?*
+
+::: notes
+In a library context, or what we call the library paradigm, representations answer two broad questions:
+
+1)  What is the item
+2)  What is the item about
+
+Generally, you will find these answers' responses in most surrogates. For example, what is the item, might be answered by Name of item, Who created the item, How big is the item, When was it created, etc. What is the item about (aboutness, a common concept in our fields) refers to the Subject or an object, what topics are included, and this aspect can often be linked to how an item is used or useful.
+
+What other questions can YOU think of?
+:::
+
+## Two Primary Challenges
+
+-   How to individually represent information objects *`as concrete entities`* so they can be found when needed?
+    -   Container-oriented
+    -   Uniqueness-oriented
+-   How to represent and relate information objects *`as sources of information on various subjects`* so they can be found by those in search of the information?
+    -   Content-oriented
+    -   Relationship-oriented
+
+::: notes
+So, we think of representation of information objects as including two primary challenges:
+
+1)  How to represent each object as a unique, container-oriented thing
+
+2)  How to represent each object as sources on various subjects that might be found in other objects in our collection, content oriented and also how this object is related to others of like subject
+:::
+
+## Relations in the Bibliographic Universe
+
+![](images/2.png){fig-align="center" width="80%"}
+
+::: notes
+In libraries, we refer to objects that we can actually represent as being part of the bibliographic universe, an abstract subset of what is called the "Universe of Knowledge" in LIS.
+
+Objects in the bibliographic universe are those that have been RECORDED in some manner/form. It does not include objects that are in a purely oral form (having not been recorded in some medium yet), such as spoken stories.
+
+Once these stories are recorded onto audio tapes/video/digital forms, then we can organize them. While the term bibliographic universe stems from a library context, it can be extended to any context, as can the relationships between the objects in one's collection. For example, in a corporation, the products produced by a company are what would be organized, say, company reports, white papers, working papers, concept briefings, emails of specific committees, etc. While we don't think of these objects in the traditional sense of "collection", they are indeed objects in a bibliographic universe that can be organized.
+
+What other examples of contexts, collections, objects can you think of?
+
+What other relationships?
+:::
+
+## Identifying Relationships {.smaller}
+
+-   `Separate containers, same content`
+    -   Different formats
+-   `Separate containers, similar content`
+    -   Translation, abridged, versions, editions
+-   `Seperate containers, same author, different content`
+    -   Link together all objects by author
+-   `Seperate containers, different authors, similar content`
+    -   Link together all objects by subject
+-   `Unique representations of container`
+-   `Relationships established through various means`
+    -   Name authority control
+    -   Controlled vocabulary
+
+::: notes
+Just reiterating the last slide and some relationships.
+
+Two new concepts here that we did not discuss earlier: name authority and controlled vocabulary.
+
+We will address these concepts in later modules, but briefly, we establish preferred (or authorized) forms of names (personal, corporate, product, etc.) and of terms that express subject matter.
+
+We assert this control so that we have a standardized form of the name or subject term, so that each time we use them in our representations, they are entered in the same form.
+
+This standardization ensures consistency in our representations, our database records, and effects more efficient retrieval in our information systems.
+
+Look up both terms in the readings to see what the authors have to add to this conversation
+:::
+
+## Bibliographic Tools (Instruments) {.smaller}
+
+-   Mechanisms by which bibliographic control is established and maintained
+-   Examples of tools (contain representations)
+    -   Library catalog\
+    -   Bibliographic
+    -   Indexes to journal literature\
+    -   Finding aids
+-   Three functions of all bibliographic tools
+    -   Identification or finding
+    -   Collocation or gathering
+    -   Evaluation or selecting
+-   Representations must support these functions
+
+::: notes
+In a library context, we call the creation of surrogates by several names, bibliographic control (control of the bibliographic universe), cataloging, indexing, etc. I personally like Patrick Wilson's vision, "bibliographic harmony"---where we strive to provide a harmonizing effect between the representations in our catalogs/information systems so that users can find what they are looking for.
+
+In libraries, we call the tools that we have created to effect bibliographic control (harmony), bibliographic tools or instruments.
+
+There are many examples and I have listed a few here. The readings for this module will cover these in more depth and give you additional examples.
+
+The functions of all bibliographic tools are to provide for: 1) Identification or finding 2) Collocation or gathering 3) Evaluation or selecting
+
+These functions are the original objectives of a library catalog that Charles Ami Cutter developed back in the early 1900s. And they really have not changed much since. Abbas and Taylor will take you through some of the rich history of the development of bibliographic tools in the readings for this module.
+
+Representations must support these three functions, in other words, they should include elements that help users identify or find a specific item in the collection or a specific subject; they should collocate or gather together all items by a specific author, title, or about a specific subject; and they should assist users in the evaluation or selecting of the object they need to satisfy their info need.
+
+WHAT other functions can you think of that could be included in a surrogate in a library context? In other context? WOULD they really be any different?
+:::
+
+## Representation Responsive to Users {.smaller}
+
+-   `What to users want to do?`
+    -   [Search?]{style="color: orange;"}
+    -   [Evaluate?]{style="color: orange;"}
+-   `How do our representations support their tasks?`
+-   Library catalog representations support `four generic user tasks (FRBR)`
+    -   [Find]{style="color: orange;"}
+    -   [Identify]{style="color: orange;"}
+    -   [Select]{style="color: orange;"}
+    -   [Acquire or obtain]{style="color: orange;"}
+
+::: notes
+As noted earlier, representations should be responsive to your users. In order to design "user-centered" systems and representations, we have to know a little about how users interact with our systems, how they search, what they want to do with our systems and with representations.
+
+Think about a general library catalog record. How do these representations support user tasks? A landmark study called the FRBR (Functional Requirements for Bibliographic Records) study was one of the first and one of the very few studies we have conducted to learn more about how users view our bibliographic records and information systems, as well as the tasks they hope to accomplish while using library catalogs/catalog records. Maxwell's reading in a later module will talk more about FRBR. Also be sure to explore the FRBR and RDA websites to learn more.
+
+You can see on the slide that three of the original objectives proposed by Cutter years ago still hold. FRBR studies identified an additional one: to acquire or obtain the object.
+
+So, what needs to be present in a surrogate so that users can satisfy the FRBR tasks? Should the representation be more generic or specialized? Can you think of instances in which representations would be customized for specific user groups?
+:::
+
+## We are Data {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+#### [***We are filled with data in today's networked society***]{style="color: blue;"}
+
+-   through our web activity, we are assigned *gender, ethnicity, class, age, education level, and potential status of parent with x no. of children* ([digital trace data/digital footprint/digital breadcrumbs]{style="color: orange;"})
+
+-   if internet metadata identifies a user as foreigner than they lose right to privacy afforded to U.S. citizens
+
+-   who would have thought that [*class status, citizenship, ethnicity*]{.underline} could be algorithmically understood?
+:::
+
+::: {.column width="50%"}
+![](images/cover.jpeg){fig-align="center" width="50%"}
+:::
+:::::
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
+:::
+
+::: notes
+This book on "We are Data" by John Cheney-Lippold is a very interesting read which helps us to rethink what data and especially metadata means in our everyday lives.
+
+In this networked society, we’re not just producing content; we’re constantly generating metadata through our web activity. That includes things like time stamps, locations, device information, search histories, clicks, and patterns of interaction.
+
+From this metadata, online or information systems infer attributes about us, such as gender, ethnicity, class, age, education level, or even whether we are likely to be a parent. These inferences are not things we explicitly declare; they are derived from what’s often called our digital trace, digital footprint, or digital breadcrumbs.
+
+What’s important to emphasize here is that metadata is not neutral. When internet metadata identifies someone as a “foreigner,” that classification can have real consequences. In the U.S. context, for example, non-citizens do not receive the same privacy protections as citizens, which means metadata can become a basis for differential treatment and surveillance.
+
+This leads to the question: who would have imagined that class status, citizenship, or ethnicity could be understood algorithmically?
+
+Metadata enables these classifications to be automated, scaled, and embedded into systems—often without transparency or consent. This is why studying metadata is not just a technical issue, but also a social, political, and ethical one.
+:::
+
+## We are Data (Cont.) {.smaller}
+
+#### [***We live in a world of ubiquitous networked communication***]{style="color: blue;"}
+
+-   technologies that constituent the Internet are so woven into the fabric of our daily lives, where for most of us, existing without seems unimaginable
+
+#### [***We also live in a world of ubiquitous surveillance***]{style="color: blue;"}
+
+-   same technologies have helped spawn an impressive network of governmental, commercial, and unaffiliated infrastructures of mass observation and control
+-   most of what we do in this world has at least the **capacity** to be *observed, recorded, analyzed, and stored* in a databank
+    -   HOW?
+        -   storage is cheap
+        -   computers are fast to analyze information in both real time & retrospective
+        -   our daily activities that are mediated with software can be easily configured to record and report everything it sees upstream
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
+:::
+
+## We are Data (Cont.) {.smaller}
+
+#### [***We call people 'terrorists' based on metadata***]{style="color: blue;"}*; [**We kill people based on metadata**]{style="color: blue;"}*
+
+-   data-based attack is a *'signature strike'*
+
+    -   a strike that requires no *'target identification'* but rather an identification of groups of men who bear certain signatures or defining characteristics associated with terrorists activity but whose identities are unknown
+
+-   US drone program in early 2000s, strikes were *"targeted"*
+
+-   US does not publicly differentiate between its *"targeted"* and *"signature"* strikes
+
+    -   shift in spike in frequency of drone attacks from 49 between 2004 and 2008 to 372 between 2009 and 2015
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of our digital selves. New York University Press.
+:::
+
+## Human Construct
+
+-   Metadata is a human construct and not found in nature
+-   It is designed to solve particular problem
+-   Nothing objective about it
+-   It makes subjective statement
+    -   what should be included
+    -   what should be omitted
+    -   where to draw boundaries
+    -   what terms can be used to describe it
+
+## Metadata and Metadata Schemes {.smaller}
+
+> ***Data about an entity***
+>
+> ***Information in the library catalog***
+>
+> ***Metadata indicates something beyond the data: a statement or statements about the data***
+>
+> ***All metadata bears the imprint of its origins and intended use when examined closely enough***
+
+-   It is "`structured information that describes, explain, locates, or otherwise makes it easier to retrieve, use, or manage an information resource`" (NISO, 2017:1)
+-   Metadata scheme consists of metadata elements
+    -   Library catalog metadata scheme (MARC) contains `metadata elements` for title, author, subject, publisher, etc
+-   Metadata element represents an `attribute of the object`
+
+::: footer
+[Understanding Metadata: A Primer](https://groups.niso.org/higherlogic/ws/public/download/17446/Understanding%20Metadata.pdf)
+:::
+
+::: notes
+OK, we cannot leave this lecture without at least introducing the concepts metadata and metadata schemes. I know, I have been using these terms throughout this lecture but it is logical to present them here again, as the result of the data modeling we just did (identifying entity level and attributes) is the development of a metadata scheme. AND the data we enter in the record to describe the object is metadata.
+
+The concept metadata is most often defined simply as "data about data" or "information about information".
+
+Librarians have been creating metadata for hundreds of years, we just did not have this sexy name, we called it cataloging.
+
+I prefer to think of metadata as "structured data representing an information object". We don't simply add a few words to describe an object, we make informed decisions and follow specific rules and standards for how to create the representation or the metadata.
+
+The term "metadata" was used before the advent of the Internet, primarily in computer science to specify information about database objects and/or program objects.
+
+When you structure metadata into a system, you are actually creating a metadata scheme, or the field structure in a database, or the list of attributes or elements you will use to represent the objects in your collection. The MARC scheme we use in libraries is an example of an early metadata scheme. There are many more.
+:::
+
+## Purpose and Functions of Metadata {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+-   `Purpose`: represent an entity
+-   `Functions`
+    -   Discovering or finding that an entity exists
+    -   Evaluating or selecting an entity
+    -   Locating or accessing an entity
+    -   Others such as collection management, rating content, managing intellectual property rights
+-   `Application areas`
+    -   Libraries
+    -   Websites
+    -   Government agencies
+    -   Museums
+:::
+
+::: {.column width="50%"}
+![](images/meta1.jpeg){fig-align="center"}
+:::
+:::::
+
+::: notes
+The main purpose of metadata is of course to represent an information object.
+
+However, because the term was coined for use in the digital environment (though it is also used in an analog context as well), the functions we saw earlier of a library catalog are slightly augmented.
+
+A simple web search from most unsophisticated smart phone generate lengthy record of new data including
+
+-   initial search term
+-   location of your phone
+-   time & date when you searched
+-   terms you searched before/after
+-   your phone operating system
+-   your phone's IP address
+-   information of apps on your phone
+
+We find present in some metadata schemes what is called "administrative metadata" or information that represents administrative activities associated with the object, such as when it was donated and by whom, who owns copyright and how might the object legally be used, any content ratings, what collection it is part of, etc. You might also find metadata specific to the digital capture of the object, such as scanner used, resolution of image(s), date scanned and by whom, etc.
+:::
+
+## Metadata Examples {.smaller}
+
+::: panel-tabset
+## Book
+
+![](images/metadata_book.png){fig-align="center" width="550" height="400"}
+
+## Word File
+
+![](images/metadata_word_document.png){fig-align="center" width="550" height="500"}
+
+## Blog
+
+![](images/metadata_blog_post.png){fig-align="center" width="500" height="500"}
+
+## Email
+
+![](images/metadata_email.png){fig-align="center" width="500" height="500"}
+
+## Spreadsheet
+
+![](images/metadata_spreadsheet.png){fig-align="center" width="500" height="500"}
+
+## Computer File
+
+![](images/metadata_files.png){fig-align="center" width="800" height="500"}
+
+## Webpage
+
+![](images/metadata_webpage.png){fig-align="center" width="500" height="500"}
+:::
+
+::: footer
+https://dataedo.com/kb/data-glossary/what-is-metadata
+:::
+
+::: notes
+On this slide, you will see examples of metadata from real-world sources like books, Word files, blogs, emails, and webpages. When you view the HTML version of the slides, take a moment to look at each example and check whether you would have recognized the metadata on your own.
+:::
+
+## Representative Statements {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+-   How should we create our statements?
+-   We want statements that represent the aspects of information objects that will help users meet their goals
+    -   i.e. to find, manage, select, locate, obtain
+-   In a consistent way
+    -   so that users can compare descriptions
+:::
+
+::: {.column width="50%"}
+![Ackoff's Pyramid](images/pyramid.png){fig-align="centered" width="950" height="350"}
+:::
+:::::
+
+::: notes
+Now, look at what makes a good representative statement. When we create statements, like metadata descriptions or records, we’re not just describing an object for its own sake. We’re doing it to support what users are actually trying to do.
+
+Those goals usually include things like finding information, managing it, selecting among options, locating the right item, or obtaining access to it. So the question to keep in mind is: **Which aspects of the information object will best help users accomplish these tasks?**
+
+Equally important is consistency. If statements are created in different ways, users can’t easily compare descriptions across objects. Consistent statements allow users to scan, evaluate, and make decisions more effectively.
+
+Ackoff’s Pyramid helps us think about the difference between raw data, information, knowledge, and understanding. Representative statements are not just raw data -- they’re structured, meaningful information designed to support use and decision-making.
+:::
+
+## Administrative Metadata
+
+*Metadata used in managing and administering collections and information resources*
+
+-   Examples
+    -   Acquisition information
+    -   Rights information
+    -   Location information
+
+## Descriptive Metadata
+
+*Metadata used to identify and describe collections and related information resources*
+
+-   Examples
+    -   Cataloging records
+    -   Finding aids
+
+## Preservation Metadata
+
+*Metadata related to the preservation management of collections and information resources*
+
+-   Examples
+    -   documentation of physical condition
+    -   documentation of preservation actions
+
+## Technical Metadata
+
+*Metadata related to how a system functions or metadata behaves*
+
+-   Examples
+    -   Hardware and software documentation
+    -   Technical details of digitization process
+    -   Authentication and encryption information
+
+## Use Metadata
+
+*Metadata related to the level and type of use of collections and information resources*
+
+-   Examples
+    -   Circulation records
+    -   Search logs
+    -   User tracking
+
+## User-Generated Metadata {.smaller}
+
+::::: columns
+::: {.column width="50%"}
+*Metadata generated by users online*
+
+-   Examples
+    -   Social-Bookmarks
+    -   Reviews on Amazons and Goodreads
+    -   Tags on LibraryThing
+    -   Folksonomy (collaborative tagging, social indexing, social tagging)
+    -   Crowdsourcing
+:::
+
+::: {.column width="50%"}
+[![https://crowd.loc.gov/get-started/how-to-tag](images/tag.png){fig-align="center"}](https://crowd.loc.gov/get-started/how-to-tag)
+:::
+:::::
+
+## Power of Metadata: Structure
+
+![](images/3.png){fig-align="center" width="80%"}
+
+::: notes
+This slide illustrates the power of the STRUCTURE behind the metadata. Without the structure (left side of screen), we have a bunch of words that describe something, but our computerized systems cannot understand these data, nor can the computer process them. If the left hand side of the screen were typed on a piece of paper, HOW would we organize it in a library catalog? In any information system?
+
+The right hand side of the screen shows how the structured fields in the metadata scheme provide a useful framework for the system to process and for users to make some sense of.
+:::
+
+## Metadata Elements and Semantics {.smaller}
+
+:::: panel-tabset
+## Introduction
+
+-   Each element needs a name
+-   Each element needs a definition (semantics)
+-   The semantics describe the information content associated with an element
+-   Input rules associated with an element
+
+::: notes
+Let's break down the parts of a metadata scheme.
+
+Each scheme contains multiple elements. In MARC they are represented using numeric tags in the range of 0XX-9XX. We will examine the MARC structure in more depth in Week 9.
+
+Each element (or think about an element as a field in a database) has three parts:
+
+1)  a name to identify the element in the field structure
+2)  a definition or what is called a semantic, which explains to the record creator (and users) what to expect to find entered in that field
+3)  Input rules or standardized rules for how to create the content entered into that field
+
+Any organization system contains a metadata scheme, regardless of context or form.
+:::
+
+## Introduction (Cont.)
+
+![](images/4.png){fig-align="center" width="80%"}
+
+## Dublin Core {.smaller}
+
+-   15 elements to represent digital resources
+-   Also used for analog resources
+
+![](images/5.png){fig-align="center" width="40%"}
+
+## Many Metadata Schemes
+
+-   Government Information Locator Service (GILS)
+    -   Metadata scheme for describing government information
+    -   67 elements
+-   Federal Geographic Data Committee (FGDC)
+    -   Metadata scheme for describing geospatial information
+    -   100+ elements
+-   Encoded Archival Description (EAD)
+    -   Used within the archival community
+-   And many more....
+    -   Visual Resources Core, MODS, etc.
+::::
+
+::: notes
+**Intro 2** -- Here is an example of a metadata element and its parts taken from one of the most well-known and used metadata schemes, the Dublin Core. Can you see what is MISSING?
+
+**Dublin core slide** ---- An example of a metadata scheme is the Dublin Core, developed in the mid 1990's and still being reworked today.
+
+It includes a core set of 15 generic elements at its base, though there are now many more that have been added to the scheme.
+
+We will come back to Dublin Core and other metadata schemes later but take some time to explore some of them online and to look at the different collections they are being used in.
+
+**more scheme** --- Just some more great examples to explore. Look these up using your favorite search engine.
+:::
+
+## Focus So Far, Upcoming Weeks
+
+-   Structuring the representation
+    -   Selecting object attributes to represent (based on users, user questions, and collection's objects)
+    -   Labeling attributes through the metadata elements/field names
+    -   Defining the elements (semantics) to indicate information about object to record
+-   In a few weeks we will try some data modeling
+
+::: notes
+This lecture has been a very quick and simple introduction to the complex concepts of representation and surrogation, bibliographic control and tools, and metadata and metadata schemes, as well as to the process and some decisions we make when developing an organization system.
+
+In the readings for the module you will explore these concepts, tools, and processes further.
+
+In Week 9, we will take a more in depth look at the application of representation and a metadata scheme when we discuss bibliographic control.
+
+Later we will look further at systems and metadata schemes.
+
+Enjoy the readings and be sure to ask questions or post insights as you read.
+:::
