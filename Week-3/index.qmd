@@ -1,0 +1,1484 @@
+---
+title: "Users & Information Seeking"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+::: notes
+This week, we're going to talk about users and information seeking
+behavior. This becomes very important to us: one, as someone who's
+helping users find information in retrieval systems, but also for those
+that design information systems and databases that help users connect
+with information.
+
+In this multi-lecture topic, we will first talk about users and their
+information behavior broadly, but also why it is important that we
+understand users to provide them with better organized collections and
+organization systems.
+
+Next week in part 1, we will learn more about information retrieval and
+user-centered design and how these both relate to information
+organization and users.
+
+Next week in part 2, which is an optional lecture, I will introduce you to
+some tips and advanced search techniques to use in information retrieval
+systems, like OU Libraries' databases.
+:::
+
+## Important Questions
+
+1.  `Who are Users?`
+
+2.  `What can we know about Users?`
+
+3.  `How do users seek and search for information?`
+
+    Examples of models for search and information seeking behavior
+
+::: notes
+So let's talk about our users. Some questions to frame our thinking:
+
+-   Who are our users?
+-   What can we know about users?
+-   How do users seek and search for information?
+
+We will also look at some different models that have been developed in
+Library and Information Science \[LIS\] through the years, primarily
+starting in the 1980s about how users look for information. So, these
+are some questions to help frame our thinking. Let's talk about each of
+these aspects individually.
+:::
+
+## Who Are Users?
+
+> A user is a person who uses information and/or information systems in
+> some meaningful way
+
+::: notes
+First, let's look at "Who are our users?"
+
+A user, very broadly defined, is "a person who uses information and/ or
+information systems in some meaningful way."
+
+Now, meaningful is a very subjective term, and you're thinking "what
+does she mean by meaningful?"
+
+And generally, it's up to the user to decide if their interaction with
+the system has been useful.
+
+Now, I'm not just talking about automated systems, technical systems.
+I'm talking about systems in general.
+
+You know, walking into the library and talking to a reference librarian
+would be part of a system's interaction. I'll explain that in just a few
+minutes, but users are anyone that really uses our system to find what
+they're looking for, to solve an information need. And there are lots of
+different terms that you're going to see in the literature that refer to
+users.
+
+In the 80's and the 90's we've called them "patrons" and "end users" and
+"system users". We used to refer to librarians, specifically reference
+librarians, as search intermediaries, so you might see that in the
+literature, but that was primarily in the late 80's and early 90's. But
+now we just call them users.
+:::
+
+## Today's User {.smaller}
+
+::: r-stack
+![](images/user.jpg){.fragment width="350" height="250"}
+
+![](images/user1.jpg){.fragment width="500" height="400"}
+
+![](images/user3.jpg){.fragment width="600" height="400"}
+
+![](images/user4.jpg){.fragment width="700" height="500"}
+:::
+
+
+
+::: notes
+
+*[`Click Next` to view the pictures]*
+
+Okay, so who exactly is today's user?
+
+I've given you some pictures on this slide to think through what a user
+or who a user is, but one thing that you'll notice, of course, is that
+there is either a computerized or virtual or a print based technology in
+place in each of these pictures.
+
+You will notice, computers, much of what you would see in most of the
+libraries today with various different people of different genders or
+ages accessing the Internet or using computer systems within their
+library context.
+
+You also have to think about users in terms of age groups. We have young
+users that are interacting with and adapting technology in ways that we
+did not anticipate, which is very exciting for us as library and
+information professionals, but it's also very challenging because we now
+have to think about how do we engage with the users and help them become
+better information consumers as well as creators of information.
+
+And we cannot forget that people still like to browse our libraries.
+People traditionally are used to going through the stacks, finding
+something they like and then looking at the books around the book to
+determine if there's something else that they find of interest or that's
+related to their information need. So, classification systems are still
+very relevant in libraries. That's not to say that the systems in place
+are the best systems or the most user-friendly systems for this new
+generation of user, but they do still support users in very important
+ways.
+
+A really interesting dimension of users, and this came about, of course,
+with the Internet and more social ways of sharing information or
+participating in online communities, is what is being called "citizen
+science".
+
+Also, we have very wired individuals as users today where a user is
+connected to internet 24/7. These users are using different tools like
+smartphones or tablets in ways that allow them to access information but
+also to share and create information and engage in different practices
+with other users. These are all dimensions of users we as information
+professionals have to think about.
+:::
+
+## Model of Today's User
+
+`Work in Progress?!`
+
+::: notes
+So, when we think about today's users, it's really difficult to model
+the user today because of all the different technology that they
+interact with on a daily basis and all the different resources they have
+available to them at their fingertips.
+
+So, let's think about the user as a "work in progress" as we work
+through this lecture on users and information behavior.
+:::
+
+## Some More Vocabulary
+
+-   `Information`: any difference you perceive in your environment or
+    within yourself
+-   `Information need`: recognition that your knowledge is inadequate to
+    satisfy a goal you have
+-   `Information seeking`: conscious effort to acquire information in
+    response to a need or gap in your knowledge
+-   `Information behavior`: information seeking, as well as other
+    unintentional or passive behaviors, or other purposive behaviors
+    such as avoiding information
+
+::: notes
+Some other vocabulary that might be useful for understanding this
+dimension of information seeking and organization of information.
+
+In this program you will read lots of definitions of **information**.
+One definition I find particularly useful is: *information is any
+difference you perceive in your environment or within yourself*.
+
+So, we can think of information in lots of different ways. We can think
+of it as a cognitive change that comes about when we learn something new
+or we encounter some new piece of information. We can think of
+"information-as-thing," or as physical objects actually being thought of
+as information bearing Or having the ability to inform us in some way.
+So, there are lots of different ways we can think of information.
+
+**Information need** then is that recognition that you have that your
+knowledge is somewhat inadequate in a particular area and you need to
+find something else out in order to satisfy a goal that you have. For
+example, if you want to learn about designing webpages, you're probably
+going to go to a class, or you're going to find a book that will help
+you with this, or you might even go on the web and find different
+information. But you're going to access systems, resources, in order to
+find information to solve your information problem.
+
+Another term is **information seeking**, and this is a conscious effort
+to acquire information in response to a need or gap in your knowledge.
+Think about your daily activities. Many of you probably got up this
+morning, turned on a computer or tablet, turned on the television,
+listened to the news, got information about the weather, so you could
+decide what you're going to wear today or if you need an umbrella. You
+probably have talked on the phone to someone today. At different points
+during your day, you have been encountering or accessing different
+systems to find information.
+
+**Information behavior**, then, is kind of this overall umbrella of
+information seeking as well as other unintentional or passive behaviors
+or other purposeful behaviors related to seeking (or not seeking)
+information, such as avoiding information.
+
+Now, how many of you have heard of cognitive dissonance? It comes from
+cognitive science. Cognitive dissonance is where you avoid information
+that you know is going to change something that you've already made a
+decision about or something that you've already done and you don't
+really want to encounter that information because you know it's going to
+make you feel bad about your decision. That's just one way of looking at
+it. So, for example, you've just made a major purchase, like you bought
+a new car. And then you get on the website or you hear consumer reports
+or something telling you how bad that car is and that you really
+shouldn't have bought it in the first place, and that's the idea of
+avoiding information.
+
+Also, it's interesting in our field because of what we call the
+information glut, or the information overload. That people purposely
+filter our information sources in their lives because they don't want to
+be overwhelmed with all this different kinds of information. For
+instance, I don't turn on the news before 8:00 because I don't want to
+know what's going on until I'm ready for it.
+
+But that's one way in which we avoid information. Turning off the radio
+while you're driving, things like that. When we look at information
+behavior, we look at not just purposeful information seeking, but we
+look at avoidance activities as well.
+
+So, it's a really interesting area of our field that tells us a lot
+about people and how our information can be represented for them in
+order to effect access to that information.
+
+So, what do we need to know about the people we call our users?
+:::
+
+## What do We Need to Know?
+
+-   `Demographics`
+-   `Types & Levels of Knowledge`
+-   `Information-Seeking Situations`
+
+::: notes
+Well, there are certain things we can know, and there are certain things
+we can make some generalizations about, such as demographics, types and
+levels of knowledge, and information seeking situations. Let's address
+each of these separately.
+:::
+
+## Demographics
+
+-   `Age`
+-   `Gender`
+-   `Education`
+-   `Occupation`
+-   `Culture` *(values, language, ethnicity)*
+
+::: notes
+**Age** is one way that we can get a good picture about a user group.
+And we can characterize age in many different ways. Our society has
+created these frameworks in order for us to do so. We can think about
+age in terms of K-5, K-12, young adult, adult, senior citizen, children.
+We put all these different labels on it. So, that's one way in which we
+can get a handle on one characteristic of our user group.
+
+Also, **gender**, are they primarily males and females? In earlier
+studies of computer adoption studies this demographic was a real factor.
+It's not as much today as it used to be, but again there are still
+studies that show that males are heavier users of different kinds of
+information technology than females are, but that's shifting.
+
+What's really interesting about some of our studies today with gender is
+that we're seeing that particularly in the web and in the internet
+environment is that we have different uses -- that each gender has a
+different use. Females tend to use more of the communicative aspects of
+the web and internet than males. And males generally -- and I don't like
+to generalize, but studies have shown this -- are more into the
+information gathering and gaming and more of the high tech applications.
+
+So it's kind of interesting what we can tell about a user population
+based on the different variables. But this is shifting constantly.
+
+**Education** can tell us a lot about a user group. It tells us about
+their potential knowledge, about their subject and domain expertise; it
+tells us about potential uses they might have for that information that
+they're looking for. So, education level can tell us quite a bit.
+
+**Occupation** is the same. If we know that someone is an engineer or
+chemist or a contractor or a builder, they're going to have a different
+knowledge base potentially. And so it's interesting to be able to tell
+what their occupation is because that again will tell us something again
+about what they're going to be looking for, what kind of resources would
+be useful for them.
+
+**Culture** is a little bit of a grayer area. But it does tell us a
+little bit about values and ethnicity and ethnic choices that people
+make. But also language. Especially if you're designing a system. You
+need to know what kind of language or what languages your users need in
+order to access your system. Is it a multilingual system? Do you have a
+very heavy multilingual population, and how do we adapt that within the
+system environment? So, even language can be a very important variable
+to know about our users. We have a sparsity of studies related to
+cultural aspects of information behavior and users.
+:::
+
+## Types and Levels of Knowledge
+
+[Allen (1991)](https://archive.org/details/informationtasks0000alle)
+
+-   `World Knowledge`
+-   `System Knowledge`
+-   `Task Knowledge`
+-   `Domain Knowledge`
+
+::: notes
+The second set of information that we can know about our users is what
+we call "types and levels of knowledge":
+
+-   world knowledge
+-   system knowledge
+-   task knowledge
+-   domain knowledge
+
+And others have expanded on this idea as well. So, let's break them each
+down.
+:::
+
+## 1. World Knowledge
+
+-   `World View, Perception of Self`
+
+-   `Affects Self-Confidence`
+
+::: notes
+Now, we can look at them separately, but you can also see the
+connections and the overlap between all these types of levels of
+knowledge.
+
+For example, **world knowledge** is a user's perception of themself and
+the role that they play in the world -- in their own world. And it's
+really a combination of the other three knowledge rolled into one. This
+is kind of from a constructivist learning point of view -- that you
+build or construct your own world based upon what you encounter, what's
+in your society, and that frames and shapes your perception of yourself
+and the role that you play.
+
+Why this is important to us is that it will affect a user's
+self-confidence when they're working with a particular system, when
+they're looking for information, when they're coming to the reference
+desk and asking questions. So, somebody with high world knowledge,
+someone who has traveled a lot, someone who has a real broad view of the
+world and different pieces of the world, and has a good sense of how
+they *fit* in the world, is probably a more confident user of
+information and information sources.
+:::
+
+## 2. System Knowledge
+
+-   `Understanding of Information Environment`
+
+> Information systems at some level (e.g. cultural, institutional,
+> technical, interpersonal)
+
+-   `Affects Skills and Expections`
+
+::: notes
+The second type of knowledge is a little bit more complex. This is
+**system knowledge**, and this has been expanded upon by many people in
+our field.
+
+For example, Allen defines it as the understanding a user has of an
+information environment. And this can mean many different things. This
+can be an information system at any level -- not just a technical level.
+It can be a cultural level -- how their community system works. Who do
+you call if you need to find out if they're picking up your garbage on a
+holiday? That's an example of your cultural system. An institutional
+system would be something you know, "Who do I call if someone's put a
+lock on my car wheel, so I can go home?" But you have to understand how
+that institutional system might work.
+
+Technical is related to knowledge of how the technical system works,
+such as, "How does this database work? What can I do to make my search
+effective?"
+
+Interpersonal systems are your personal network. Who do you call if you
+need a recipe for coffee cake? So, your own personal network, your
+friends, your family, your colleagues.
+
+Your understanding of system knowledge affects your skills and your
+expectations when you're using different systems.
+
+Okay, now let's expand this even further.
+:::
+
+## 2. System Knowledge (Cont.)
+
+-   Conceptual knowledge of the information retrieval process - -
+    *translating a need into a query*
+
+-   Semantic knowledge of how to implement a query in a given system - -
+    *the how and when to use the system features*
+
+-   Technical skills in executing the query [(Borgman,
+    1996)](https://escholarship.org/content/qt3mz7h8hr/qt3mz7h8hr_noSplash_36344d4ac812b2c94219b90e4a164074.pdf?t=p7cad8)
+
+    -   basic computing skills
+    -   syntatic knowledge of query entry and how search statements,
+        systems work
+
+::: notes
+System knowledge includes many different aspects.
+
+We can think of it as conceptual knowledge, we can think of it as
+semantic knowledge, and we can think of it as technical skills. These
+ideas were introduced by Christine Borgman in 1996 and they still hold
+true today. Let's define each.
+
+**Conceptual knowledge** is your understanding of an information
+retrieval process -- translating your need into a query and eventually
+implementing into a system.
+
+**Semantic knowledge** is your understanding about how to implement a
+query into a specific system -- or how do you input your query into a
+given system. And how and when to use different system features.
+
+For example, technical skills in inputting the query: your basic
+computing skills, the syntax that you need in order to actually enter it
+into the search box. Now, today we have it a little easier; we don't
+have to use any command line searching. We don't have to put into our
+OPACS anymore "A:\\" (A colon backslash) and then the author's last
+name. And in most system's we don't even need to know if we need to
+enter the last name, first name anymore. We've gotten very spoiled in
+that way. But there are still a lot of systems out there that you really
+have to know the syntax in order to enter a query to make the system
+understand it.
+:::
+
+## 2.1 Conceptual Knowledge {.smaller}
+
+-   Going from the vaguely-felt need...
+    -   To the query formulation
+        -   verbally expressed
+        -   written or typed
+-   Query is formulated in terms of the... (Buckland, 1991)
+    -   Content *(words, numbers, symbols)*
+    -   Information Entities *(documents, objects)*
+    -   "Information as Thing" *(container of information)*
+-   Successful query = translation of intended meaning into search terms
+
+::: notes
+Let's look at **conceptual knowledge**. Going from a vaguely felt need,
+where we start to realize that we need some information about this
+particular topic and "how can I find that information" to the idea of
+expressing that query, either verbally where you go and ask somebody.
+
+You ask a reference librarian, call someone on the phone, text somebody
+on your phone, or type it into a search engine, type it into a database,
+type it into an OPAC. We then have to understand how to formulate that
+query within our system. We have to be able to take our actual query and
+put it into terms that would be useful and meaningful to either a human
+or a computerized system.
+
+And oftentimes, I'm sure as you'll learn in 5053, your user doesn't
+really know what they want when they come to talk to you. When they ask
+you a question at a reference desk, they'll give you a really big ,
+broad question, when they really need this other subset of that actual
+query. After many years at a reference desk, I can tell you, you get
+everything from A - Z.
+
+And oftentimes, you start very broadly and eventually you drill down to
+what they need. But again, a user often has to go through that same
+process when they're seeking information.
+:::
+
+## 2.2 Semantic Knowledge
+
+-   `How to Implement a Query in the System`
+-   `How the System is Structured` *(file system used)*
+-   `Action` *(find, select, scan, browse)*
+-   `Access Points or Field Tags` *(author, title, subject)*
+-   `Search Terms` *(search functions of systesm: Boolean, Keyword)*
+-   `How the Search Results are Displayed`
+
+::: notes
+**Semantic knowledge** is again how to implement a query into a system.
+You have to know how that system is structured - what kinds of fields
+are in that system, what fields are searchable within a system, and the
+kinds of information that they would hold within those fields.
+
+You have to know the different actions that are possible such as which
+fields are searchable and how to limit your query to specific field(s)
+in the system you are using. Other aspects include, for example, how we
+enter our search terms. What terms work, and as I said earlier, what
+kind of functions are possible in the system? Do you have to use an AND
+or a NOT Boolean string in order to make your search work, or can you
+just do fielded searching? Or if you're in a search engine, do you just
+put a couple of terms into the magical box and see what you get?
+
+You also have to know how the search results are displayed, and it's not
+as difficult in some of the systems today, but remember in older
+systems, we had all those function keys across the top? And if you hit
+F1, you could print. If you hit F3, you could get a full - screen
+preview. Things like that. Our users again are a little more spoiled
+than when we were learning different systems, but still, they have to
+understand the different functionalities of a system. And if the system
+isn't well - designed - if the navigation is difficult, or there are a
+lot of necessary or unnecessary features that are not easily
+accessible - then our users are also not going to be able to use our
+systems.
+:::
+
+## 2.3 Technical Skills
+
+-   We MUST not take for granted that all users know how to use
+    computers
+-   How the computer operates
+-   Syntax of entering search commands
+-   Commands to manipulate system [(Borgman,
+    1996)](https://escholarship.org/content/qt3mz7h8hr/qt3mz7h8hr_noSplash_36344d4ac812b2c94219b90e4a164074.pdf?t=p7cad8)
+    -   control search
+    -   display formats
+    -   control output of results
+
+::: notes
+Technical skills - is the second aspect of System Knowledge.
+
+We cannot take for granted that all our users know how to use computers.
+Even in today's very highly wired web environment. Not all our users are
+online. And not all of our users are proficient searchers. We, then,
+can't take for granted some of the basic functions of a computer, such
+as how a keyboard works.
+
+Have you all heard the tech support story about the person that calls up
+and says, "Well, it says to hit the 'any key,' but I can't find it on my
+keyboard. Where's 'any key'?" We still get stories like that. Or the one
+where the people were so happy because their new computer came with a
+cup holder - the CD drive? Thought it was for holding cups? Or even the
+one about the mouse, where they tried to access their computer by
+pointing their mouse at the screen? Or putting it down on the floor like
+a presser foot for a sewing machine?
+
+These are true stories, and we still get them.
+
+So, we can't make assumptions that everyone understands how to use our
+systems.
+
+Users base their use of systems on previous experience they have had.
+For example, an older user may be familiar with a presser foot when she
+used a sewing machine so her mental model of how to use the mouse may be
+based on this prior experience.
+
+And as you all know, when you're learing new databases, you first have
+to navigate a little bit. You have to look and see which kinds of fields
+are searchable, if it includes Boolean searches or not, if there's any
+kind of proximity operators you can use to make your queries more
+precise.
+
+Everyone has to go through the same kind of process whenever you start
+using a new system. So, they may not understand how the computer itself
+works, they may not know how to enter the query, and they may not know
+the different commands to make the system do what they need.
+
+And, honestly, even though these are really interesting , fun stories,
+we also need to remember that our users don't have the background that
+we all do. They're not all from a library science program, where this is
+what we learn. This is what we're here for, is to learn how to connect
+our users with information.
+:::
+
+## 3. Task Knowledge
+
+-   `Understanding of Information Problem and Use`
+-   `Affects Motivation and Goals`
+
+::: notes
+The third type of knowledge is what we call **"task knowledge,"** and
+this is one of the primary areas after domain knowledge that's really
+essential to know about your users.
+
+Task knowledge is an understanding a person has of their information
+problem and use - how well your users understand what they need, what
+they're looking for and how well they understand the kind of resources
+they might need to use to find that information.
+
+So, if we say that a user has high task knowledge, that means that they
+understand very well what the query is that they have.
+
+They want to wallpaper their kitchen, so they know that they want some
+kind of book that tells them about home decoration. That's a really
+pretty good understanding of their task.
+
+But say that they need to know about the ordinances in your city if they
+want to build a house with a pitched roof. Where do you go for that kind
+of information? To the city ordinances, or your planning department, but
+this is not the kind of information every user will know.
+
+But your users have to have a good understanding of the task itself and
+the kind of resources that they need to answer that query. And they also
+need to know how well your collection can help them answer that query.
+And this really affects our user's motivation and goal. If they can't
+easily figure out what they need, oftentimes, they will not go any
+further. They will leave the library or library website unsatisfied and
+go to another source, such as a search engine.
+:::
+
+## 4. Domain Knowledge
+
+-   `Understanding of Topic and Topic Organization`
+-   `Affects Ability to Exploit Language and Association`
+
+::: notes
+The last area, and this is probably the most important, of the four
+types of knowledge, is called **"domain knowledge."** This is our user's
+understanding of the topic and the topic organization or the discipline
+of the topic and how that discipline is structured. So, for example, if
+you're an undergraduate chemistry student, how well at that point do you
+understand the discipline of chemistry? Probably you have a fairly basic
+understanding, but not at the same level as your professor or not at the
+same level as graduate students in the discipline.
+
+This type of knowledge is important for us to know because if a user has
+a low or a high domain knowledge, it gives us an understanding of their
+ability or facility to use the language of that discipline. And when
+we're creating representations, we would make a decision to use very
+specific terminology or to use more general terminology based upon what
+we understand about their domain knowledge.
+
+So, for example, if we're working with, again, a chemistry database,
+we're assuming that our users are individuals that are in a program of
+chemistry - they're either students or faculty - and we have varying
+levels of domain knowledge. The students probably have a low to moderate
+level of domain knowledge, whereas the faculty would probably have a
+higher level.
+:::
+
+## Example
+
+`Collection`: Law Firm Library
+
+`Demographics`: First Yer Law Clerks
+
+`Information-Seeking Situations`: State Statute on Environmental
+Easements
+
+`Types and Levels of Knowledge`: World, System, Task, Domain
+
+::: notes
+Here's an example on how we can apply what we've just been talking
+about.
+
+Our collection is a law firm library. The demographics, we have first
+year law clerks, so they've probably been to law school for one year.
+They're beginning to know the language of their discipline; they're
+beginning to know how to conduct research in the areas. They've probably
+taken at least one legal research class. They're beginning to understand
+how to find information for their particular information needs.
+
+Our situation here is that they need to find information on a state
+statute on what are called environmental easements, which is a law that
+tells you, for example, can you have a pitched roof, or how close can
+you build to the water on a beach. An easement is a stipulation of
+ownership and ownership building rights in a particular tract of land,
+whether you own it, or if the government owns it.
+
+So, this is our situation. We have the law clerks; they probably have a
+pretty good idea of how to go about finding out this information. They
+probably have a probably moderate domain knowledge - moderate to low.
+Their system knowledge will vary depending upon the systems they have
+used. And their task knowledge is probably moderate to low at this point
+because they may not even know what an environmental easement is at that
+stage in their education, but again it may vary as well.
+
+Now, if we take the same situation and we put it in a public library ,
+our users are going to change. We're probably not going to have law
+clerks; we're going to have a person who wants to build on the beach.
+And they need to know how close they're allowed to build close to the
+dunes, for example. They're probably not going to have a clue what an
+environmental easement is or even what a state statute is - very
+possible. And so their task knowledge is going to be lower, their domain
+knowledge is going to be lower, system knowledge depends on their
+experience, but all of those are going to affect how they go about
+looking for information, the questions they ask you, the resources they
+access and how they interact with different systems.
+
+Okay, so can you see how those types and levels of knowledge and
+demographics can change what we need to provide in terms of access?
+
+In a library - a public library - our records- our representations - are
+probably going to be at a very general level. We're going to have one
+card in our catalog that represents our set of state statues if we're
+fortunate enough to have them in a public library, which will have very
+general subject headings. Now, in a law firm library, we're probably
+going to have a breakdown of the different volumes of the state statute
+set that tells us what's in each individual volume. But the language in
+our law firm collection is going to be at a higher level of what we call
+of specificity - more specific terminology in use - than what we might
+see in a public library.
+
+So, the choices we make when we're designing and creating
+representations will be different depending upon the environment,
+depending upon the users, and their four types and levels of knowledge.
+That's why types and levels of knowledge are so important to your
+understanding of organizing information.
+:::
+
+## How Do User Seek and Search for Information?
+
+Users are motivated to seek information in a given situation to: 
+
+- `answer a question` 
+
+- `solve a problem` 
+
+- `complete a task` 
+
+- `learn about a subject` 
+
+- `verify a fact`
+
+::: notes
+Alright, now let's talk about our next framing question: How do users
+seek and search for information?
+
+As I've mentioned, there are lots of different models that we've
+developed, as we've looked at information seeking from lots of different
+perspectives.
+
+Users are motivated for many different reasons to seek information:
+
+-   to answer a question;
+-   to solve a problem;
+-   to complete a task;
+-   to learn about a subject;
+-   to verify a fact; and
+
+many others I'm sure that you can think of!
+:::
+
+## How Do Users Seek & Search for Information?
+
+Two Situational Levels
+
+1.  `Information Seeking`
+    
+    Broad context involving any or all systems or sources accessed
+
+2.  `Information Searching`
+
+     Narrow context involving interaction with specific system or
+        source
+
+::: notes
+We can look at this also from two situational levels: (i) **information
+seeking** and (ii) **information searching**. And oftentimes in the
+literature, these two get used interchangeably, but they're really not
+the same.
+
+**Information seeking** is kind of a broader context where we look at an
+individual's entire information seeking activities - from all the
+different systems that they use, from the beginning of their search to
+the end of their search and the use of the information. That would be
+seeking.
+
+**Searching** is a more narrow context where we look at one specific
+interaction with either a human system, a computerized system, any of
+those other forms of systems that we discussed earlier. So, information
+seeking is a broader context; information search is where we're looking
+at a specific narrow situation.
+:::
+
+## What is Information Seeking?
+
+>It refers to the [user's process for obtaining information]{style="color: blue;"}, from recognition of an information
+need through use of information to resolve the information need
+
+::: notes
+So, what is information seeking? Let's go back to that idea.
+
+The information seeking is the whole process of user recognizing their
+information need -- that they have a gap in their knowledge, to
+obtaining the information itself -- that they need to know something
+about a particular topic through the use of different systems.
+:::
+
+## Information Seeking: Assumptions
+
+Common assumptions about information seeking in LIS are that the process
+is:
+
+1.  `Purposeful`
+2.  `Cognitive`
+3.  `Contextual`
+4.  `Value-Based`
+5.  `Dynamic`
+
+::: notes
+Now in our field, as well as other fields, we've made some different
+assumptions about information seeking and the process itself - that it's
+purposeful (that we're always looking for information for a purpose).
+
+Now, we're changing our idea about this because of the web. A lot of
+people just get online and surf around. And actually, we've always been
+not just for a specific purpose when we look for information. You go to
+the library and you just browse the 'new book' shelf. You want to see
+what's been published. You're not necessarily looking for anything in
+particular . Maybe the purpose is to find something to read, but it's
+not necessarily linked to a specific information need.
+
+We've also assumed that it's a *cognitive activity* - that we're always
+learning as we encounter information.
+
+That it's *contextual* and that your need will change depending on the
+different context.
+
+And actually, that it's very *dynamic*. That as you learn more about a
+particular subject when you're searching, your need will change because
+you might because more focused, or you might become even broader. You
+might go to a particular library OPAC looking for a particular subject
+and then you find other subjects that are really interesting and you go
+off on more of a non - focused track. Or you find a sub - piece of that
+topic, and that is really where you want to focus. So, your need is
+changing as well as you go into the information seeking process.
+
+And *context* is important because that will impact the way that you
+make decisions.
+
+For example, if you need to do some research for your research paper and
+it's due in three months, right now you'll use the web, you'll maybe use
+an OPAC. You might even interlibrary loan something - a novel idea. You
+can still do that. But say you have three days to get your paper in,
+you're going to go to the web, you're going to access anything you can
+quickly access, you're not going to interlibrary loan - you don't have
+time for it now - and you're probably going to take anything that is
+related to the topic that you're working on.
+
+Your idea of what's relevant or useful to you changes because of the
+context!
+:::
+
+## Information Seeking & Searching: Models {.smaller}
+
+-   `Motivation`: [why users seek information, their information
+    needs]{style="color: orange;"}
+    -   Dervin's Sense-Making
+    -   Belkin's Anomalous State of Knowledge
+-   `Situation`: [how users seek information]{style="color: orange;"}
+    -   Kuhlthau's Information Search Process
+-   `Resources`: [how users use resources/tools]{style="color: orange;"}
+    -   Mann's Library Research Models
+-   `Interaction`: [how users interact with information systems and the
+    process(es) they use]{style="color: orange;"}
+
+::: notes
+We've also framed information seeking through four basic different
+frameworks: *motivation, situation, resources, and interaction*.
+
+For example, *motivational models* look at why users seek information.
+And what are their information needs. And how does this make each
+information seeking situation different? The two most prominent models
+in this area are Dervin's sense - making model and Belkin's anomalous
+state of knowledge (ASK).
+
+Dervin's sense - making model is one that's primarily a constructivist
+point of view, where, and also it's been referred to as kind of a 'Star
+Wars point of view,' in that she says that as we move through the world
+in our daily lives and we encounter different stimulus from different
+environments, we have a cognitive shift where we learn something new
+about the particular topic or our world around us.
+
+And when we're seeking information, we then have to be able to make
+sense of that information and fit it into our cognitive frameworks. And
+once we can do that, then it becomes useful to us. But again, when is
+that point? And what do we have to do to get there? Her model's a lot
+more complex than that, and it's really a very interesting model to
+study. But again, it's more of a constructivist point of view, where we
+learn from and construct new realities for ourselves based upon the
+information we encounter in our daily lives.
+
+Belkin's anomalous state of knowledge, or the ASK model, is where we
+perceive some 'gap' in our knowledge - base and we look for information,
+we use different systems in order to fill that gap. It's a little bit
+more straightforward, but it's more of a process model from, again,
+where we recognize we have a gap and everything we do in the meantime is
+to find the information. Now, Belkin and Dervin have studied various
+different populations, primarily adults, and their models, again, reveal
+different patterns and information to us about how users look for
+information, the different kinds of sources they use, and how they
+interact with different systems.
+
+*Situational models* look at how users seek information. What do they
+actually do ? Kuhlthau's model, one of the most well known situational
+models, has *affective* variables to it as well. Her research has
+primarily been with middle and high school students.
+
+We also have *resource models*. Thomas Mann who was the Librarian of the
+Library of Congress developed these models through watching people over
+the years and interacting with different people.
+
+We have also *interaction models* - how users interact with information
+systems. For example, "how we use a particular database, how we use the
+web, or what systems do we actually use when we go to look for
+information."
+
+It is important to remember that each of these different frameworks and
+models has been developed through the years with different groups of
+users - from adults to children to elderly, to what we call 'naive
+users' to more experienced users, to web users, to database users, to
+OPAC users.
+
+We've put lots of different labels on our user - groups, but we've
+developed these models on about forty years of research now in various
+different aspects of our field.
+:::
+
+## Kuhlthau's ISP Model
+
+`Task Initiation: Recognize Information Need`
+
+1.  [Topic Selection]{style="color: orange;"}: identify general topic
+2.  [Prefocus Formulation]{style="color: orange;"}: investigate
+    information on general topic
+3.  [Focus Formulation]{style="color: orange;"}: decide on narrower
+    topic
+4.  [Information Collection]{style="color: orange;"}: gather information
+    on narrower topic
+5.  [Search Closure]{style="color: orange;"}: complete the search
+6.  [Use of Information]{style="color: orange;"}: making use of
+    information
+
+::: notes
+Kuhlthau's model, for example, is probably the most well - known and the
+most well - used in our field. She has kind of a somewhat linear
+approach, where we have a topic selection at the beginning, where you
+identify a general topic. Remember most of her research was with
+middle - and high - school students. The youth are looking for
+information for a research project or a research paper.
+
+The first stage is topic selection.
+
+The second stage is called 'prefocus formulation' where the users do
+some investigation on the general topic. They start looking at databases
+and encyclopedias. They start looking in their card catalogs to find
+information in their libraries about that topic - or now online.
+
+The third stage is what Kuhlthau calls 'focus formulation,' where users
+decide on a narrower topic from that general topic that they started
+from. Kuhlthau links users' affective states to each of these different
+stages - affective meaning different emotional responses or feelings at
+the time of topic selection. At the time of topic selection, they're a
+little anxious. And at the prefocus formulation they're getting even a
+little bit more anxious because they're starting to look for
+information, they have to identify resources, they have to use different
+systems. And at the point of focus formulation users are starting to
+level off again and feeling more comfortable.
+
+Now, why that's important for us is because it tells us as reference
+librarians where we should intervene, or what Kuhlthau calls the 'zone
+of intervention.' Should we let users continue to look around for
+themselves for a while and then come and questions? Or should we go and
+say, "Can I help you with this?" Kuhlthau says to probably wait until
+between stages two and three, somewhere during these stages is what she
+calls the 'zone of intervention.' During the zone of intervention,
+that's when you should jump in and say, "Maybe I can help you with this
+different system," or "This resource might be better for you."
+
+Step four is where users collect the information. They've decided on a
+narrower topic, they've explored some different systems, some different
+resources, and they start gathering some information on that narrower
+topic.
+
+Step five is the search closure where users complete their search, and
+finally, the last step that Kuhlthaus has recently added, when users use
+the information.
+
+Now, this model appears to be linear, but at any point, you can go back
+through the stages. If you get to stage two and you don't like this
+general topic, so you might propose a whole completely new topic and
+start over again.
+
+Or you might get to three and you're not quite happy with that narrow
+topic, so you go back and explore the general topic some more.
+
+So, again, it's not necessarily a linear process. But what she's
+primarily famous for, and especially in this model, is this whole
+process, but also the affective states of the individual and when we
+should actually intervene.
+:::
+
+## Mann's Library Research Models 
+
+`These are models for library searching, or how people (end-users and/or professionals) use resources and tools to find information`
+
+-   Search options based on organization of information in libraries
+-   Importance of models in concealing/revealing search options/indexing
+    system
+-   Applicability of models in any subject area, language, format
+
+::: notes
+Mann has developed some really interesting models. He's looked at
+different search options that we've developed based on how we organize
+information. Also, his models show the importance of our library systems
+in revealing or concealing different pieces of information to our users.
+How much can they tell about our resources by looking at a bibliographic
+record? How useful is that? Do they actually use our pathfinders and our
+finding aids?
+
+He's also developed some different models, like for example, a specific
+subject or discipline model. Mann has looked longitudinally at how
+different disciplines look for information. For example, Social
+scientists do what's called 'citation checking or chasing' where you
+find a really good article and then you go and look at the citations in
+the back and then you start chasing those down. People in the hard
+sciences, like say chemistry and physics, they call their colleagues
+before they do any research in our systems. They'll actually network
+before they'll use a library database or to your library catalog.
+
+So, through the years Mann developed these different models from
+observing and working with people in reference situations.
+
+The traditional library science model is one model that Mann examined
+how people use different tools we've developed such as our
+classification schemes, or controlled vocabulary or subject headings
+within library catalogs, but also how people use bibliographies and
+indexes.
+:::
+
+## Research Models
+
+Examples: [Mann's Library Research Models](https://archive.org/details/libraryresearchm00mann)
+(just a few, there are many others!)
+
+-   Specific Subject or Discipline Model
+-   Traditional Library Science Model
+    -   Classification, controlled-vocabulary catalog, published
+        bibliographies and indexes
+-   Actual-Practice Model
+-   Principle of Least Effort
+
+::: notes
+Mann's Actual practice model is a generic model of "What do people
+really do when they look for information in, say, the Library of
+Congress?" Do they ask reference librarians first? Do they go to the
+OPAC first; do they go to a finding aid? So, he's examining a user's
+process rather than lumping them into a group like we saw in some of the
+earlier models.
+
+The last one isn't Mann's model. We attribute it to Zipf. It's the
+'principle of least effort,' but Mann has developed this model further.
+This is the idea that people will go to the least amount of effort to
+find what they need. How many of us are guilty of that? At some point or
+another we all just want the information right now, right quick, and the
+web makes it even easier for us to do this. We can also apply this model
+to the Web. It's very interesting in early retrieval research, we knew
+that people would probably access the first fifty hits when they
+searched our OPACs, and believe it or not, that still carries into the
+web. Most people don't go beyond the first fifty hits when they find
+results on the search page.
+
+So, these again are just some ideas of the different models we've
+developed through the years.
+:::
+
+## How Do Questions Relate to Information Objects?
+
+-   Information Object Attributes *(general characteristics, eg has a
+    creator, size, content)*
+
+-   Implications for practice: understanding users' information needs
+    will help us create better representations for objects *(more
+    efficient access)*
+
+::: notes
+So, you might ask, "How do these questions relate to information
+objects?" and "Why is it important that we understand users when we're
+organizing information?
+
+If you ever take a look at search logs which capture all the searches
+and terms that users input into a system to do a search, it's really
+revealing about the types of words they use or the types of attributes
+or fields they use when they're looking for particular objects in the
+collection.
+
+And so from that type of study, we can attempt to understand what the
+users' information needs are as well as how they actually search for
+information in your system.
+
+The implications of understanding users' information needs really help
+us create better representations for objects and provide more efficient
+access.
+
+So, knowing more about how our users interact with systems, the types of
+problems or information needs they bring to a system, and then the
+processes they undertake to find those needs is really important when
+you're designing a system or when you're cataloging or creating
+representation for the resources in a collection.
+
+We'll explore this further.
+:::
+
+## Examples
+
+-   User Question (1): *I want all the books by Janet Evanovich*
+
+-   Attributes
+
+    -   Format
+    -   Creator
+
+-   User Question (2): *I need to find current books or videos on new
+    paint treatments for kitchens*
+
+-   Attributes
+
+    -   ????
+
+::: notes
+Let's take some examples of this.
+
+Our user question might be, "I want all the books by Janet Evanovich."
+When you look at that question, what are the attributes that you see
+embedded within the words the user inputs into the system or they ask
+the reference librarian? We have 'format' because they want books and we
+have 'creator' because we're looking for books by a particular author.
+
+Another example would be in user question two: "I need to find current
+books or videos on new paint treatments for kitchens." Now, attributes
+associated with this particular question might be 'date,' because
+they're asking for current books, 'format' books or videos, and also
+'subject' because they're interested in a particular subject area of new
+paint treatments that they might use in kitchens.
+
+So, you can see just from examining some basic questions that might come
+to your library or your information organization, you can begin to get
+an idea of the needs of your users. And, of course, this has many
+different implications for practice related to the information
+organization, but also related to, say, collection development and other
+aspects of services we provide.
+:::
+
+## User Expectations
+
+-   Expectations for Retrieval Performance (eg. `precision and recall`)
+
+-   Other Measures: `Relevance or Pertinence`
+
+::: notes
+Another area that we look at when we think about user expectations for
+our systems or for the representations that we create of the objects in
+our collection are the concepts of retrieval, or *precision and recall*.
+
+Recall assesses the output of the system, meaning that every object that
+is related to that query in some way should be returned back to a user
+in the list of hits in the system. It also assesses the ability of the
+system to retrieve all relevant items, meaning that everything that is
+retrieved in the set should be related to the subject or the attributes
+in the user's question. So, if they're looking for all books on paint
+treatments that you might have in your collection, they should return
+all records related to paint treatments. If not, it's said to be 'low
+recall.
+
+Precision, on the other hand, assesses relevance of output, meaning it
+assesses the ability of the system to retrieve only the relevant items.
+So, precision is looking at how specifically the system has returned
+only items that are appropriate to your query. As you can see, this
+could be a problem, especially if the system is difficult to use or the
+representations don't match the terms being used by the user themselves.
+And as we'll talk about in later module that there are very different types of
+systems and they operate in different ways, and that could impact both
+recall and precision.
+
+So, again, when we look at our users' queries, we can tell whether or
+not they want a very precise return, and only the particular objects,
+such as only books by Janet Evanovich or current books by a particular
+author, and if they retrieve items that are not books or they retrieve
+items not by that author, it's said that precision is very low. It's
+also important to understand that our systems have an inverse
+relationship between precision and recall, in that precision if it's
+high, means that recall is generally pretty low.
+
+We'll talk more about this in later module, but I wanted to address it
+just briefly here. Other measures that you might see in the literature
+related to retrieval are 'relevance' or 'pertinence' - or how useful
+that information or that object is to the user.
+:::
+
+## What Do We Know About How People Organize Their Stuff?
+
+-   Not Very Much!!
+
+-   Personal Information Management
+
+    -   In home spaces
+    -   In professional spaces
+    -   In digital spaces
+
+-   In socially-constructed spaces
+
+    -   Online, Web 2.0 environments like Flickr, LibraryThing
+
+::: notes
+Another really interesting area that's new to our field, but that also
+helps us to better understand our users is what's called 'personal
+information management' (PIM). We'll talk more about this later in the
+semester. But PIM this is the research into how people
+organize their stuff.
+
+At this point we don't really know very much about how people organize
+the 'stuff' in their lives - whether it's personal, whether it's, your
+kitchen spice cabinet, or whether it's the list that you make to help
+organize your day; or it's the digital stuff on your computer or your
+various devices, but we are learning more.
+
+In the areas of environmental design and in human - computer
+interaction, personal information management has been researched for
+quite a few years. I have given you a couple of readings related to this
+because this is an area that I find particularly fascinating, but I also
+think it tells us a lot about our users in general. We'll come back to it in later module, but it's a really interesting area of our field. We've looked
+at different types of information management in our home spaces, in
+professional spaces, and also now in digital spaces.
+
+Also, another area that we learn about how people organize their
+information on their webpages or their pictures or their videos is in
+the socially constructed spaces that are online in Web 2.0 environments,
+like LibraryThing and flickr.
+
+There is quite a large body of research in this area now beginning back
+with image researchers at least fifteen years ago. This week's
+readings will help you begin to think about what we can really know
+about how people organize their stuff and how that will then help us to
+design better systems and create representations that are relevant, or
+more user - centered.
+:::
+
+## Implications for Practice {.smaller}
+
+`Models of Information Seeking....`
+
+-   Guide development of user-centered services
+    -   Reference
+    -   Searching
+    -   Indexing/Cataloging
+    -   IR Systems Design
+-   Librarians improve organization of resources to accommodate users'
+    searching styles
+-   Understand users'
+    -   Decision-making criteria
+    -   Process strategies
+    -   Expectations of search process
+    -   Attitudes and feelings
+    -   Organization schemes (categories, labels, methods)
+
+::: notes
+Why is understanding the many complexities of users important to what
+we're talking about in this class? Why am I boring you with all this
+stuff?
+
+First, understanding our users and their information behaviors and
+organizing behaviors guide development of user - centered services, not
+just in reference departments, not when we search, help our users
+search, but also in indexing and cataloging.
+
+The models we have developed and the research conducted into user
+behaviors help us understand more about the kinds of searches people do.
+What fields do they use in our databases? Do they only conduct author -
+title, which are called known - item searches, or do they do more
+subject searching?
+
+So, when we're building a system, we're designing a system that we hope
+will be useful. When we're creating representations, such as card
+catalog records, knowing about how people go about looking for
+information can help us design better systems. We'll know which fields
+need to be searchable; we'll know which attributes or aspects of our
+objects should be represented in our records.
+
+So, again, knowing a little bit more about how our users look for, and
+find information, and use information, can help us design systems that
+are more in line with their information needs. This understanding also
+can help us choose in terms when indexing and cataloging and to know
+more about what level of terminology we need to use when representing
+the subject content.
+
+Furthermore, as a searcher, understanding the levels of exhaustively and
+specificity that are present in the indexing or the cataloging in the
+system can help you become a better searcher. Your search terms will be
+more aligned with the actual vocabulary used by the cataloger or indexer
+within the system. So, therefore, you should have better retrieval. You
+can also help your users understand this and make them more efficient in
+their searching as well.
+:::
+
+## Implications for Practice (Cont.) {.smaller}
+
+-   Help us
+    -   `Choose elements for system design`
+        -   Fields to include in system
+        -   Fields to make searchable (indexed)
+        -   Creation of input rules
+    -   `Choose appropriate controlled or other vocabulary to use (natural language, free text)`
+    -   `Choose appropriate level of indexing`
+        -   Exhaustivity
+        -   Specificity
+        -   Number of subject terms to include
+
+::: notes
+Other implications for practice that I did start to mention on the
+previous slide are that understanding our users really helps us to
+design a particular system for users. In libraries we tend to be very
+generic in that our systems are for a very large, diverse audience of
+individuals.
+
+So, sometimes it's not possible to build a system that's going to
+satisfy every user. In fact, it's really not possible to do so, unless
+you have a very specialized collection, a very specialized user - group
+and you understand very closely those users and their information
+behaviors.
+
+But learning about our users helps us to choose elements that we want to
+include or that we know need to be included in our system design. It
+helps us make decisions and to work with our vendors to determine what
+fields to include and also which fields should be indexed or searchable
+within your system. It also helps us to create input rules.
+
+So, for those of you who are going to work on the organization system
+project, there is a section in the project where you have the
+opportunity to create input rules for each of the fields within your
+system. This is analogous to the standards we use when we create catalog
+records in library catalogs. We use the Resource Description and Access
+(RDA) and other subject heading lists in order to create records in our
+system, and those standards are sets of rules that guide catalogers.
+
+Also, we use what we know about users to choose appropriate controlled
+vocabulary or other types of vocabulary to represent subjects in our
+systems. In libraries we tend to use Library of Congress Subject
+Headings (LCSH) or Sears subject headings if we're in a school library.
+We might use a user - specific ontology if we're in a business
+community, where we've designed a specific ontology to represent the
+language of that community. So, again, knowing about our users and the
+types of searches or searches they do conduct really can help us in
+these choices.
+
+Also, it helps us choose the appropriate level of indexing in our
+catalogs. How many subject terms do we need? How many fields do we need?
+And there are two measures that we talk about in libraries called
+'exhaustivity' and 'specificity' that really define the number of
+subject terms or the level of exhaustiveness - how many terms do we use
+to describe the content of an object for effective retrieval? How
+specific should those terms be? Is it appropriate to have very specific
+terms in the catalog or an academic library versus when we're creating
+records for children, where we'll want to have more broad generalized
+terms?
+
+So, again, learning more about our users and the types of searching
+systems they use really can help us determine all of these different
+factors.
+:::
+
+## IR System Design {.smaller}
+
+> ["Why are online catalogs *still* hard to use?"]{style="color: blue;"}
+> [(Borgman,
+> 1996)](https://escholarship.org/content/qt3mz7h8hr/qt3mz7h8hr_noSplash_36344d4ac812b2c94219b90e4a164074.pdf?t=p7cad8)
+
+-   System Design Models
+    -   Query Design
+    -   Online Card Catalog Model
+    -   Representations have to fit into "cookie cutter" systems that
+        were developed many years ago and do not necessarily benefit
+        from what we know about users and their informatoion seeking
+        processes
+-   Often times specialized knowledge is required
+    -   Semantic
+    -   Syntactic
+
+::: notes
+Christine Borgman in her 1996 article, "Why are online catalogs still
+hard to use?" explained why OPACs in libraries are difficult to use. Her
+article is a really good one for giving you even more conceptual
+framework for what we've addressed in this lecture.
+
+System design models in the past were based upon the original card
+catalog model and what could fit on the library catalog card. And
+unfortunately, a lot of systems today are still based on that model. We
+can fit on information about the author, the title, and maybe one to
+three subject headings, and a classification code.
+
+So, that's how our basic library systems were designed. In our next
+generation catalogs we have improved the interface design, added more
+searching functionality, and allow users to search using a "Google -
+like" search box. BUT, and this is what is really important, their
+retrieval is still based on the RECORDS or representations of items in
+the collection that catalogers have developed.
+:::
+
+## IR System Design (Cont.)
+
+`Traditionally IR System Design Often...`
+
+-   Based on `assumptions about information-seeking` rather than
+    research (although that is changing!)
+-   `Directed toward system use by information professionals`, not
+    end-users
+-   `Forces system users to adapt to the system`, rather than adapts to
+    users' natural abilities
+
+::: notes
+In our field and as new technologies are developed and as users start to
+use different systems and start to use them in different ways, it also
+forces us to rethink decisions and choices we've made in the past.
+Again, that's why I think it's such an exciting time to be in our field
+right now because we are really at the forefront of a lot of these
+change.
+
+Also, we've been designing and working through our records structures,
+we've been designing XML systems that can work XML MARC, which gives us
+even more functionality than the traditional MARC system might have. And
+people are designing more user - centered systems when they create
+digital libraries; we're not just using MARC record structures, we're
+designing metadata schemes like Dublin Core.
+
+What is in our library catalog records may not have changed much until
+the recent 5 years with the development of the FRBR model and with the
+new cataloging standard, RDA. AND when we move beyond the MARC record in
+library catalogs into BIBFRAME, our records will hopefully connect to
+other external records through this linked data structure. But that is
+for another module.
+:::
+
+## IR System Design (Cont.)
+
+`Good IR System Design Tends To Be...`
+
+-   Based on study of users needs/interactions
+-   Interactive to accommodate natural information-seeking behaviors
+-   Flexible to accommodate differences among individual users
+
+::: notes
+In conclusion, good information retrieval system design should be based
+on a study of our users, user needs, and their interactions with
+different systems.
+
+We need to understand the types of searches that they bring to a system.
+We need to understand the attributes in those searches that should be
+fields in our system. We also need to understand the exhaustivity and
+specificity level of the terms that we use to represent subjects or
+other concepts within our systems. And also, whether or not we need to
+have very complex concepts represented. Or can the terms be very general
+in nature?
+
+Our systems also have to be very interactive to accommodate natural
+information seeking behaviors. We need to think about how users really
+do interact with systems at different levels - at their homes, in their
+work environments - to try to make sure our systems can try to emulate
+some of those natural behaviors.
+
+Systems also need to be flexible to accommodate differences among
+different users because no two users are going to interact with the
+system in the same way. They're not going to use the same terminology.
+They're probably not going to use the same functions in your system -
+whether it's a simple search or an advanced search. So, you're going to
+need to keep that in mind as well.
+:::

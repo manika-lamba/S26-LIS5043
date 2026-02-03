@@ -1,5 +1,5 @@
 ---
-title: "Week 2: Representation & Surrogation"
+title: "Representation & Surrogation"
 subtitle: "LIS 5043: Organization of Information"
 author: 
   - Dr. Manika Lamba
