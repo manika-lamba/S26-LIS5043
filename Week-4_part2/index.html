@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <meta name="author" content="Dr.&nbsp;Manika Lamba">
+  <title>Module 3.3: Searching Techniques and Process</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Module 3.3: Searching Techniques and Process</h1>
+  <p class="subtitle">LIS 5043: Organization of Information</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Dr.&nbsp;Manika Lamba 
+</div>
+</div>
+</div>
+
+</section>
+<section id="database-searching" class="slide level2 smaller">
+<h2>Database Searching</h2>
+<ul>
+<li>Effective database searching consists of:
+<ul>
+<li><p>Analytical skills</p>
+<ul>
+<li>Understanding and extracting meaning out of user information needs</li>
+</ul></li>
+<li><p>Conceptual skills in developing search strategies</p>
+<ul>
+<li>Do we search for concepts or do we search for words?</li>
+</ul></li>
+<li><p>Technical skills particular to a search system</p>
+<ul>
+<li>Each database will have its own search functions, features, structure, etc.</li>
+</ul></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>In this module, we are going to look at some strategies and techniques that you can use for searching. We’re going to primarily focus on searching within the database environment rather than on the web. You might recall in the earlier lecture in Module 3.2, we talked about database and information retrieval systems and the different models behind how these systems work.</p>
+<p>In this lecture we’re going to continue the idea of searching and retrieval, but we’re going to look specifically at some different systems that you might use while you’re in the program at OU and then some skills and techniques that you can use in other environments as well. To learn even more I recommend you take the <strong>LIS 5523 Online Information Retrieval</strong> class.</p>
+<p>It’s really important to note that there are several different skills sets that you’re bringing to your database searching. Effective database searching consists of analytical skills, conceptual skills, as well as technical skills. Analytical skills are your understanding or being able to extract meaning out of a user’s information need.</p>
+<p>Oftentimes when a user comes to you and needs help doing a search or if you’re conducting a search for someone that you received via email, or on the phone, or chat, you’re going to have to, first, have a very good understanding of what it is that they really want. And oftentimes a user is not exactly sure what they want or what they need in particular circumstances.</p>
+<p>So, an important part of effective searching is then helping the user understand their information need by asking a lot of targeted questions, which we’ll discuss in a few minutes. So, analytical skills are really key to good database searching.</p>
+<p>Conceptual skills are also really important when you’re developing search strategies for searching. We think about searching as putting together strings of words, or words that somehow represent our users’ information needs or our own information needs if we’re searching for ourselves.</p>
+<p>But what we’re really doing when we search is putting together words to represent concepts or sets of concepts that then represent that information need. So, we’re not just aiming to search with words, we’re aiming to represent the concepts that are present in the information need.</p>
+<p>And this takes quite a bit of skill as well as quite a bit of time to think through your searches and not just type in the first word that comes to your mind, which is primarily how most people search. The third set of skills that is really important are the technical skills that are particular to a specific search system.</p>
+<p>We’ve been talking a lot about structures of databases or structures of our search systems and how that can impact our searching, and it becomes really important, especially when you have a very complex search where you may have to combine several different fields in a database, you might need to know what kind of indexing is behind those fields. The majority of our proprietary databases nowadays are creating inverted indexes behind the fields in the database, and they’re generally word and phrase indexed.</p>
+<p>So, you can put in one word or you can put in multiple words using the parameters of that system. It’s also really important to know which search functions are available in your database. Most systems have either implicit or explicit Boolean operator searches as a possibility, but then there are some other higher level skills that we can use, such as proximity searching or truncation and wildcards, which we’ll go into in a few minutes.</p>
+<p>Each of these is designed to help you become even more precise in your search and, in some cases, to increase recall as well. So, it’s really important when you start to learn a new database or a suite of databases, such as EBSCO or ProQuest, that you look up what the search functions are, that you try to determine what types of searching are possible within the systems, how they handle plurals, what their stop word lists might include, how the database is structured, and the differences between using advanced search versus a simple search or a basic search.</p>
+<p>There is a great deal you can learn by looking at the help or FAQ pages for the different systems that you’re using. So, now that we’ve talked a little bit about some of the skills that we need, let’s talk about ten steps to good database searching.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="steps-to-follow-when-searching" class="slide level2">
+<h2>Steps to Follow When Searching</h2>
+
+<img data-src="images/paste-5C3867E2.png" class="quarto-figure quarto-figure-center r-stretch" width="580"><aside class="notes">
+<p>The first step is to read the query. We can substitute that for either listen to the query and also understand the query. So, if you’re being sent a search in email or via chat, you’re going to read the query, but you have to really read the query, meaning that you have to discern the meaning underneath the words in the user’s query. If you’re talking to the user, you need to actively listen to the query and start thinking about potential questions to ask them.</p>
+<p>As part of read the query, you need to make sure you really understand what the user wants, and if they can’t spell it out for you, you need to ask more probing questions to find out exactly what they want. Or you may go back to the user at a later point and ask them further questions once you start searching. The second step is to identify the major concepts in the query.</p>
+<p>Parse apart the words and start thinking about what concepts you will be representing in the search terms. Third, you need to identify potential terms to correspond to those concepts. So, you’re going to think about what words you might use to represent the concepts. And then you’re going to select alternative terms to use if the original strategy needs refining, such as broader terms, narrower terms, or related terms. We’re just going to walk through these steps quickly, and then we’ll go back through them in more depth.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="steps-to-follow-when-searching-1" class="slide level2">
+<h2>Steps to Follow When Searching</h2>
+
+<img data-src="images/paste-615E5423.png" class="quarto-figure quarto-figure-center r-stretch" width="532"><aside class="notes">
+<p>The fifth step is to determine logical or Boolean relationships that could exist between the terms and the concepts. The sixth–and this is a very important step–is to choose the appropriate sources in which to conduct your searches.</p>
+<p>Choose databases that are on the topic itself, or if it’s a very general kind of search, try to find a database that’s going to include the types of resources that you envision would hold that information.</p>
+<p>Seven is, of course, to begin the search. Eight is to look at a few of the results and to evaluate whether or not your search is successful or if you need to rethink the terms or concepts or if you need to go back even further in your analysis. Nine is to revise and refine the search based on your initial results.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-1" class="slide level2">
+<h2>Step 1</h2>
+
+<img data-src="images/paste-DA469959.png" class="quarto-figure quarto-figure-center r-stretch" width="525"><aside class="notes">
+<p>Okay, let’s talk about step one. Again, it was to read the query, to understand the query, to listen to the query. Step one is really about conducting a really good reference interview. Now, I don’t know if you’ve encountered this term in other courses or not, but a reference interview is something that we do when we talk to users about their information needs.</p>
+<p>The first step, of course, is to get as much information as you possibly can. And again, this is going to be limited by the type of system that intermediating between you and the user. If you’re on the phone, you can ask for a lot of information, if you’re via chat, you can continue to chat, but if you get something in email, you might have to have a series of emails over a protracted time period in order to gather what you need.</p>
+<p>When you’re talking to the user, ask for useful terms, talk to them about their own prior searching and what they’ve looked for and what they’ve used, ask about any known authors or experts that might be part of a search or that you might want to look for; ask about sources that they’ve used or that they want you to use.</p>
+<p>And it’s really important to find out what types of sources they really need.</p>
+<ul>
+<li><p>Do they need journal articles, and if so, do they have to be peer-reviewed? Depending upon your user, they may not know what that means, so you’ll have to explain it further.</p></li>
+<li><p>Do they want books?</p></li>
+<li><p>Do they want conference proceedings, which would be a group of papers that are presented at a specialized conference?</p></li>
+</ul>
+<p>So, again, find out what type of sources they need as well, and that’s going to help you limit your search.</p>
+<p>Determine criteria for evaluation, and there, of course, can be several different criteria, but some of the most prevalent would be like currency–how current does the resource need to be, the information that you find; are we looking at, archival materials where we need to go back into a backlog or back file, or do we need something that was published last week?</p>
+<p>So talk to them about their expectations for date restrictions.</p>
+<ul>
+<li><p>What kind of formats do they want?</p></li>
+<li><p>Do they need PDF files, do they want HTML?</p></li>
+</ul>
+<p>They more than likely want full text retrieval if you’re looking for journal articles or conference proceedings. They want something they can use immediately. But they also might want images. They might want video or audio.</p>
+<p>So, again, talk to them about different formats. And then also ask them what is not wanted.</p>
+<ul>
+<li><p>Are there materials that they already know about?</p></li>
+<li><p>Have they conducted their own searches and what have they found?</p></li>
+<li><p>Are there things that they don’t want to address?</p></li>
+<li><p>Talk to them about the scope of the question as well, and, you know, what to include and what not to include in your search.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-2-identify-major-concepts-to-use" class="slide level2">
+<h2>Step 2: Identify major concepts to use</h2>
+<p><code>Concept analysis</code></p>
+<p><strong>concept</strong> : <em>“abstract idea of a thing, regardless of what it may be called in a given instance. May have more than one recognizable name”</em></p>
+<p>(eg. instructor: may also be teacher, professor, lecturer, etc.)</p>
+<aside class="notes">
+<p>Step two is probably what I think is the best part of searching, and that’s when you identify the major concepts that represent the information need. You would complete what’s called a concept analysis. Remember what I said, when we search, we’re forced to use words, but we’re thinking about concepts. A concept means, “an abstract idea of a thing, regardless of what it may be called in a given instance. It may have more than one recognizable name.” This is a really important point. You might put into your search the first word that comes to your mind when you’re thinking of a particular concept. So, if you’re looking for ‘instructor’ for example, there are multiple other terms that can be used to represent the same concept. It can be ‘teacher,’ ‘professor,’ ‘lecturer,’ or other terms you can think of. So, again, you need to look at the query, understand the query, and identify the major concepts that are present in that query. And then you start thinking about other terms.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-2-cont." class="slide level2">
+<h2>Step 2 (Cont.)</h2>
+
+<img data-src="images/paste-BC15371B.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><aside class="notes">
+<p>When we put together a search, we do what’s called ‘building blocks’ or ‘playing with Legos’ during concept analysis. Each word that you use to represent the concepts that are present in the information need are what we might think of as a Lego block, and you’re going to build some structure out of your Legos.</p>
+<p>You put words together to make a concept, and you’re going to use multiple types of words to form those concepts. And you might have multiple concepts that you need to use to represent that information need. You are going to put those concepts together into what we call a search string. The search string is what you enter into your database.</p>
+<p>Now, just like Legos, words and concepts of a search are interchangeable, movable and adaptable, meaning that you might have to rethink the words you’re using if they’re not working in your search. You can move them around. You know, put them in different orders or put them in different groupings, but again, you have to keep in mind how you’re combining them. So, think about the formulation of your query as playing with Legos. Think about building some kind of a structure out of each of those different Legos.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-3-identify-terms-to-use" class="slide level2">
+<h2>Step 3: Identify terms to use</h2>
+
+<img data-src="images/paste-3659D359.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>So, now we’ve identified several concepts, and we’ve started to think about how we can put words together to represent those concepts in our query. The next thing that I want you to do is to identify terms that you can use. And I want you to find multiple terms to represent each concept. Don’t just use the one term, because you never know how it’s being used in the system.</p>
+<p>Now, the difference between this idea and one form of searching, which is controlled vocabulary searching, is that there is only one word that represents that concept in the system. When you do controlled vocabulary searching, you’re using the thesaurus of the system, or you’re using the authorized terms that someone has decided will represent those concepts within that particular system. This is analogous to when we assign subject headings from Library of Congress or from Sears Subject Headings to represent the subjects in library catalog records. And there are definitely advantages and disadvantages to using controlled vocabulary searches.</p>
+<p>So, for step three, you’re going to find multiple terms to represent each concept. It’s really helpful to use a search form and to write out all the different concepts and the terms that you’ve identified. And then also, you can build in those relationships. When I learned to search, it was pre-Web days, and we constructed our searches offline before we even logged on to systems like Dialog because the system was very expensive to use. You remember we didn’t have the graphical user interfaces that we have today. We had very clunky screens with green lettering on black screens, and it was not a very conducive environment for searching.</p>
+<p>So, you’re going to find multiple terms. You’re going to think also about forms of the words you want to use, and you’re going to think about whether you should truncate something or not. Now, truncating means that you’re taking the word down to its root. For example, if you’re looking for the word “computers”, for example, but you think there might also be something in an article about computing, you would enter as your search term “comput” and then whatever the character is that that system uses for truncation–some use question marks, some use asterisks, and some even use number signs.</p>
+<p>So, again, that’s one thing you have to find out about your system, is how to truncate. Truncation is useful because it gets more than just one form of the word, and some systems will default to either a singular or a plural search if you’re not truncating at all. So it’s, again, useful to know how the system deals with plural and singular forms of words. Truncation, again, offers you the ability to search for more than just one form of a word.</p>
+<p>It is important to remember that there is not just one right way for formulate a search. Each of you is probably going to approach searches in different ways and use different operators, use different words, and that’s okay. But again, you need to remember that the term you choose may not necessarily be used within the system itself, so think about alternative ones as well. And use a search form to structure your searches ahead of time.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-4-select-alternative-terms" class="slide level2">
+<h2>Step 4: Select alternative terms</h2>
+
+<img data-src="images/paste-C3CD8624.png" class="quarto-figure quarto-figure-center r-stretch" style="width:63.0%"><aside class="notes">
+<p>So, now that you’ve identified other terms to use, or you’ve selected terms, also think of broader terms, narrower terms, related terms, or completely different terms or concepts if the concept you’re using really doesn’t pan out. The next step, then, is to identify the relationships between the different terms and concepts.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-5-define-relationships" class="slide level2">
+<h2>Step 5: Define relationships</h2>
+
+<img data-src="images/paste-4F50F554.png" class="r-stretch"><aside class="notes">
+<p>When we define relationships in a database, you are thinking about how you’re going to put them together using Boolean operators. We use Boolean operators to connect the terms or those concept blocks that you formed earlier. There are three different Boolean operators, the OR, the AND, or the NOT. We’ll talk about what each of these does in the system in just a moment.</p>
+<p>But what’s really important–if you can find this information in these systems, and sometimes it’s not talked about even in their FAQs; you have to find it out through trial and error–is you have to first determine which are used in the system. And that’s pretty evident; in most systems you can see the drop down menus that let you add AND, OR, and NOT between the search terms.</p>
+<p>You also have to determine the order of operation, or how the system treats the operators. Does OR always default as being treated first, or does AND? Now, NOT generally is not the default first operator; in fact, I don’t think I’ve seen that as the default in any system I’ve used. But OR and NOT are in different orders depending upon the system you’re using. And why that’s important is because it can really change the nature of how the system reads your search.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="operators-or" class="slide level2">
+<h2>Operators: OR</h2>
+
+<img data-src="images/paste-C5AED4AB.png" class="quarto-figure quarto-figure-center r-stretch" style="width:5.0%"><aside class="notes">
+<p>Okay, so let’s talk about each of these operators. The OR operator is what we use to build up concepts. It’s where we string together our synonymous terms, or what we might call in indexing our equivalent terms. It’s also where we can put in spelling variants if truncation is not possible in the system or if wildcards are not possible. A wildcard is different from truncation.</p>
+<p>A wildcard is when you insert a character, such as an asterisk or a question mark, in the middle of a term, which tells the system “I want you to look for all of the spelling variants for this particular term that might replace this character.” And in some systems, wildcards can replace more than one character. It will look for all spelling variants. We’ll look at some examples of this in just a few minutes.</p>
+<p>The EBSCO system has a really nice wildcard feature, where the ProQuest system is not as useful. You also use the OR operator to put together related terms. So, again, what you’re doing with the OR operator is you’re building up those relationships between the different concepts, the synonyms or equivalent terms, spelling variants, and related terms.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="or-how-it-works" class="slide level2">
+<h2>OR: How it Works</h2>
+<p><img data-src="images/paste-794F4985.png"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-D82284AE.png" class="quarto-figure quarto-figure-center" width="400"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>How it works in the system–and this is something that confuses our users–is that when you use OR, any documents that contain any of the terms you’ve put together with the OR are going to be brought together in your search set, in your result set.</p>
+<p>So, generally when you use OR, it produces larger sets and more documents. Okay, so you’ve got a set for ‘information seeking OR searching.’</p>
+<p>So, every document in your system that has any of those terms–‘information,’ ‘seeking,’ ‘information seeking’ or ‘searching’–are going to come back into this large document set. Now what does that say about precision and recall?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="operators-and" class="slide level2">
+<h2>Operators: AND</h2>
+<p><img data-src="images/paste-001728E4.png"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-C09779ED.png" class="quarto-figure quarto-figure-center" width="400"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>The operator AND works very differently. AND is where we combine those concepts blocks or the words that we’re using in our queries. And it will only bring back documents that contain all of the words and all of the concept blocks. So, what the system does is to produce a smaller set, a more precise set, which includes fewer documents than our OR set includes.</p>
+<p>So, if we’re looking for ‘children AND information seeking’ or ‘information, seeking,’ we’re going to find only those documents that include all of our terms, so that small set in the middle of the Venn diagram is what’s returned back to our users. Generally an AND search is going to be more precise, but it’s going to have lower recall.</p>
+<p>So, if you had any documents that included ‘adults’ but did not include ‘children,’ they would not be part of the set. So, you have to think about this potential limitation to the results when you’re constructing the query.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="operators-not" class="slide level2">
+<h2>Operators: NOT</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-BD0B9141.png" class="quarto-figure quarto-figure-center" width="500"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/paste-7F1EB2F0.png" class="quarto-figure quarto-figure-center" width="300"></p>
+</figure>
+</div>
+<aside class="notes">
+<p>Okay, the NOT operator is what we use to exclude words or concepts from our set. You want to use NOT sparingly because it may limit your search too much, okay? So, generally what you’re going to want to do is start out without using NOT, and then if you have way too many documents, that’s when you’re going to start excluding words or concepts, okay?</p>
+<p>It’s only going to bring back documents that do not include those excluded terms. It produces a smaller set, even smaller than the AND set, with more specific documents–so higher precision and fewer documents, so lower recall. And, again, it depends upon the goal for the search. Do you need just really highly specific documents and few documents, or do you need to find out everything on this topic, so you want higher recall.</p>
+<p>So, again, in our search ‘information seeking,’ ‘information and seeking’ and ‘NOT adults,’ we’re going to get back the white set in the middle of the diagram. But if we’re looking for documents that include both ‘adults AND children’–you know, we’re looking for information seeking of children–and we NOT out ‘adults,’ any documents that include adults and children are not going to be returned in our search. So, you need to use the NOT operator sparingly.</p>
+<p>In a database, you’re going to use the NOT operator to exclude the term, in a Web search engine, you can simply insert a minus sign directly in front of the word or phrase you want to NOT out, and supposedly, it will be excluded from your document set. Or if you’re using advanced search on the Web, that’s where you can tell the search engine “do not contain these words or phrase,” and then the system should exclude the word or phrase from your set. But again, just a cautionary note, don’t start with NOT unless you’re very sure about what you want back in your document set.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-6-choose-databases" class="slide level2">
+<h2>Step 6: Choose Database(s)</h2>
+<ul>
+<li><p>Familiarize self with databases and combination of databases</p>
+<ul>
+<li>OU databases
+<ul>
+<li>Scope/coverage</li>
+<li>Advanced Search pages, Thesauri, FAQs</li>
+<li>What search features, operators (Boolean, proximity), IR methods (stemming, stopword lists, etc.) are available for the database</li>
+</ul></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Now, I always waffle about where to put this step. Choosing databases is one of the very important first steps we take when we’re searching. You need to choose the appropriate sources in which to conduct your searches, or you’re going to waste your time. You’re going to come up with items that are not relevant. You’re going to become frustrated and think your terms aren’t working, and it’s because you’re in the wrong database to begin with.</p>
+<p>So, the first step to this, of course, is to take some time to familiarize yourself with databases and different combinations of databases. Now, OU’s databases have been put together by different vendors, so that all the EBSCO databases get searched in that large federated search, which I dislike. Or you can pick and choose particular databases by Resource by Subject or you can browse and search multiple different databases, which I’ll show you how to do in a few minutes.</p>
+<p>But there are different ways you can determine your database. But this is the class where you get to spend some time playing around with different databases and exploring all those other databases that you never really looked at before because they weren’t library science databases and you had no real reason to look at them. So, take some time first to familiarize yourself with the different databases. OU has a wonderful variety on multiple different topics that, of course, are geared to help the users of this academic community, so they’re focused on the academic subject areas present at OU.</p>
+<p>When you look at a database, you should try to determine the scope of it, meaning–how many years are covered, what topics are covered, what’s not included, are there things that I can’t find in this database that I need to supplement with another database? You also then need to look at the advanced and basic search pages and what can be done. See if there’s a thesaurus function–if you can search within a thesaurus and come up with subject headings or controlled vocabulary terms instead of just key words.</p>
+<p>And then look at the FAQ pages to figure out what type of operators are being used; can you use proximity operators, Boolean operators? Can you use truncation? And if so, how do you do it? So look at those FAQ pages and find out how to make your searches more precise. And then look at the different types of search features–such as Boolean operators, the IR methods, how is the system stemming your words, are there stop word lists that the system uses, If so you don’t want to use those words in your searches.</p>
+<p>Again, it’s important that within a suite of databases you may have very similar functionality, but you may not always have the same fields in a system, you may not always have a thesaurus, and you may have a different option–instead of a thesaurus, you may be able to browse topics. So, again, familiarize yourself with the different databases before you start searching. This exploration usually only takes a few minutes; just click around and see what options are there and read the FAQs. It will make your searches a lot more efficient.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thesaurushelp-page" class="slide level2">
+<h2>Thesaurus/Help Page</h2>
+
+<img data-src="images/paste-1F9FE076.png" class="r-stretch"><aside class="notes">
+<p>Okay, so let’s take a look at where we might find a thesaurus in one of our suite of databases. This is the EBSCOhost page, advanced search page, and I’m using Communication Source as the database because it has some different options than what we might see in LIS databases. You might take some time to compare those differences. The black arrow on the left hand side of the screen shows you where to find the thesaurus feature, and this particular system has one. And then also the arrow on the right hand side of the screen is where your Help, or your FAQ, pages are for this system.</p>
+<p>You can also search by Publications–which we’ll look at in a few slides–and Images. And then also in that same bar there is a More screen, which will take you into the Indexes and Images, and I’ll show you that in a minute. This screen shows the advanced search page, and you can see you can choose by Boolean/ Phrase, “Find any of the terms,” you can “Find any of the phrases”, or “all of the terms”. And there are a lot of other options if you scroll on down the page to limit your search as well to different publications, to document types, language, date ranges, etc. that you should take advantage of if you have that information.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-of-thesaurus" class="slide level2">
+<h2>Example of Thesaurus</h2>
+
+<img data-src="images/paste-1AC98071.png" class="r-stretch"><aside class="notes">
+<p>Okay, Let’s explore the Thesaurus feature. To access the Thesaurus, click on the Thesaurus link at the top red bar. I’ve just put in a phrase you’ve all become very familiar with lately, ‘Freedom of Information.’ And so, when I search this database, which is dealing with journalism and communication in general as a discipline, freedom of information is really important to journalists because they have to verify the information on particular government activities, and one way they do it is requesting information through the FOIA Act.</p>
+<p>So, on this slide, I’ve clicked on the Freedom of Information choice from the list of thesaurus terms. Each term contains a scope note–a scope note is generally a definition of how this term is used in this controlled vocabulary within this system, and it might be very different in another system. So, it’s important to read scope notes to make sure that the term is really what you’re looking for, that the concept is what you need. There are also listed narrower terms and related terms. And then there are some terms below that are in black by the “Used for,” which are the non-authorized terms, meaning that they would not be used to index the subjects in this database.</p>
+<p>So, things like ‘Information, Freedom of’ would not be used as a subject term in this system, okay. And then the other narrower terms and related terms are other terms that you can add to your search simply by clicking on the box next to it and then clicking the little “add,” and then they will automatically get added in the proper format to your search string. Using the thesaurus feature is another way of digging out some alternative terms, related terms, that you might not have thought about when you were constructing your search. It’s going to give you a larger document set, more than likely, but it’s going to be very much on point because it’s using the controlled vocabulary of this system.</p>
+<p>The terms in the thesaurus are the subject headings used by indexers when they created the database records for each article. Not every system is going to have a thesaurus feature that you can use. And oftentimes people don’t use that thesaurus feature because one, they don’t see that it’s a possibility and two, they don’t know what it is because this system isn’t giving you any information about how to use it or what it is used for. If you go into the FAQs it gives you a nice description, but if somebody just accidentally clicked on that link, it really wouldn’t tell them very much. So, again, it’s something I hope you take a look at and explore. Controlled vocabulary searching, as I said, is a way to get into the subject terms being used by this particular system, and it can make for very precise searching.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thesaurus" class="slide level2">
+<h2>Thesaurus</h2>
+
+<img data-src="images/paste-565D7DEC.png" class="r-stretch"><aside class="notes">
+<p>This slide shows you an example of the ProQuest thesaurus, and I’ve used the same term again, ‘Freedom of Information,’ and you can see that the display is slightly different. The system is giving you all the Broader terms first but no other related terms,</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thesaurus-cont." class="slide level2">
+<h2>Thesaurus (Cont.)</h2>
+
+<img data-src="images/paste-9B67B14F.png" class="r-stretch"><aside class="notes">
+<p>And then you can click on those terms and they’re automatically added to your search or they expand out and give you even more choices. And then it gives you ‘Freedom of movement,’ ‘Freedom of religion,’ etc., which, of course, are just alphabetical listings of the terms in this thesaurus.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="thesaurus-cont.-1" class="slide level2">
+<h2>Thesaurus (Cont.)</h2>
+
+<img data-src="images/paste-1263A818.png" class="r-stretch"><aside class="notes">
+<p>On this slide, I’ve clicked on one of the terms ‘First Amendment, United States’ because I wanted to drill down even further to see how that term was being represented and what broader and narrower terms and related terms I might want to consider for my search. So, the thesaurus serves two purposes. One, it gets you into the subject terms that are used by this system in the subject field to represent the concept, Freedom of Information, okay? But it also gives you additional terms that you might want to add to your query.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-of-topic-search" class="slide level2">
+<h2>Example of Topic Search</h2>
+
+<img data-src="images/paste-490ACD8D.png" class="r-stretch"><aside class="notes">
+<p>Okay, in ProQuest you have some additional features that you don’t see in EBSCO. And these can be very useful, but again, they take some time to get used to and to learn how they’re structured and what you can do with them. You can select topics by the broad categories of Business &amp; Industry, Computers &amp; Internet, Economics &amp; Trade, Environment, Government &amp; Law, and Social Issues &amp; Policy. You can play around and see what you think about this feature. When you click on any of the subtopics, you can view documents related to that topic, you can narrow it by related topics, etc. So, it’s another way in which you can get into the system’s structure as well as how they’re representing particular concepts.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="results-of-topic-search" class="slide level2">
+<h2>Results of Topic Search</h2>
+
+<img data-src="images/paste-7C4374EA.png" class="r-stretch"><aside class="notes">
+<p>And on this slide, I’ve just selected one of those subtopics so you can see what the screen would look like. I selected the entry for Information literacy. You can see all Related Searches at the top of the screen, as well as click on “View All” to see all related searches. From the pop up for “View All” you can choose other related searches to pursue. If you scroll to the bottom of the screen, you will find the option to “Search Within” that can also be very helpful when narrowing down searches within the desired result set.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="wildcard-and-truncation" class="slide level2">
+<h2>Wildcard and Truncation</h2>
+
+<img data-src="images/paste-C52279A4.png" class="r-stretch"><aside class="notes">
+<p>Now let’s talk about wildcard and truncation. Wildcard and truncation are ways in which you can expand your search in different ways. With the truncation symbol, you are telling the system to search the root of the word and any other forms of the word that are present in the system. So, a truncation search can be really helpful; however, you have to be really careful not to truncate too far to the left. If you truncate too far to the left, you’re cutting off too much of the word and you might end up with some really interesting results.</p>
+<p>And each system has different truncation possibilities; some systems don’t allow truncation at all, but the majority of proprietary systems nowadays do have some truncation function. For the EBSCO system you can see on the screen here, it’s giving you instructions that you use an asterisk at the point, the root point of the word, that you want it to search. So if we type C-O-M-P-U-T and put the asterisk there (‘comput<em>’), it will look for ’computer,’ ’computers,’ ’computing’–any form of the word that follows that root, okay? You can also use the symbol here between words to match any word, and it gives you an example there at the bottom. Use ’midsummer’ and then ’</em>dream’ (‘midsummer * dream’) and it would include ‘midsummer night’s dream’ in that search.</p>
+<p>So, again, that’s a useful way of conducting a truncation search. Now, a wildcard is when you want to search for variants of spellings, say, or different forms that are in the middle of a word, such as ‘woman’ or ‘women.’ You would use a wildcard symbol in the place of the letter. The EBSCO database uses a question mark and a pound sign for wildcard. They use the question mark to replace an unknown character. So, if there’s a word that you’re not quite sure how you want to spell or you want to spell it several different ways, then you’re going to put the question mark in.</p>
+<p>If you want to use the number sign, that’s where you’re going to look for alternate forms of the word, such as color. You would put in the number sign after C-O-L-O-number sign-R (‘colo#r’), then you’d get both forms of that word; color with the ‘or’ and colour with the ‘our’. So, wildcard and truncation symbols, again, are useful in that you’re searching more than just one form or spelling of a word, and it allows the computer instruction to look for more than just the root of a word.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="truncation-and-wildcards" class="slide level2">
+<h2>Truncation and Wildcards</h2>
+
+<img data-src="images/paste-95C54B8B.png" class="r-stretch"><aside class="notes">
+<p>Slide 23 shows you the help screen for ProQuest related to wildcards and truncation symbols to use in your searches. The two systems are quite similar.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="proximity-searching" class="slide level2">
+<h2>Proximity Searching</h2>
+
+<img data-src="images/paste-5808C3C5.png" class="r-stretch"><aside class="notes">
+<p>Another really nice feature is what’s called proximity searching, and every database that includes proximity searching generally has like an ‘n’ or a ‘w’ operator–‘n’ is a near operator, and ‘w’ is the within operator. In EBSCO you can use both the near operator and the within operator to limit your searches even further. For example, if you use the near operator, that’s where you want to find words that are within a particular range of another word.</p>
+<p>So, if we put in the word ‘tax’ and then ‘n5,’ meaning near within five words of reform, it’s going to look for every document that has ‘tax’ and then there might be up to five intervening words in between the word ‘reform.’ With the w operator generally it finds words that are within the particular range of one another; they don’t have to be in a particular order.</p>
+<p>So, if you put in that same kind of search ‘tax’ within 5 of ‘reform’ (‘tax w5 reform’), it’s going to find anything that has ‘tax’ within ‘reform’ or ‘reform’ within ‘tax.’ So, there’s no order imposed when you’re using the w operator. It depends upon the system itself as to how those proximity operators work or even if they’re an option. So, try some proximity operators in your searches at some point and see what you think. You can use proximity operators even within the Boolean search strings as well.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="stopwords-phrases-punctuation" class="slide level2">
+<h2>Stopwords, Phrases, Punctuation</h2>
+
+<img data-src="images/paste-DAF3708D.png" class="r-stretch"><aside class="notes">
+<p>Additional aspects of searching that you need to learn a little bit about in each system are stop words. Those are the words that really have low value within a system because they’re used so frequently that the term has been stripped out of the indexing when indexing is conducted by the system when the system creates the inverted indexes. Also, you need to learn how to conduct phrase searches. Some systems use either quotation marks, or you put your words, your concept, in a set of parentheses. And then also you should look at how your particular system is using punctuation. What is shown on this slide is EBSCO’s Help for “More Information on Stop Words, Quotation Marks, and Punctuation.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="nesting-not-just-for-birds" class="slide level2">
+<h2>Nesting (Not Just for Birds!)</h2>
+
+<img data-src="images/paste-D5D8399E.png" class="r-stretch"><aside class="notes">
+<p>There’s another concept that you can use in your searching and that’s called nesting, because it allows us to string together a lot of concepts or concept blocks using multiple Boolean operators to conduct really complex searches.</p>
+<p>This screen on EBSCO Help tells us more about nesting and phrase searching as well as Boolean operators and how they work, This system calls them ‘Booleans.’ Nesting is when we put multiple concepts together in parentheses and then we combine them using Boolean operators with other concepts blocks.</p>
+<p>So, if we had a search looking for computerized instruction, we could use ’comput<em>’ with a truncation, ‘AND’ and then within parentheses, we could put ‘instruction,’ or ‘instruct’, ‘educate,’ ‘online education’ as a phrase. You could construct a very complex search using nesting, and EBSCO systems do allow you to use this form of searching. You can nest using the Boolean operators as well, and so, you can really create some complex searches within the advanced search pages such as comput</em> AND (instruction OR instruct, educate, online education)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="indexesarticles" class="slide level2">
+<h2>Indexes/Articles</h2>
+
+<img data-src="images/paste-F3076007.png" class="r-stretch"><aside class="notes">
+<p>Another nice feature that I like with EBSCO is that it allows you to get into the indexes of your different systems. And EBSCO also lets you do searches by the particular documents themselves, the publications, or the articles. The way to get into the indexes is to click on the More tab on the red bar, choose Indexes. I’ve just shown that on this slide.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="indexes" class="slide level2">
+<h2>Indexes</h2>
+
+<img data-src="images/paste-6CB0D747.png" class="r-stretch"><aside class="notes">
+<p>So, I’ve gone into the index for the Communication Source and then I’ve selected the Browse tab. And you can see here different indexes created by the system when it created the inverted indexes. This system has an inverted index for Author, Author Supplied Keywords, Company, Document Type, etc. When you search in a specific field, you’re going to search in the inverted index file. And this is our way that we can browse those indexes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="indexespeople" class="slide level2">
+<h2>Indexes/People</h2>
+
+<img data-src="images/paste-5E4CEE28.png" class="r-stretch"><aside class="notes">
+<p>On this slide, I am browsing the People index. You can simply browse the whole index if you want to, which would be very inefficient, but you can also enter the term into the search box. I’ve used ‘Obama, Barack’. You can see the number of records that have this term as an index term. You could click on those and add them to your search. If you want to add them as your search, you would click on the boxes for the different index terms, and then click the Add button, and it would construct that search for you.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="indexespeople-1" class="slide level2">
+<h2>Indexes/People</h2>
+
+<img data-src="images/paste-26D7109C.png" class="r-stretch"><aside class="notes">
+<p>Okay, so, on this screen you can see the search that the system conducted. If you look at the very top left hand corner, you can see the search box that’s put all of my index terms that I have selected together in a search. So, it should produce a set that includes all those different alternatives.</p>
+<p>Now, remember that what the inverted index does is it takes the words out of that field in the database and it puts them into an alphabetical index, so that when the system is searching that particular field, that’s what’s being searched rather than every other word in every other field of the system.</p>
+<p>So, it makes your search a lot quicker, but it also makes it more precise. So, what is happening when you’re doing an index search limiting by this method, is you’re using the words that are in the documents themselves and also in the indexing that the person who indexed this database put together. So, it becomes a really precise search.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="publication-search" class="slide level2">
+<h2>Publication Search</h2>
+
+<img data-src="images/paste-ED51F119.png" class="r-stretch"><aside class="notes">
+<p>Both EBSCO and ProQuest also allow you to browse by publication, so if you know the name of a particular publication, such as the 21st Century Fuels; Oxford, you can click on that and go directly to it. Another nice feature of the ProQuest system is that you can see that it’s a full text search and you can also see the range of years included within this particular system for that publication. So, on this screen 21st Century Fuels from Oxford is a full text document and it is for years 1995-1998. So, this is one way you can check the scope of your database. You can also see on this slide the many ways in which you can identify and limit the Publications search.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-7-begin-search" class="slide level2">
+<h2>Step 7: Begin Search</h2>
+
+<img data-src="images/paste-79742CC0.png" class="r-stretch"><aside class="notes">
+<p>Okay, now that we’ve explored some of the functionality of our two of our large database vendors at OU, ProQuest and EBSCO–though, you know, there are many, many more we could explore,–let’s begin our search, which is step seven. Usually, you should start with the most specific word or concept block when you’re doing a search. But again this will be different depending upon whether you want high precision or high recall.</p>
+<p>And so you’re going to have to tweak that depending upon the expectations for the search. If you use the most specific word or concept block, it’s generally an indication of how large a set you’re going to expect, okay? If you’re using very broad terms, you’re probably going to get a larger set. If you’re using very specific search terms or concept blocks, you’re going to get a smaller set. It’s also a really good indication of how effective your terms or your concept blocks are in your search. You can take a look at each of your different searches and see how effective your search has been.</p>
+<p>Another strategy that some people use is they don’t like to combine their searches. So, they use the terms individually and then they combine their search sets, and some systems will let you do that, especially some of the EBSCO systems. You can go back into your search history and chose those different sets and combine them into searches, and you let the system do the combining for you. Generally what they’re doing is ORing your terms or your sets together, though, and that’s not necessarily what you want. So, some people like to start using terms individually, and then some people like to combine them with Boolean operators. Also, you want to determine if truncation is important in your search or not and just be careful how much of the term you truncate. Don’t go too far to left; if you do, you might end up with some very odd results. So, one thing to check is, if you’re getting very strange results or you’re not getting what you’re expecting, is how far you truncated it or if you need to truncate.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-8-review-results" class="slide level2">
+<h2>Step 8: Review Results</h2>
+
+<img data-src="images/paste-2B60F00C.png" class="r-stretch"><aside class="notes">
+<p>Step eight is, of course, to review your results. You want to evaluate your documents. You want to see how they’re matching your terms or those concepts blocks and determine if it’s an appropriate match.</p>
+<p>Or if it’s an inappropriate match, what’s going on? Why didn’t it work? Did some of the terms work? Did some terms not work? And then you want to adjust your query accordingly.</p>
+<p>You also at this point want to look at other terms that are in those useful documents that you pull up. We call this pearl growing. This is where you might look at the subject headings being used or the controlled vocabulary terms in the indexing, and you might want to add those to your searches, or you might want to construct different searches using those terms.</p>
+<p>Now the nice thing about systems like EBSCO and ProQuest is that oftentimes you can link out to those different subject headings and conduct that search right from your result page. But again, the problem with that is that you might get lost and you need to go back to your original search.</p>
+<p>And sometimes depending upon how complicated your query is, that can be a little frustrating, trying to get back where you were or to remember what you’ve done, and that’s where those search logs are really useful.</p>
+<p>And if you do decide to link out to some of those other terms, you want to make sure you note that down, so you can know where you’ve been. But pearl growing is really useful, and even in library catalogs, it’s a really good way for our users to get closer to the concepts that we’re using in our cataloging. By clicking on the subject headings that are used to index that document, they’ll pull up even more documents that are on the same topic.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-9-revise-and-refine-search" class="slide level2">
+<h2>Step 9: Revise and Refine Search</h2>
+
+<img data-src="images/paste-5210E560.png" style="width:80.0%" class="r-stretch"><aside class="notes">
+<p>Step nine is where we want to revise and refine our search. You’ll use different strategies depending upon each individual search, the functions of the system, and the degree of match between your terms and the terms or the documents retrieved. So it’s going to be different depending on the results of your search.</p>
+<p>But you’re going to try some things, like alternative terms and combinations. If you didn’t want to nest all your terms at once, you can go back and run different sets, as I mentioned, using alternative terms, and then you can combine the successful sets together. And again, this is based on your comfort level as to how complicated of a search you wanted to construct.</p>
+<p>But if one search term isn’t working or a concept block isn’t working, then try to some alternative terms, try some synonymous terms, try some broader, narrower, or related terms. Truncate further to the left is another strategy you can use, but again, I always caution people about this one because you can end up with some really strange things.</p>
+<p><br>
+Drop concept sets. You know, if there’s something’s not working, get rid of it. Generally, you want to get rid of the least specific first, because it’s generally giving you too broad of results. If you reviewed your searches, you’ll have a good understanding of why it worked or why it didn’t work. And then you can also add in new concept sets if there are alternative concept sets you didn’t use, or if you’ve rethought your search and you’ve realized that I really should think about it this way instead, then you can go back and add additional concept sets.</p>
+<p>And you should always check for errors. If a search isn’t working, there’s usually a reason. Spelling errors are something, especially with younger users, that are really prevalent. Now a lot of our systems correct our spelling for us, or like in Google, they’ll say “Did you mean this spelling?” But spelling still can be a problem in a lot of systems, and even those spelling variants can be a problem as well.</p>
+<p>You also want to check that your combinations are correct.</p>
+<ul>
+<li><p>Are you constructing your Boolean search accurately, and then how is it being operated on by your system?</p></li>
+<li><p>Is the OR the default or is the AND the default in that system?</p></li>
+<li><p>So, think about how the systems are reading your search string, and is that how you want it to be read?</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-9-cont." class="slide level2">
+<h2>Step 9 (Cont.)</h2>
+
+<img data-src="images/paste-613E837F.png" class="quarto-figure quarto-figure-center r-stretch" width="500"><aside class="notes">
+<p>Now, if you’re getting too many documents, there’s a potential problem with your recall. You want to try to figure out which terms are useful. You want to use fewer terms in your search, and you want to use narrower terms in your search. But again, this is going to depend upon the results produced. You have to evaluate what’s going on in that search. If you’re getting wrong results, that means that your terms are not being used within that system or even within the documents themselves if you’re doing full text searching.</p>
+<p>So, you want to try alternative terms and different kinds of concept combinations of terms, different kinds of Boolean combinations. Another thing you might consider is get more information from your user. Go back and talk to them some more. Say that you’re not finding anything or you’re not finding anything useful, and can they give you some more information? Another strategy, again, is to try some of the pearl growing that I mentioned. If you can find some documents that are relatively useful, do some pearl growing and use the system’s terms to find the subjects for you.</p>
+<p>You can also go back into your thesaurus as I showed you earlier and use controlled vocabulary terms from the system. Now, again, if you’re using controlled vocabulary terms, you are searching in the subject field, but you’re using the terms that the system has identified as the authorized term for representing that concept. And controlled vocabulary searching can be really powerful, but it also can be really precise. So, you have to evaluate the results and see are you getting what you want, or is it too restrictive? As with any type of searching there are pros and cons with using controlled vocabulary as well.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="step-10-remain-focused" class="slide level2">
+<h2>Step 10: Remain Focused</h2>
+<p><img data-src="images/paste-CD4FA4D0.png" style="width:90.0%"></p>
+<blockquote>
+<p>REMEMBER: It is possible that there are no documents that match your needs in that particular source. Review the question and re-evaluate your choice of source. Should you change databases? Go onto the Web? Online resources are fairly comprehensive, but they do not contain everything.</p>
+</blockquote>
+<aside class="notes">
+<p>Lastly, and this is something that I have to tell myself even after how many years of searching– thirty plus years of conducting searches? Boy, I’m really dating myself now. Anyway, step ten, remain focused. Always stay focused; don’t get off on false leads if at all possible.</p>
+<p>That’s why search logs can really help you. You’ll know what terms and searches you used in the past; you know what didn’t work. You can reorganize your searches; you can add new terms. You will have a record of false leads. If you’re going down the path where you’re doing a lot of pearl growing, make a note of it, so you know where you’ve been and how to get back to where you started. This is a real problem when you get on the Web too. You click around, and you access so many sites, you don’t know where you’ve been. Your search history is nice, but search histories are limited on the Web.</p>
+<p>Retrace your steps and review your past searches. Use your search logs to determine where you’ve been. If you have a system like EBSCO where it has a search history, you can see what you’ve done. You’re not reviewing the same results sets again, but you can at least see what queries worked or didn’t work.</p>
+<p>Try new combinations of terms. Go back and think about the words that you used to represent your concepts.</p>
+<p>And this one is really important. Try other resources. You may be in a database that’s not appropriate for that search. You may be in a resource that just doesn’t have the kind of information you need to answer that question. So, try other resources. And I always tell you to step out of your comfort zone, but don’t go too far. Make sure that the system that you’re using, the database you’re using is useful for that search. You don’t just use Library and Information Science databases because that’s what you’re familiar with and you think, “Oh, it should be in there.” The point is, be open to trying other sources that might hold the information you are looking for.</p>
+<p>But again, remain focused. If it’s not working, try to figure out why. Ask for more information. Try other resources. And when you use the Web, make sure you’re using terms that are going to be useful, and try some advanced strategies that we talked about if your searches aren’t working. I hope this has given you some more information on how to conduct searches, but also how to make your searches more efficient and more precise.</p>
+<p>Take some time to evaluate different databases. Look up their FAQs. The nice thing about suites of databases is generally those functions work through all of the system in the suite. Be sure you know which different functions are available in the system you are using and that you capitalize on the field structure when possible. Don’t just assume that each system is going to work exactly the same. I hope you will take some time to check out some new systems you haven’t looked at and explore different ways of searching that may be new to you.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="quarto-auto-generated-content">
+<p><img src="images/ou.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true,"theme":"whiteboard"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: "separate-page",
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>

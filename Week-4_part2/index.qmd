@@ -1,0 +1,1168 @@
+---
+title: "Module 3.3: Searching Techniques and Process"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Database Searching {.smaller}
+
+-   Effective database searching consists of:
+    -   Analytical skills
+
+        -   Understanding and extracting meaning out of user information
+            needs
+
+    -   Conceptual skills in developing search strategies
+
+        -   Do we search for concepts or do we search for words?
+
+    -   Technical skills particular to a search system
+
+        -   Each database will have its own search functions, features,
+            structure, etc.
+
+::: notes
+In this module, we are going to look at some strategies and techniques
+that you can use for searching. We're going to primarily focus on
+searching within the database environment rather than on the web. You
+might recall in the earlier lecture in Module 3.2, we talked about
+database and information retrieval systems and the different models
+behind how these systems work.
+
+In this lecture we're going to continue the idea of searching and
+retrieval, but we're going to look specifically at some different
+systems that you might use while you're in the program at OU and then
+some skills and techniques that you can use in other environments as
+well. To learn even more I recommend you take the **LIS 5523 Online
+Information Retrieval** class.
+
+It's really important to note that there are several different skills
+sets that you're bringing to your database searching. Effective database
+searching consists of analytical skills, conceptual skills, as well as
+technical skills. Analytical skills are your understanding or being able
+to extract meaning out of a user's information need.
+
+Oftentimes when a user comes to you and needs help doing a search or if
+you're conducting a search for someone that you received via email, or
+on the phone, or chat, you're going to have to, first, have a very good
+understanding of what it is that they really want. And oftentimes a user
+is not exactly sure what they want or what they need in particular
+circumstances.
+
+So, an important part of effective searching is then helping the user
+understand their information need by asking a lot of targeted questions,
+which we'll discuss in a few minutes. So, analytical skills are really
+key to good database searching.
+
+Conceptual skills are also really important when you're developing
+search strategies for searching. We think about searching as putting
+together strings of words, or words that somehow represent our users'
+information needs or our own information needs if we're searching for
+ourselves.
+
+But what we're really doing when we search is putting together words to
+represent concepts or sets of concepts that then represent that
+information need. So, we're not just aiming to search with words, we're
+aiming to represent the concepts that are present in the information
+need.
+
+And this takes quite a bit of skill as well as quite a bit of time to
+think through your searches and not just type in the first word that
+comes to your mind, which is primarily how most people search. The third
+set of skills that is really important are the technical skills that are
+particular to a specific search system.
+
+We've been talking a lot about structures of databases or structures of
+our search systems and how that can impact our searching, and it becomes
+really important, especially when you have a very complex search where
+you may have to combine several different fields in a database, you
+might need to know what kind of indexing is behind those fields. The
+majority of our proprietary databases nowadays are creating inverted
+indexes behind the fields in the database, and they're generally word
+and phrase indexed.
+
+So, you can put in one word or you can put in multiple words using the
+parameters of that system. It's also really important to know which
+search functions are available in your database. Most systems have
+either implicit or explicit Boolean operator searches as a possibility,
+but then there are some other higher level skills that we can use, such
+as proximity searching or truncation and wildcards, which we'll go into
+in a few minutes.
+
+Each of these is designed to help you become even more precise in your
+search and, in some cases, to increase recall as well. So, it's really
+important when you start to learn a new database or a suite of
+databases, such as EBSCO or ProQuest, that you look up what the search
+functions are, that you try to determine what types of searching are
+possible within the systems, how they handle plurals, what their stop
+word lists might include, how the database is structured, and the
+differences between using advanced search versus a simple search or a
+basic search.
+
+There is a great deal you can learn by looking at the help or FAQ pages
+for the different systems that you're using. So, now that we've talked a
+little bit about some of the skills that we need, let's talk about ten
+steps to good database searching.
+:::
+
+## Steps to Follow When Searching
+
+![](images/paste-5C3867E2.png){fig-align="center" width="580"}
+
+::: notes
+The first step is to read the query. We can substitute that for either
+listen to the query and also understand the query. So, if you're being
+sent a search in email or via chat, you're going to read the query, but
+you have to really read the query, meaning that you have to discern the
+meaning underneath the words in the user's query. If you're talking to
+the user, you need to actively listen to the query and start thinking
+about potential questions to ask them.
+
+As part of read the query, you need to make sure you really understand
+what the user wants, and if they can't spell it out for you, you need to
+ask more probing questions to find out exactly what they want. Or you
+may go back to the user at a later point and ask them further questions
+once you start searching. The second step is to identify the major
+concepts in the query.
+
+Parse apart the words and start thinking about what concepts you will be
+representing in the search terms. Third, you need to identify potential
+terms to correspond to those concepts. So, you're going to think about
+what words you might use to represent the concepts. And then you're
+going to select alternative terms to use if the original strategy needs
+refining, such as broader terms, narrower terms, or related terms. We're
+just going to walk through these steps quickly, and then we'll go back
+through them in more depth.
+:::
+
+## Steps to Follow When Searching
+
+![](images/paste-615E5423.png){fig-align="center" width="532"}
+
+::: notes
+The fifth step is to determine logical or Boolean relationships that
+could exist between the terms and the concepts. The sixth--and this is a
+very important step--is to choose the appropriate sources in which to
+conduct your searches.
+
+Choose databases that are on the topic itself, or if it's a very general
+kind of search, try to find a database that's going to include the types
+of resources that you envision would hold that information.
+
+Seven is, of course, to begin the search. Eight is to look at a few of
+the results and to evaluate whether or not your search is successful or
+if you need to rethink the terms or concepts or if you need to go back
+even further in your analysis. Nine is to revise and refine the search
+based on your initial results.
+:::
+
+## Step 1
+
+![](images/paste-DA469959.png){fig-align="center" width="525"}
+
+::: notes
+Okay, let's talk about step one. Again, it was to read the query, to
+understand the query, to listen to the query. Step one is really about
+conducting a really good reference interview. Now, I don't know if
+you've encountered this term in other courses or not, but a reference
+interview is something that we do when we talk to users about their
+information needs.
+
+The first step, of course, is to get as much information as you possibly
+can. And again, this is going to be limited by the type of system that
+intermediating between you and the user. If you're on the phone, you can
+ask for a lot of information, if you're via chat, you can continue to
+chat, but if you get something in email, you might have to have a series
+of emails over a protracted time period in order to gather what you
+need.
+
+When you're talking to the user, ask for useful terms, talk to them
+about their own prior searching and what they've looked for and what
+they've used, ask about any known authors or experts that might be part
+of a search or that you might want to look for; ask about sources that
+they've used or that they want you to use.
+
+And it's really important to find out what types of sources they really
+need.
+
+-   Do they need journal articles, and if so, do they have to be
+    peer-reviewed? Depending upon your user, they may not know what that
+    means, so you'll have to explain it further.
+
+-   Do they want books?
+
+-   Do they want conference proceedings, which would be a group of
+    papers that are presented at a specialized conference?
+
+So, again, find out what type of sources they need as well, and that's
+going to help you limit your search.
+
+Determine criteria for evaluation, and there, of course, can be several
+different criteria, but some of the most prevalent would be like
+currency--how current does the resource need to be, the information that
+you find; are we looking at, archival materials where we need to go back
+into a backlog or back file, or do we need something that was published
+last week?
+
+So talk to them about their expectations for date restrictions.
+
+-   What kind of formats do they want?
+
+-   Do they need PDF files, do they want HTML?
+
+They more than likely want full text retrieval if you're looking for
+journal articles or conference proceedings. They want something they can
+use immediately. But they also might want images. They might want video
+or audio.
+
+So, again, talk to them about different formats. And then also ask them
+what is not wanted.
+
+-   Are there materials that they already know about?
+
+-   Have they conducted their own searches and what have they found?
+
+-   Are there things that they don't want to address?
+
+-   Talk to them about the scope of the question as well, and, you know,
+    what to include and what not to include in your search.
+:::
+
+## Step 2: Identify major concepts to use
+
+`Concept analysis`
+
+**concept** : *"abstract idea of a thing, regardless of what it may be
+called in a given instance. May have more than one recognizable name"*
+
+(eg. instructor: may also be teacher, professor, lecturer, etc.)
+
+::: notes
+Step two is probably what I think is the best part of searching, and
+that's when you identify the major concepts that represent the
+information need. You would complete what's called a concept analysis.
+Remember what I said, when we search, we're forced to use words, but
+we're thinking about concepts. A concept means, "an abstract idea of a
+thing, regardless of what it may be called in a given instance. It may
+have more than one recognizable name." This is a really important point.
+You might put into your search the first word that comes to your mind
+when you're thinking of a particular concept. So, if you're looking for
+'instructor' for example, there are multiple other terms that can be
+used to represent the same concept. It can be 'teacher,' 'professor,'
+'lecturer,' or other terms you can think of. So, again, you need to look
+at the query, understand the query, and identify the major concepts that
+are present in that query. And then you start thinking about other
+terms.
+:::
+
+## Step 2 (Cont.)
+
+![](images/paste-BC15371B.png){fig-align="center" width="100%"}
+
+::: notes
+When we put together a search, we do what's called 'building blocks' or
+'playing with Legos' during concept analysis. Each word that you use to
+represent the concepts that are present in the information need are what
+we might think of as a Lego block, and you're going to build some
+structure out of your Legos.
+
+You put words together to make a concept, and you're going to use
+multiple types of words to form those concepts. And you might have
+multiple concepts that you need to use to represent that information
+need. You are going to put those concepts together into what we call a
+search string. The search string is what you enter into your database.
+
+Now, just like Legos, words and concepts of a search are
+interchangeable, movable and adaptable, meaning that you might have to
+rethink the words you're using if they're not working in your search.
+You can move them around. You know, put them in different orders or put
+them in different groupings, but again, you have to keep in mind how
+you're combining them. So, think about the formulation of your query as
+playing with Legos. Think about building some kind of a structure out of
+each of those different Legos.
+:::
+
+## Step 3: Identify terms to use
+
+![](images/paste-3659D359.png){fig-align="center"}
+
+::: notes
+So, now we've identified several concepts, and we've started to think
+about how we can put words together to represent those concepts in our
+query. The next thing that I want you to do is to identify terms that
+you can use. And I want you to find multiple terms to represent each
+concept. Don't just use the one term, because you never know how it's
+being used in the system.
+
+Now, the difference between this idea and one form of searching, which
+is controlled vocabulary searching, is that there is only one word that
+represents that concept in the system. When you do controlled vocabulary
+searching, you're using the thesaurus of the system, or you're using the
+authorized terms that someone has decided will represent those concepts
+within that particular system. This is analogous to when we assign
+subject headings from Library of Congress or from Sears Subject Headings
+to represent the subjects in library catalog records. And there are
+definitely advantages and disadvantages to using controlled vocabulary
+searches.
+
+So, for step three, you're going to find multiple terms to represent
+each concept. It's really helpful to use a search form and to write out
+all the different concepts and the terms that you've identified. And
+then also, you can build in those relationships. When I learned to
+search, it was pre-Web days, and we constructed our searches offline
+before we even logged on to systems like Dialog because the system was
+very expensive to use. You remember we didn't have the graphical user
+interfaces that we have today. We had very clunky screens with green
+lettering on black screens, and it was not a very conducive environment
+for searching.
+
+So, you're going to find multiple terms. You're going to think also
+about forms of the words you want to use, and you're going to think
+about whether you should truncate something or not. Now, truncating
+means that you're taking the word down to its root. For example, if
+you're looking for the word "computers", for example, but you think
+there might also be something in an article about computing, you would
+enter as your search term "comput" and then whatever the character is
+that that system uses for truncation--some use question marks, some use
+asterisks, and some even use number signs.
+
+So, again, that's one thing you have to find out about your system, is
+how to truncate. Truncation is useful because it gets more than just one
+form of the word, and some systems will default to either a singular or
+a plural search if you're not truncating at all. So it's, again, useful
+to know how the system deals with plural and singular forms of words.
+Truncation, again, offers you the ability to search for more than just
+one form of a word.
+
+It is important to remember that there is not just one right way for
+formulate a search. Each of you is probably going to approach searches
+in different ways and use different operators, use different words, and
+that's okay. But again, you need to remember that the term you choose
+may not necessarily be used within the system itself, so think about
+alternative ones as well. And use a search form to structure your
+searches ahead of time.
+:::
+
+## Step 4: Select alternative terms
+
+![](images/paste-C3CD8624.png){fig-align="center" width="63%"}
+
+::: notes
+So, now that you've identified other terms to use, or you've selected
+terms, also think of broader terms, narrower terms, related terms, or
+completely different terms or concepts if the concept you're using
+really doesn't pan out. The next step, then, is to identify the
+relationships between the different terms and concepts.
+:::
+
+## Step 5: Define relationships
+
+![](images/paste-4F50F554.png)
+
+::: notes
+When we define relationships in a database, you are thinking about how
+you're going to put them together using Boolean operators. We use
+Boolean operators to connect the terms or those concept blocks that you
+formed earlier. There are three different Boolean operators, the OR, the
+AND, or the NOT. We'll talk about what each of these does in the system
+in just a moment.
+
+But what's really important--if you can find this information in these
+systems, and sometimes it's not talked about even in their FAQs; you
+have to find it out through trial and error--is you have to first
+determine which are used in the system. And that's pretty evident; in
+most systems you can see the drop down menus that let you add AND, OR,
+and NOT between the search terms.
+
+You also have to determine the order of operation, or how the system
+treats the operators. Does OR always default as being treated first, or
+does AND? Now, NOT generally is not the default first operator; in fact,
+I don't think I've seen that as the default in any system I've used. But
+OR and NOT are in different orders depending upon the system you're
+using. And why that's important is because it can really change the
+nature of how the system reads your search.
+:::
+
+## Operators: OR
+
+![](images/paste-C5AED4AB.png){fig-align="center" width="5%"}
+
+::: notes
+Okay, so let's talk about each of these operators. The OR operator is
+what we use to build up concepts. It's where we string together our
+synonymous terms, or what we might call in indexing our equivalent
+terms. It's also where we can put in spelling variants if truncation is
+not possible in the system or if wildcards are not possible. A wildcard
+is different from truncation.
+
+A wildcard is when you insert a character, such as an asterisk or a
+question mark, in the middle of a term, which tells the system "I want
+you to look for all of the spelling variants for this particular term
+that might replace this character." And in some systems, wildcards can
+replace more than one character. It will look for all spelling variants.
+We'll look at some examples of this in just a few minutes.
+
+The EBSCO system has a really nice wildcard feature, where the ProQuest
+system is not as useful. You also use the OR operator to put together
+related terms. So, again, what you're doing with the OR operator is
+you're building up those relationships between the different concepts,
+the synonyms or equivalent terms, spelling variants, and related terms.
+:::
+
+## OR: How it Works
+
+![](images/paste-794F4985.png)
+
+![](images/paste-D82284AE.png){fig-align="center" width="400"}
+
+::: notes
+How it works in the system--and this is something that confuses our
+users--is that when you use OR, any documents that contain any of the
+terms you've put together with the OR are going to be brought together
+in your search set, in your result set.
+
+So, generally when you use OR, it produces larger sets and more
+documents. Okay, so you've got a set for 'information seeking OR
+searching.'
+
+So, every document in your system that has any of those
+terms--'information,' 'seeking,' 'information seeking' or
+'searching'--are going to come back into this large document set. Now
+what does that say about precision and recall?
+:::
+
+## Operators: AND
+
+![](images/paste-001728E4.png)
+
+![](images/paste-C09779ED.png){fig-align="center" width="400"}
+
+::: notes
+The operator AND works very differently. AND is where we combine those
+concepts blocks or the words that we're using in our queries. And it
+will only bring back documents that contain all of the words and all of
+the concept blocks. So, what the system does is to produce a smaller
+set, a more precise set, which includes fewer documents than our OR set
+includes.
+
+So, if we're looking for 'children AND information seeking' or
+'information, seeking,' we're going to find only those documents that
+include all of our terms, so that small set in the middle of the Venn
+diagram is what's returned back to our users. Generally an AND search is
+going to be more precise, but it's going to have lower recall.
+
+So, if you had any documents that included 'adults' but did not include
+'children,' they would not be part of the set. So, you have to think
+about this potential limitation to the results when you're constructing
+the query.
+:::
+
+## Operators: NOT
+
+![](images/paste-BD0B9141.png){fig-align="center" width="500"}
+
+![](images/paste-7F1EB2F0.png){fig-align="center" width="300"}
+
+::: notes
+Okay, the NOT operator is what we use to exclude words or concepts from
+our set. You want to use NOT sparingly because it may limit your search
+too much, okay? So, generally what you're going to want to do is start
+out without using NOT, and then if you have way too many documents,
+that's when you're going to start excluding words or concepts, okay?
+
+It's only going to bring back documents that do not include those
+excluded terms. It produces a smaller set, even smaller than the AND
+set, with more specific documents--so higher precision and fewer
+documents, so lower recall. And, again, it depends upon the goal for the
+search. Do you need just really highly specific documents and few
+documents, or do you need to find out everything on this topic, so you
+want higher recall.
+
+So, again, in our search 'information seeking,' 'information and
+seeking' and 'NOT adults,' we're going to get back the white set in the
+middle of the diagram. But if we're looking for documents that include
+both 'adults AND children'--you know, we're looking for information
+seeking of children--and we NOT out 'adults,' any documents that include
+adults and children are not going to be returned in our search. So, you
+need to use the NOT operator sparingly.
+
+In a database, you're going to use the NOT operator to exclude the term,
+in a Web search engine, you can simply insert a minus sign directly in
+front of the word or phrase you want to NOT out, and supposedly, it will
+be excluded from your document set. Or if you're using advanced search
+on the Web, that's where you can tell the search engine "do not contain
+these words or phrase," and then the system should exclude the word or
+phrase from your set. But again, just a cautionary note, don't start
+with NOT unless you're very sure about what you want back in your
+document set.
+:::
+
+## Step 6: Choose Database(s)
+
+-   Familiarize self with databases and combination of databases
+
+    -   OU databases
+        -   Scope/coverage
+        -   Advanced Search pages, Thesauri, FAQs
+        -   What search features, operators (Boolean, proximity), IR
+            methods (stemming, stopword lists, etc.) are available for
+            the database
+
+::: notes
+Now, I always waffle about where to put this step. Choosing databases is
+one of the very important first steps we take when we're searching. You
+need to choose the appropriate sources in which to conduct your
+searches, or you're going to waste your time. You're going to come up
+with items that are not relevant. You're going to become frustrated and
+think your terms aren't working, and it's because you're in the wrong
+database to begin with.
+
+So, the first step to this, of course, is to take some time to
+familiarize yourself with databases and different combinations of
+databases. Now, OU's databases have been put together by different
+vendors, so that all the EBSCO databases get searched in that large
+federated search, which I dislike. Or you can pick and choose particular
+databases by Resource by Subject or you can browse and search multiple
+different databases, which I'll show you how to do in a few minutes.
+
+But there are different ways you can determine your database. But this
+is the class where you get to spend some time playing around with
+different databases and exploring all those other databases that you
+never really looked at before because they weren't library science
+databases and you had no real reason to look at them. So, take some time
+first to familiarize yourself with the different databases. OU has a
+wonderful variety on multiple different topics that, of course, are
+geared to help the users of this academic community, so they're focused
+on the academic subject areas present at OU.
+
+When you look at a database, you should try to determine the scope of
+it, meaning--how many years are covered, what topics are covered, what's
+not included, are there things that I can't find in this database that I
+need to supplement with another database? You also then need to look at
+the advanced and basic search pages and what can be done. See if there's
+a thesaurus function--if you can search within a thesaurus and come up
+with subject headings or controlled vocabulary terms instead of just key
+words.
+
+And then look at the FAQ pages to figure out what type of operators are
+being used; can you use proximity operators, Boolean operators? Can you
+use truncation? And if so, how do you do it? So look at those FAQ pages
+and find out how to make your searches more precise. And then look at
+the different types of search features--such as Boolean operators, the
+IR methods, how is the system stemming your words, are there stop word
+lists that the system uses, If so you don't want to use those words in
+your searches.
+
+Again, it's important that within a suite of databases you may have very
+similar functionality, but you may not always have the same fields in a
+system, you may not always have a thesaurus, and you may have a
+different option--instead of a thesaurus, you may be able to browse
+topics. So, again, familiarize yourself with the different databases
+before you start searching. This exploration usually only takes a few
+minutes; just click around and see what options are there and read the
+FAQs. It will make your searches a lot more efficient.
+:::
+
+## Thesaurus/Help Page
+
+![](images/paste-1F9FE076.png)
+
+::: notes
+Okay, so let's take a look at where we might find a thesaurus in one of
+our suite of databases. This is the EBSCOhost page, advanced search
+page, and I'm using Communication Source as the database because it has
+some different options than what we might see in LIS databases. You
+might take some time to compare those differences. The black arrow on
+the left hand side of the screen shows you where to find the thesaurus
+feature, and this particular system has one. And then also the arrow on
+the right hand side of the screen is where your Help, or your FAQ, pages
+are for this system.
+
+You can also search by Publications--which we'll look at in a few
+slides--and Images. And then also in that same bar there is a More
+screen, which will take you into the Indexes and Images, and I'll show
+you that in a minute. This screen shows the advanced search page, and
+you can see you can choose by Boolean/ Phrase, "Find any of the terms,"
+you can "Find any of the phrases", or "all of the terms". And there are
+a lot of other options if you scroll on down the page to limit your
+search as well to different publications, to document types, language,
+date ranges, etc. that you should take advantage of if you have that
+information.
+:::
+
+## Example of Thesaurus
+
+![](images/paste-1AC98071.png)
+
+::: notes
+Okay, Let's explore the Thesaurus feature. To access the Thesaurus,
+click on the Thesaurus link at the top red bar. I've just put in a
+phrase you've all become very familiar with lately, 'Freedom of
+Information.' And so, when I search this database, which is dealing with
+journalism and communication in general as a discipline, freedom of
+information is really important to journalists because they have to
+verify the information on particular government activities, and one way
+they do it is requesting information through the FOIA Act.
+
+So, on this slide, I've clicked on the Freedom of Information choice
+from the list of thesaurus terms. Each term contains a scope note--a
+scope note is generally a definition of how this term is used in this
+controlled vocabulary within this system, and it might be very different
+in another system. So, it's important to read scope notes to make sure
+that the term is really what you're looking for, that the concept is
+what you need. There are also listed narrower terms and related terms.
+And then there are some terms below that are in black by the "Used for,"
+which are the non-authorized terms, meaning that they would not be used
+to index the subjects in this database.
+
+So, things like 'Information, Freedom of' would not be used as a subject
+term in this system, okay. And then the other narrower terms and related
+terms are other terms that you can add to your search simply by clicking
+on the box next to it and then clicking the little "add," and then they
+will automatically get added in the proper format to your search string.
+Using the thesaurus feature is another way of digging out some
+alternative terms, related terms, that you might not have thought about
+when you were constructing your search. It's going to give you a larger
+document set, more than likely, but it's going to be very much on point
+because it's using the controlled vocabulary of this system.
+
+The terms in the thesaurus are the subject headings used by indexers
+when they created the database records for each article. Not every
+system is going to have a thesaurus feature that you can use. And
+oftentimes people don't use that thesaurus feature because one, they
+don't see that it's a possibility and two, they don't know what it is
+because this system isn't giving you any information about how to use it
+or what it is used for. If you go into the FAQs it gives you a nice
+description, but if somebody just accidentally clicked on that link, it
+really wouldn't tell them very much. So, again, it's something I hope
+you take a look at and explore. Controlled vocabulary searching, as I
+said, is a way to get into the subject terms being used by this
+particular system, and it can make for very precise searching.
+:::
+
+## Thesaurus
+
+![](images/paste-565D7DEC.png)
+
+::: notes
+This slide shows you an example of the ProQuest thesaurus, and I've used
+the same term again, 'Freedom of Information,' and you can see that the
+display is slightly different. The system is giving you all the Broader
+terms first but no other related terms,
+:::
+
+## Thesaurus (Cont.)
+
+![](images/paste-9B67B14F.png)
+
+::: notes
+And then you can click on those terms and they're automatically added to
+your search or they expand out and give you even more choices. And then
+it gives you 'Freedom of movement,' 'Freedom of religion,' etc., which,
+of course, are just alphabetical listings of the terms in this
+thesaurus.
+:::
+
+## Thesaurus (Cont.)
+
+![](images/paste-1263A818.png)
+
+::: notes
+On this slide, I've clicked on one of the terms 'First Amendment, United
+States' because I wanted to drill down even further to see how that term
+was being represented and what broader and narrower terms and related
+terms I might want to consider for my search. So, the thesaurus serves
+two purposes. One, it gets you into the subject terms that are used by
+this system in the subject field to represent the concept, Freedom of
+Information, okay? But it also gives you additional terms that you might
+want to add to your query.
+:::
+
+## Example of Topic Search
+
+![](images/paste-490ACD8D.png)
+
+::: notes
+Okay, in ProQuest you have some additional features that you don't see
+in EBSCO. And these can be very useful, but again, they take some time
+to get used to and to learn how they're structured and what you can do
+with them. You can select topics by the broad categories of Business &
+Industry, Computers & Internet, Economics & Trade, Environment,
+Government & Law, and Social Issues & Policy. You can play around and
+see what you think about this feature. When you click on any of the
+subtopics, you can view documents related to that topic, you can narrow
+it by related topics, etc. So, it's another way in which you can get
+into the system's structure as well as how they're representing
+particular concepts.
+:::
+
+## Results of Topic Search
+
+![](images/paste-7C4374EA.png)
+
+::: notes
+And on this slide, I've just selected one of those subtopics so you can
+see what the screen would look like. I selected the entry for
+Information literacy. You can see all Related Searches at the top of the
+screen, as well as click on "View All" to see all related searches. From
+the pop up for "View All" you can choose other related searches to
+pursue. If you scroll to the bottom of the screen, you will find the
+option to "Search Within" that can also be very helpful when narrowing
+down searches within the desired result set.
+:::
+
+## Wildcard and Truncation
+
+![](images/paste-C52279A4.png)
+
+::: notes
+Now let's talk about wildcard and truncation. Wildcard and truncation
+are ways in which you can expand your search in different ways. With the
+truncation symbol, you are telling the system to search the root of the
+word and any other forms of the word that are present in the system. So,
+a truncation search can be really helpful; however, you have to be
+really careful not to truncate too far to the left. If you truncate too
+far to the left, you're cutting off too much of the word and you might
+end up with some really interesting results.
+
+And each system has different truncation possibilities; some systems
+don't allow truncation at all, but the majority of proprietary systems
+nowadays do have some truncation function. For the EBSCO system you can
+see on the screen here, it's giving you instructions that you use an
+asterisk at the point, the root point of the word, that you want it to
+search. So if we type C-O-M-P-U-T and put the asterisk there
+('comput*'), it will look for 'computer,' 'computers,' 'computing'--any
+form of the word that follows that root, okay? You can also use the
+symbol here between words to match any word, and it gives you an example
+there at the bottom. Use 'midsummer' and then '*dream' ('midsummer \*
+dream') and it would include 'midsummer night's dream' in that search.
+
+So, again, that's a useful way of conducting a truncation search. Now, a
+wildcard is when you want to search for variants of spellings, say, or
+different forms that are in the middle of a word, such as 'woman' or
+'women.' You would use a wildcard symbol in the place of the letter. The
+EBSCO database uses a question mark and a pound sign for wildcard. They
+use the question mark to replace an unknown character. So, if there's a
+word that you're not quite sure how you want to spell or you want to
+spell it several different ways, then you're going to put the question
+mark in.
+
+If you want to use the number sign, that's where you're going to look
+for alternate forms of the word, such as color. You would put in the
+number sign after C-O-L-O-number sign-R ('colo#r'), then you'd get both
+forms of that word; color with the 'or' and colour with the 'our'. So,
+wildcard and truncation symbols, again, are useful in that you're
+searching more than just one form or spelling of a word, and it allows
+the computer instruction to look for more than just the root of a word.
+:::
+
+## Truncation and Wildcards
+
+![](images/paste-95C54B8B.png)
+
+::: notes
+Slide 23 shows you the help screen for ProQuest related to wildcards and
+truncation symbols to use in your searches. The two systems are quite
+similar.
+:::
+
+## Proximity Searching
+
+![](images/paste-5808C3C5.png)
+
+::: notes
+Another really nice feature is what's called proximity searching, and
+every database that includes proximity searching generally has like an
+'n' or a 'w' operator--'n' is a near operator, and 'w' is the within
+operator. In EBSCO you can use both the near operator and the within
+operator to limit your searches even further. For example, if you use
+the near operator, that's where you want to find words that are within a
+particular range of another word.
+
+So, if we put in the word 'tax' and then 'n5,' meaning near within five
+words of reform, it's going to look for every document that has 'tax'
+and then there might be up to five intervening words in between the word
+'reform.' With the w operator generally it finds words that are within
+the particular range of one another; they don't have to be in a
+particular order.
+
+So, if you put in that same kind of search 'tax' within 5 of 'reform'
+('tax w5 reform'), it's going to find anything that has 'tax' within
+'reform' or 'reform' within 'tax.' So, there's no order imposed when
+you're using the w operator. It depends upon the system itself as to how
+those proximity operators work or even if they're an option. So, try
+some proximity operators in your searches at some point and see what you
+think. You can use proximity operators even within the Boolean search
+strings as well.
+:::
+
+## Stopwords, Phrases, Punctuation
+
+![](images/paste-DAF3708D.png)
+
+::: notes
+Additional aspects of searching that you need to learn a little bit
+about in each system are stop words. Those are the words that really
+have low value within a system because they're used so frequently that
+the term has been stripped out of the indexing when indexing is
+conducted by the system when the system creates the inverted indexes.
+Also, you need to learn how to conduct phrase searches. Some systems use
+either quotation marks, or you put your words, your concept, in a set of
+parentheses. And then also you should look at how your particular system
+is using punctuation. What is shown on this slide is EBSCO's Help for
+"More Information on Stop Words, Quotation Marks, and Punctuation."
+:::
+
+## Nesting (Not Just for Birds!)
+
+![](images/paste-D5D8399E.png)
+
+::: notes
+There's another concept that you can use in your searching and that's
+called nesting, because it allows us to string together a lot of
+concepts or concept blocks using multiple Boolean operators to conduct
+really complex searches.
+
+This screen on EBSCO Help tells us more about nesting and phrase
+searching as well as Boolean operators and how they work, This system
+calls them 'Booleans.' Nesting is when we put multiple concepts together
+in parentheses and then we combine them using Boolean operators with
+other concepts blocks.
+
+So, if we had a search looking for computerized instruction, we could
+use 'comput*' with a truncation, 'AND' and then within parentheses, we
+could put 'instruction,' or 'instruct', 'educate,' 'online education' as
+a phrase. You could construct a very complex search using nesting, and
+EBSCO systems do allow you to use this form of searching. You can nest
+using the Boolean operators as well, and so, you can really create some
+complex searches within the advanced search pages such as comput* AND
+(instruction OR instruct, educate, online education)
+:::
+
+## Indexes/Articles
+
+![](images/paste-F3076007.png)
+
+::: notes
+Another nice feature that I like with EBSCO is that it allows you to get
+into the indexes of your different systems. And EBSCO also lets you do
+searches by the particular documents themselves, the publications, or
+the articles. The way to get into the indexes is to click on the More
+tab on the red bar, choose Indexes. I've just shown that on this slide.
+:::
+
+## Indexes
+
+![](images/paste-6CB0D747.png)
+
+::: notes
+So, I've gone into the index for the Communication Source and then I've
+selected the Browse tab. And you can see here different indexes created
+by the system when it created the inverted indexes. This system has an
+inverted index for Author, Author Supplied Keywords, Company, Document
+Type, etc. When you search in a specific field, you're going to search
+in the inverted index file. And this is our way that we can browse those
+indexes.
+:::
+
+## Indexes/People
+
+![](images/paste-5E4CEE28.png)
+
+::: notes
+On this slide, I am browsing the People index. You can simply browse the
+whole index if you want to, which would be very inefficient, but you can
+also enter the term into the search box. I've used 'Obama, Barack'. You
+can see the number of records that have this term as an index term. You
+could click on those and add them to your search. If you want to add
+them as your search, you would click on the boxes for the different
+index terms, and then click the Add button, and it would construct that
+search for you.
+:::
+
+## Indexes/People
+
+![](images/paste-26D7109C.png)
+
+::: notes
+Okay, so, on this screen you can see the search that the system
+conducted. If you look at the very top left hand corner, you can see the
+search box that's put all of my index terms that I have selected
+together in a search. So, it should produce a set that includes all
+those different alternatives.
+
+Now, remember that what the inverted index does is it takes the words
+out of that field in the database and it puts them into an alphabetical
+index, so that when the system is searching that particular field,
+that's what's being searched rather than every other word in every other
+field of the system.
+
+So, it makes your search a lot quicker, but it also makes it more
+precise. So, what is happening when you're doing an index search
+limiting by this method, is you're using the words that are in the
+documents themselves and also in the indexing that the person who
+indexed this database put together. So, it becomes a really precise
+search.
+:::
+
+## Publication Search
+
+![](images/paste-ED51F119.png)
+
+::: notes
+Both EBSCO and ProQuest also allow you to browse by publication, so if
+you know the name of a particular publication, such as the 21st Century
+Fuels; Oxford, you can click on that and go directly to it. Another nice
+feature of the ProQuest system is that you can see that it's a full text
+search and you can also see the range of years included within this
+particular system for that publication. So, on this screen 21st Century
+Fuels from Oxford is a full text document and it is for years 1995-1998.
+So, this is one way you can check the scope of your database. You can
+also see on this slide the many ways in which you can identify and limit
+the Publications search.
+:::
+
+## Step 7: Begin Search
+
+![](images/paste-79742CC0.png)
+
+::: notes
+Okay, now that we've explored some of the functionality of our two of
+our large database vendors at OU, ProQuest and EBSCO--though, you know,
+there are many, many more we could explore,--let's begin our search,
+which is step seven. Usually, you should start with the most specific
+word or concept block when you're doing a search. But again this will be
+different depending upon whether you want high precision or high recall.
+
+And so you're going to have to tweak that depending upon the
+expectations for the search. If you use the most specific word or
+concept block, it's generally an indication of how large a set you're
+going to expect, okay? If you're using very broad terms, you're probably
+going to get a larger set. If you're using very specific search terms or
+concept blocks, you're going to get a smaller set. It's also a really
+good indication of how effective your terms or your concept blocks are
+in your search. You can take a look at each of your different searches
+and see how effective your search has been.
+
+Another strategy that some people use is they don't like to combine
+their searches. So, they use the terms individually and then they
+combine their search sets, and some systems will let you do that,
+especially some of the EBSCO systems. You can go back into your search
+history and chose those different sets and combine them into searches,
+and you let the system do the combining for you. Generally what they're
+doing is ORing your terms or your sets together, though, and that's not
+necessarily what you want. So, some people like to start using terms
+individually, and then some people like to combine them with Boolean
+operators. Also, you want to determine if truncation is important in
+your search or not and just be careful how much of the term you
+truncate. Don't go too far to left; if you do, you might end up with
+some very odd results. So, one thing to check is, if you're getting very
+strange results or you're not getting what you're expecting, is how far
+you truncated it or if you need to truncate.
+:::
+
+## Step 8: Review Results
+
+![](images/paste-2B60F00C.png)
+
+::: notes
+Step eight is, of course, to review your results. You want to evaluate
+your documents. You want to see how they're matching your terms or those
+concepts blocks and determine if it's an appropriate match.
+
+Or if it's an inappropriate match, what's going on? Why didn't it work?
+Did some of the terms work? Did some terms not work? And then you want
+to adjust your query accordingly.
+
+You also at this point want to look at other terms that are in those
+useful documents that you pull up. We call this pearl growing. This is
+where you might look at the subject headings being used or the
+controlled vocabulary terms in the indexing, and you might want to add
+those to your searches, or you might want to construct different
+searches using those terms.
+
+Now the nice thing about systems like EBSCO and ProQuest is that
+oftentimes you can link out to those different subject headings and
+conduct that search right from your result page. But again, the problem
+with that is that you might get lost and you need to go back to your
+original search.
+
+And sometimes depending upon how complicated your query is, that can be
+a little frustrating, trying to get back where you were or to remember
+what you've done, and that's where those search logs are really useful.
+
+And if you do decide to link out to some of those other terms, you want
+to make sure you note that down, so you can know where you've been. But
+pearl growing is really useful, and even in library catalogs, it's a
+really good way for our users to get closer to the concepts that we're
+using in our cataloging. By clicking on the subject headings that are
+used to index that document, they'll pull up even more documents that
+are on the same topic.
+:::
+
+## Step 9: Revise and Refine Search
+
+![](images/paste-5210E560.png){width="80%"}
+
+::: notes
+Step nine is where we want to revise and refine our search. You'll use
+different strategies depending upon each individual search, the
+functions of the system, and the degree of match between your terms and
+the terms or the documents retrieved. So it's going to be different
+depending on the results of your search.
+
+But you're going to try some things, like alternative terms and
+combinations. If you didn't want to nest all your terms at once, you can
+go back and run different sets, as I mentioned, using alternative terms,
+and then you can combine the successful sets together. And again, this
+is based on your comfort level as to how complicated of a search you
+wanted to construct.
+
+But if one search term isn't working or a concept block isn't working,
+then try to some alternative terms, try some synonymous terms, try some
+broader, narrower, or related terms. Truncate further to the left is
+another strategy you can use, but again, I always caution people about
+this one because you can end up with some really strange things.
+
+\
+Drop concept sets. You know, if there's something's not working, get rid
+of it. Generally, you want to get rid of the least specific first,
+because it's generally giving you too broad of results. If you reviewed
+your searches, you'll have a good understanding of why it worked or why
+it didn't work. And then you can also add in new concept sets if there
+are alternative concept sets you didn't use, or if you've rethought your
+search and you've realized that I really should think about it this way
+instead, then you can go back and add additional concept sets.
+
+And you should always check for errors. If a search isn't working,
+there's usually a reason. Spelling errors are something, especially with
+younger users, that are really prevalent. Now a lot of our systems
+correct our spelling for us, or like in Google, they'll say "Did you
+mean this spelling?" But spelling still can be a problem in a lot of
+systems, and even those spelling variants can be a problem as well.
+
+You also want to check that your combinations are correct.
+
+-   Are you constructing your Boolean search accurately, and then how is
+    it being operated on by your system?
+
+-   Is the OR the default or is the AND the default in that system?
+
+-   So, think about how the systems are reading your search string, and
+    is that how you want it to be read?
+:::
+
+## Step 9 (Cont.)
+
+![](images/paste-613E837F.png){fig-align="center" width="500"}
+
+::: notes
+Now, if you're getting too many documents, there's a potential problem
+with your recall. You want to try to figure out which terms are useful.
+You want to use fewer terms in your search, and you want to use narrower
+terms in your search. But again, this is going to depend upon the
+results produced. You have to evaluate what's going on in that search.
+If you're getting wrong results, that means that your terms are not
+being used within that system or even within the documents themselves if
+you're doing full text searching.
+
+So, you want to try alternative terms and different kinds of concept
+combinations of terms, different kinds of Boolean combinations. Another
+thing you might consider is get more information from your user. Go back
+and talk to them some more. Say that you're not finding anything or
+you're not finding anything useful, and can they give you some more
+information? Another strategy, again, is to try some of the pearl
+growing that I mentioned. If you can find some documents that are
+relatively useful, do some pearl growing and use the system's terms to
+find the subjects for you.
+
+You can also go back into your thesaurus as I showed you earlier and use
+controlled vocabulary terms from the system. Now, again, if you're using
+controlled vocabulary terms, you are searching in the subject field, but
+you're using the terms that the system has identified as the authorized
+term for representing that concept. And controlled vocabulary searching
+can be really powerful, but it also can be really precise. So, you have
+to evaluate the results and see are you getting what you want, or is it
+too restrictive? As with any type of searching there are pros and cons
+with using controlled vocabulary as well.
+:::
+
+## Step 10: Remain Focused
+
+![](images/paste-CD4FA4D0.png){width="90%"}
+
+> REMEMBER: It is possible that there are no documents that match your
+> needs in that particular source. Review the question and re-evaluate
+> your choice of source. Should you change databases? Go onto the Web?
+> Online resources are fairly comprehensive, but they do not contain
+> everything.
+
+::: notes
+Lastly, and this is something that I have to tell myself even after how
+many years of searching-- thirty plus years of conducting searches? Boy,
+I'm really dating myself now. Anyway, step ten, remain focused. Always
+stay focused; don't get off on false leads if at all possible.
+
+That's why search logs can really help you. You'll know what terms and
+searches you used in the past; you know what didn't work. You can
+reorganize your searches; you can add new terms. You will have a record
+of false leads. If you're going down the path where you're doing a lot
+of pearl growing, make a note of it, so you know where you've been and
+how to get back to where you started. This is a real problem when you
+get on the Web too. You click around, and you access so many sites, you
+don't know where you've been. Your search history is nice, but search
+histories are limited on the Web.
+
+Retrace your steps and review your past searches. Use your search logs
+to determine where you've been. If you have a system like EBSCO where it
+has a search history, you can see what you've done. You're not reviewing
+the same results sets again, but you can at least see what queries
+worked or didn't work.
+
+Try new combinations of terms. Go back and think about the words that
+you used to represent your concepts.
+
+And this one is really important. Try other resources. You may be in a
+database that's not appropriate for that search. You may be in a
+resource that just doesn't have the kind of information you need to
+answer that question. So, try other resources. And I always tell you to
+step out of your comfort zone, but don't go too far. Make sure that the
+system that you're using, the database you're using is useful for that
+search. You don't just use Library and Information Science databases
+because that's what you're familiar with and you think, "Oh, it should
+be in there." The point is, be open to trying other sources that might
+hold the information you are looking for.
+
+But again, remain focused. If it's not working, try to figure out why.
+Ask for more information. Try other resources. And when you use the Web,
+make sure you're using terms that are going to be useful, and try some
+advanced strategies that we talked about if your searches aren't
+working. I hope this has given you some more information on how to
+conduct searches, but also how to make your searches more efficient and
+more precise.
+
+Take some time to evaluate different databases. Look up their FAQs. The
+nice thing about suites of databases is generally those functions work
+through all of the system in the suite. Be sure you know which different
+functions are available in the system you are using and that you
+capitalize on the field structure when possible. Don't just assume that
+each system is going to work exactly the same. I hope you will take some
+time to check out some new systems you haven't looked at and explore
+different ways of searching that may be new to you.
+:::

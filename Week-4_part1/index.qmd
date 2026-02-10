@@ -1,0 +1,1356 @@
+---
+title: "Information Retrieval: Representations and Models"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Model of Information Retrieval {.smaller}
+
+![](images/1.png){fig-align="center" width="80%"}
+
+::: notes
+This week, we’re going to talk about information retrieval (IR) from
+different perspectives. We’re first going to talk about the idea of
+representation within information systems, and how it affects
+information retrieval. Then we will look at some different information
+retrieval models that are present in today’s systems, as well as look at
+some of those in earlier systems.
+
+To begin our discussion, here is the recap of the model from previous module to
+help you think through the idea of multiple representations and how they
+interact to connect users to information.
+
+Representation A is the user’s information need, which the user enters
+into a system using terms that they believe represent this need.
+
+Representation B is the representation created as a surrogate for the
+information object by a cataloger or indexer. Often the cataloger will
+use a set of authorized terms, called a controlled vocabulary to
+represent the subjects, but also a set of standards that tell them how
+to describe the object within the representation.
+
+Both are entered into a system.
+
+The retrieval component of the information system matches these two
+representations and brings back a subset of representations that the
+system contains that are representative of the words in the users
+queries. (We won’t go into the mechanics of searching at this point, or
+how the retrieval mechanisms work within various systems.)
+
+The user then chooses a representation to review to see if it meets
+their information need or not.
+:::
+
+## Representation: Definition
+
+-   A system for choosing or highlighting some characteristics
+    (attributes), together with a specification of the rules for
+    selection (codes)
+
+-   This implies a trade-off: if some characteristics are highlighted,
+    other characteristics are left behind
+
+::: notes
+Next, let’s begin by defining ‘representation’ within the broader
+context. Now you’ll recall, we talked about representation in previous. module,
+but let’s look even more specifically at some of the issues related to
+representation within IR systems.
+
+Representation can be thought of as a system for choosing or
+highlighting some characteristics, or attributes – or general
+characteristics -- together with the specification of the rules for
+selection and the code, meaning that we should understand a little bit
+about how the system is structured and how data exists within the
+system’s records.
+
+This selection (or surrogation) process implies a trade - off of some
+kind. If some characteristics are highlighted, then we have to assume
+that other characteristics are left behind.
+
+So, for example, in library catalogs we made decisions on what
+attributes of the information objects in our collection are important to
+describe in our records for users. In early catalog records these
+attributes included, Title, Author, Subject, and Classification.
+
+In order to create those representations, the card catalog records, we
+had to decide which characteristics to highlight and which to leave
+behind.
+:::
+
+## More Definitions {.smaller}
+
+-   `ENTITES`: objects or concepts
+-   `ATTRIBUTES`: characteristics of entities
+    -   `DIACHRONIC`: stable across time
+    -   `SYNCHRONIC`: changes across time
+
+::: notes
+Okay, let’s also look at some other definitions that we need to
+consider.
+
+In terms of representations, we have to consider the term of ‘entities.’
+Entities are those objects, or even concepts, that we’re going to
+represent.
+
+‘Attributes’ are the general characteristics of information objects. So,
+we can also think of them as characteristics of the entities that we’re
+representing. There are different types of attributes; ‘diachronic’ and
+‘synchronic’ attributes.
+
+Diachronic attributes are those that remain stable across time. In other
+words, they do not change, and their meanings and uses also do not
+change.
+
+And then there are synchronic attributes, and those are attributes that
+change across time. The change could be as simple as the use of a
+particular term or concept within a specific language.
+:::
+
+##  {.smaller}
+
+![](images/2.png){fig-align="center" width="80%"}
+
+::: notes
+On this slide I have modelled the idea of how *agency* plays a role in
+the information representation and retrieval process.
+
+For example, we have an agency, which might be your local cataloging
+department, or it could be an indexing service within a database. That
+agency has a *document representation rule* , meaning that they have
+predefined the structure in that particular system . And then they’ve
+also made choices in terms of controlled vocabulary use, whether or not
+they use a controlled vocabulary or the specific one that they do use.
+And they may also have a *question representation rule* , meaning that a
+user has to input our question into the system using a specific format
+or syntax and it will be matched to the representations using a specific
+algorithm.
+
+Also, part of this model is the *retrieval mechanism rule* . That
+particular system has a structure, such as the file structure or field
+structure. The retrieval mechanism rule would also include the types of
+data in the fields, how that data is retrieved, how it’s indexed within
+a system – whether or not a field is searchable, and then also the
+algorithms that match the user’s query terms to the representations
+(records) within the system.
+:::
+
+## Human Indexing
+
+-   Diachronic Attributes (do not change)
+    -   *author, title, publisher, number of pages*
+-   Only most general thought of users
+-   Rules not evident to users
+-   *Great vagueness & Generality resting on a foundation of shiftiing
+    quicksand*
+
+::: notes
+There are several factors related to human indexing of particular
+documents within collections. As I’ve said, we have diachronic
+attributes, and those are the ones that don’t change. They’re always the
+same when representing something in the system. Examples of diachronic
+attributes would be author, title, publisher, number of pages.
+
+The problem is that oftentimes representation systems have only the most
+general thought about users. We’re designing this system for retrieval,
+and the different agencies have different specifications for how or what
+they want to be retrievable within their system. But we’re oftentimes
+unaware of how the users use those particular systems or how they search
+for items within the systems. Another problem that comes in with human
+indexing is that the rules in which we create representations are not
+evident to our users. How many times have you used a library catalog,
+only to have results come back that are really confusing – with
+abbreviations you don’t understand or no information on how to access
+the resources?
+
+So, again, there are different aspects of representation that are not
+evident to users or are confusing to users.
+
+When we’re thinking about representation and the different factors from
+a human side that impact retrieval, “there’s a great vagueness and
+generality resting on a foundation of shifting quicksand.”
+
+Because if you think back to the IR/representation model that we looked
+at earlier, users are only concerned with one side of the model; they’re
+concerned with how they enter their information need or their query into
+the system. As the person who is creating the representation, we have to
+be concerned with both sides. We have to know the rules for creating the
+representation, including the structure of the system, but we also have
+to understand how our users are interacting with and/ or searching
+within that particular system.
+:::
+
+## Requirements for Successful Retrieval
+
+::: r-stack
+![](images/3.png){.fragment width="250" height="250"}
+
+![](images/4.png){.fragment width="500" height="400"}
+
+![](images/5.png){.fragment width="600" height="400"}
+
+![](images/6.png){.fragment width="700" height="500"}
+
+![](images/7.png){.fragment width="750" height="500"}
+
+![](images/8.png){.fragment width="800" height="500"}
+:::
+
+::: notes
+Image 1: Okay, let’s look at some requirements for a successful
+retrieval. We have a collection. It is shown on this slide with these
+various different symbols, which may or may not be useful to us as a
+user. `(Click Next)`
+
+Image 2: Within our collection, there is at least one document, based on
+its representation that might be useful to us. `(Click Next)`
+
+Image 3: The user has some idea of what kind of information or
+information resource would be useful to them in helping to satisfy an
+information need. So, they input that information into the search
+mechanism of the information retrieval system with the hopes of enacting
+a match between their search terms and the terms used within the system
+to represent the objects on that particular topic, subject, or by a
+particular author.
+
+So, we can say that retrieval was successful because at least one of the
+terms, the search terms that the user input into the system, matched
+with the terms in the representation and brought back the document or
+resource that the user thought might be useful. `(Click Next)`
+
+Image 4: So, we have a patron! `(Click Next)`
+
+Image 5: With a very specific information need. `(Click Next)`
+
+Image 6: When the indexer created this representation, they picked the
+four symbols that you see in the pink bar. And these symbols are
+represented within this document. Now, again, what they’ve done is
+chosen to *highlight* specific attributes of this object for their
+representation. So, we can see four different aspects that were probably
+more important topics within this object, and that’s what the
+cataloger/indexer chose to represent. Also, they might be constrained by
+their system parameters or local practice as to how many concepts they
+can represent instead of representing every concept within the document.
+
+What’s also not known to the user at this point are the conventions
+(local practice rules in the cataloging department) and the different
+choices that the indexer must make.
+:::
+
+## 
+
+![](images/10.png){fig-align="center" width="80%" height="80%"}
+
+::: notes
+Part of the problem also is that the indexer and the patron often do not
+use the same code.
+
+Or in this case, we can think of the controlled vocabulary, Library of
+Congress Subject Headings (LCSH), as the code that we use to represent
+subjects within our particular representations or records within our
+system.
+
+Patrons in libraries do not usually have an understanding about what the
+four big, red books, or LCSH, contain and how they can be used in
+searching. And oftentimes, especially today in the automated world in
+which we live, we don’t provide the LSCH in online or print form to our
+users as a potential source of topics or search terms.
+:::
+
+# 
+
+::: columns
+::: {.column width="60%"}
+`Indexer has selected (perhaps among others) the concept that the patrons will want`
+:::
+
+::: {.column width="40%"}
+::: r-stack
+![](images/11.png){.fragment width="250" height="250"}
+
+![](images/12.jpeg){.fragment width="500" height="400"}
+:::
+:::
+:::
+
+::: notes
+Image 1: It really becomes a bit of a guessing game for the indexer;
+they’ve selected, perhaps among others, the concept(s) that they think
+the patron will want or that the patron will use when they’re searching
+for documents about this particular item in the collection.
+`(Click Next)`
+
+Image 2: Now, if there’s a match between the terms or the concepts that
+this indexer or cataloger has chosen and the patron has used in their
+search terms, there is successful retrieval.
+:::
+
+## What If?
+
+-   `Indexer picks a different topic`
+-   `Indexer and patron use different terms for the same concept`
+-   `Patrons cannot articulate just what the question state is`
+
+::: notes
+But! What happens if there’s no match? We can think about this as a
+dance.
+
+So, what if the indexer picks a different topic?
+
+What if the indexer and the patron use different terms for the same
+concept, such as if the indexer uses ‘automobiles’ and the patron uses
+‘cars’ ?
+
+What if the patron can’t articulate just what their question is or what
+their question state might be, meaning that they’re not entirely sure
+what kinds of information they’re looking for to satisfy this particular
+need.
+:::
+
+## The Dance
+
+::: columns
+::: {.column width="50%"}
+**Indexer**
+
+describes doc
+
+predicts use
+:::
+
+::: {.column width="50%"}
+**Patron**
+
+describes doc
+
+predicts doc
+:::
+:::
+
+::: notes
+The dance begins between the indexer and the patron.
+
+The indexer describes the document, where the patron is trying to
+predict the document that they need that will help them resolve an
+information need.
+
+The indexer predicts use of the particular items that they’re
+representing.
+
+The patron, on the other hand, has to somehow describe how they’re going
+to use the document or the object in your collection to satisfy their
+information need.
+
+So, if you look at it from this perspective, you can see that there are
+a lot of places where the retrieval will break down. If the indexer and
+the patron do not correspond in terms of how the document is described
+and how they’ll use the documents or how the indexer believes the
+document will be used versus how the patron is describing their use,
+then there can be problems in retrieving documents from the collection.
+:::
+
+## Some Important Questions
+
+-   `What patron attributes can we know?`
+-   `What document attributes can we know?`
+-   `How can we use this knowledge to open the bottleneck between patrons in need and the documents that might be of use?`
+
+::: notes
+In previous module, we talked about users and what we can know about users.
+So, at this point, let’s also consider “What patron attributes can we
+know?
+
+We can know about their age, we can know about their economic status
+potentially, depending on where they’re accessing our collection. We can
+know about their gender. We might know about the particular use. So,
+there are different aspects of patrons we can know about. Now that we’re
+in an online environment, knowing who our users are is very difficult,
+and our representations reflect that difficulty by becoming more general
+in nature.
+
+We also can know what document attributes are useful within our systems.
+And how we determine this is oftentimes through user studies, in which
+we talk to users about how they use our systems, or how they use
+collections, or how they conduct searching within different systems.
+
+So, how can we use this knowledge to open up what we would consider the
+‘bottleneck’ between patrons with a particular information need and the
+documents that might be of use to them?
+:::
+
+## Indexing Factors Affecting IR Performance {.smaller}
+
+::: columns
+::: {.column width="50%"}
+1.  [Indexing]{style="color: orange;"}
+
+------------------------------------------------------------------------
+
+2.  [Type of Knowledge]{style="color: purple;"}
+
+------------------------------------------------------------------------
+
+3.  [Effective/Cognitive]{style="color: red;"}
+:::
+
+::: {.column width="50%"}
+1.1 [Consistency]{style="color: orange;"}
+
+1.2 [Subject Expertise]{style="color: orange;"}
+
+1.3 [Indexing Expertise]{style="color: orange;"}
+
+------------------------------------------------------------------------
+
+2.1 [Searching Experience]{style="color: purple;"}
+
+2.2 [Domain Knowledge]{style="color: purple;"}
+
+------------------------------------------------------------------------
+
+3.1 [Motivation Level]{style="color: red;"}
+
+3.2 [Emotional State]{style="color: red;"}
+:::
+:::
+
+::: notes
+There are other indexing factors that do effect information retrieval
+(IR) performance, and some of these are related back to human factors.
+
+For example, within the indexing process and resulting index , there is
+a problem that we call ‘inter - indexer consistency,’ or ‘inter -
+indexer inconsistency,’ meaning that there is a low percentage of
+consistency between any two indexers when they’re creating
+representations.
+
+There is also the problem with subject expertise. People with higher
+domain knowledge, generally, are better indexers in that particular
+area.
+
+And also indexers with more experience tend to know the codes or the
+controlled vocabularies better, as well as how representations are
+structured.
+
+Then there are also factors from the user’s side such as the types and
+levels of knowledge, the user’s search experience and domain knowledge;
+these factors can also play a role in retrieval performance.
+
+There are also effective and cognitive factors, such as a person’s
+motivation level and emotional state as they’re looking for information.
+:::
+
+## Other Factors to Consider
+
+-   `Use of Standards/Rules (code)`
+    -   Depends on form of index/abstract
+    -   Depends on criteria of employer
+        -   Pages allocated
+        -   Format used
+        -   Order
+-   `Depends on Resources/Audience`
+
+::: notes
+One final set of factors to consider – and I’m sure that you can also
+think of others – is that the indexer or cataloger has specific
+standards and rules, or what we might refer to as a code, that have to
+be followed when they create representations.
+
+We’ll be covering the codes or standards we use in library cataloging or
+indexing in more depth coming in future modules. Those standards
+and rules depend on the form of the index or the abstract or the record
+being created; they also depend on criteria of employers, such as how
+many pages are allocated for an index, what format can be used, how will
+the information be structured and displayed to the users, what is the
+particular order of the elements of the record, etc.
+
+Again, all of this depends upon which type of organizing structure is
+being developed (MARC record, back of the book index, etc.), as well as
+the audience or the users.
+:::
+
+## Information Retrieval {.smaller}
+
+> `A process in which sets of records or documents are searched to find items which may help to satisfy the information need`
+
+-   IR is concerned with:
+
+    -   `representation`
+    -   `storage`
+    -   `organization`
+    -   `accessing of information objects`
+
+::: notes
+Okay, now that we have talked a little bit about representation and some
+of the issues related to representation within IR systems, let’s step
+back a bit and talk about IR, as well as IR models.
+
+IR has been defined very basically as a process in which sets of records
+or documents are searched to find items, which may help to satisfy the
+user’s information needs.
+
+Now, we know from our discussions throughout class that IR is a lot more
+complicated than has been defined here.
+
+IR is concerned with several different processes as well as how the
+system is structured. It’s concerned with
+
+-   representation from both a user’s side, or
+-   how the user represents their need within a system mechanism, and
+    from the computerized side, or
+-   from the system’s side of how items in the collection are
+    represented within the system,
+-   how the system is set up and structured, and
+-   how the cataloger or indexer has represented those objects within
+    that system structure.
+
+IR is also concerned with storage of the representations from the system
+side (and how the system is structured) and the organization of those
+representations, meaning how the field structure is devised, the system
+search algorithms, and the different IR models in use to access the
+information objects successfully.
+:::
+
+## Information Retrieval (Cont.) {.smaller}
+
+-   Information retrieval concerns a range of concepts
+    -   `User Group`
+        -   types of knowledge
+        -   context & information environment
+    -   `Information Need`
+    -   `Information Sources`
+    -   `Information System`
+        -   system capabilities/IR techniques used
+        -   how information organized
+    -   `Results of the Query`
+    -   `User Selection & Evaluation (Relevance)`
+
+::: notes
+IR concerns a wide range of concepts. In last module, we talked about
+users, what we have learned about users in our research, and what we can
+learn about users – related to their types and levels of knowledge – as
+well as the different variables the come into play that are related to
+context and the information environment in which they’re conducting
+their searches. We also talked about different information needs and
+information sources.
+
+We’re going to focus this time more about the **information system**. We
+are going to look at the system capabilities and the IR techniques or
+models being used, as well as how that impacts how information is
+organized and retrieved. Another component here, of course, is the
+results of the query and the user selection.
+:::
+
+## Information Retrieval (Cont.) {.smaller}
+
+-   The central problem of IR is how to represent documents for
+    retrieval
+-   To be more successful, document representation must be used in ways
+    similar to the ways ordinary language is used
+    -   document representations should take context into account
+    -   document representations should take users into account
+
+::: notes
+The central problem of IR then is how to represent documents for
+retrieval. Our field has done a lot of research on users and their
+information behavior, as we talked about in the last module. We can also
+think about it from the system’s side of how documents are represented
+by human agencies as well as computerized agency within the system.
+
+To be more successful, we’ve found in our research, document
+representation must be similar to the way that ordinary language is
+used, which, again, presents some problems.
+
+We’ll talk later in this lecture about the natural language processing
+model of IR and some of the issues associated with that.
+
+But document representation should take context into account, or the
+domain of the system into account, as well as the users of that system.
+:::
+
+## Information Retrieval (Cont.) {.smaller}
+
+-   `Most IR is based on techniques introduced in the 1960's`
+    -   Primarily text-based retrieval
+    -   Makes use of inverted indexes and index terms
+-   `IR is no longer just a library problem`
+    -   Used in businesses, everyday settings
+    -   Used in search engines
+-   `As a result of these evolved uses high standards of retrieval are expected by users`
+
+::: notes
+IR and the models that we’ll cover in this lecture, both the classical
+and the more advanced models being developed and being used today, were
+introduced in the 1960’s. The retrieval within those models was and
+still remains primarily textual based. What I mean by ‘textual based’ is
+that the systems were being designed primarily to retrieve text - based
+documents within sets of different document collections using text -
+based representations.
+
+IR systems also make use of inverted indexes and index terms, especially
+within our online databases. Even search engines have inverted indexes
+as the basis for retrieval.
+
+It’s also important to note that information retrieval is no longer just
+a library problem. People do not just retrieve documents within library
+systems any longer; IR is used in multiple different contexts as well as
+in everyday homes. People are using the web, and the penetration of web
+access within the home environment is pretty high within the United
+States, though it does vary. There are definitely digital divide issues;
+however, users can also access the web for everyday use in libraries and
+other organizations, and of course, using smart phones and other
+devices. And around the world we know that access to the web is also at
+varying levels.
+
+As a result of these more evolved uses – we’re no longer just using
+databases to do research – users have very high standards of retrieval
+and of our retrieval systems. And oftentimes they come away from a
+library OPAC being very unsatisfied with the results. Some of these
+expectations can be attributed to the system, but also to the user’s
+misunderstandings about how that particular system functions.
+:::
+
+## Taxonomy of IR Techniques
+
+-   `We can divide IR techniques into basic classes`
+    -   **Exact Match**: *where the set of retrieved documents contains
+        only documents whose representations match exactly with the
+        query*
+    -   **Partial Match**: *where there is some matching that occurs,
+        but it is not exact, although some of the documents may be exact
+        matches to the query*
+
+::: notes
+At the heart, we can divide information retrieval techniques into two
+basic classes: **exact match** and **partial match**. Systems today
+still have these techniques in place.
+
+Exact match is where the set of retrieved documents, contains *only*
+documents whose representations – those of the indexer within the system
+and those of the user in their search queries – *match* exactly when an
+IR transaction is taking place.
+
+For example, in an exact match system, if I put in the terms,
+‘information’ and ‘data,’ my system documents are only going to retrieve
+those items that include ‘information’ and ‘data,’ and they will leave
+out any other types of materials that might be related even though they
+could be potential matches.
+
+In a partial match model, this is where some matching occurs, the terms
+are not necessarily exactly the same, some of the documents may be
+exact matches to the query, but then others might be what we considered
+‘partial’ or ‘low relevance matching.’ Both of these two techniques are
+still present in systems today.
+:::
+
+## Traditional IR Model {.smaller}
+
+#### **`Simple Match Model`**
+
+> **Request = Information Data**
+
+Document A = data, information
+
+Document B = data, information
+
+Document C = information, retrieval
+
+`Advantages`: simple process; widespread; familiar
+
+`Disadvantages`: single descriptor requests less effective in large
+databases
+
+::: notes
+One of the classical IR models is the *‘simple match model’* or a *‘best
+match model’* that is part of an IR model.
+
+For example, the user has a request, which is the information that’s
+needed, and that matches to the documents in our collection. So, again
+if we use that same example of ‘data’ and ‘information,’ if document A
+and document B have some reference to ‘data’ and ‘information’ within
+that system’s representation, within their index record, or within their
+bibliographic record, then we’re going to have a successful match.
+
+The problem with simple match models is that it usually uses only a few
+query terms which becomes less effective in large databases.
+
+The advantage is that it’s a simple process; it’s very wide spread and
+familiar to our users. They enter terms into a search engine or into a
+fielded search in a database, and they get back results.
+
+But as I said, it becomes even less effective in larger databases where
+we’re searching multiple collections with thousands of documents within
+the collections.
+:::
+
+## Boolean IR Model {.smaller}
+
+-   Boolean Retrieval
+    -   one step above the basic model
+-   Named after the creator, *George Boole*, of Boolean algebra, around
+    1850
+-   Most familiar IR technique used in OPAC's and online databases
+-   Uses `AND`, `OR`, and `NOT` to allow more complex queries to the IR
+    system
+-   Works with that what is called `Set Theory`
+
+::: notes
+One of the most *prevalent* classical IR models is what’s called
+‘Boolean retrieval,’ which is one step above the basic model that I just
+described.
+
+Boolean retrieval is present in most systems today that you’ve used,
+from library OPACs, to databases, to search engines. ‘Boolean’ was named
+for its creator, George Boole, when he developed Boolean algebra around
+1850.
+
+As I noted, it’s probably the most familiar IR technique, but it’s also
+one of the least understood techniques because the user has to
+manipulate the query in some way, where other techniques might work
+behind the interface and the user doesn’t have as much control over how
+the query is processed by the system, but they also don’t know what the
+system is doing.
+
+Boolean uses the AND, OR, or NOT operators to allow more complex queries
+within the system. A user can structure queries in many different ways,
+and systems may also process Boolean operators in a different order,
+meaning that those search operators of AND, OR, or NOT are treated in a
+specific order within that system.
+
+We’ll talk more about operator order and Boolean searching in the next
+lecture, when we look at specific search structures and
+creating good search strings within IR systems.
+
+Boolean also works with what is called ‘set theory,’ which is a binary
+approach – an item either belongs to a set or it doesn’t belong to a
+set. This is both an advantage and a limitation of the IR model.
+:::
+
+## Boolean IR Model (Cont.) {.smaller}
+
+-   Example of Boolean Search
+
+    ![](images/clipboard-953469533.png)
+
+::: notes
+Let’s take a look at an example of a Boolean search. We’re going to use
+as our search ‘information AND retrieval NOT data.
+
+AND in a Boolean search serves as an intersection between the terms,
+meaning that any documents that are retrieved have to include both
+‘information’ and ‘retrieval,’ otherwise the result set will not include
+that particular document. The OR serves as a union, meaning that any of
+the two terms have to be present within the document within the OR
+relationship or the document would not be returned in the retrieval set.
+
+The NOT serves as a complement, or we might think of it as a way of
+filtering out those documents that we do not want to see retrieved.
+
+So, in this particular search we have ‘information AND retrieval NOT
+data.’ In document A, we have ‘information’ and ‘data.’ So, with the NOT
+serving as a complement or a filtering function, document A would not be
+retrieved.
+
+Document B includes ‘information’ and ‘retrieval,’ which satisfies our
+first criteria, and ‘IR.’ Now, we don’t have the concept of IR as stated
+as the acronym as part of our retrieval, but because this document
+includes our two terms, ‘information’ and ‘retrieval,’ and it does not
+include the term ‘data,’ this document would be retrieved. Document C
+‘information’ and ‘data’ and ‘retrieval’ would, again, not be retrieved
+because it includes the term ‘data.’
+
+And then, in Document D ‘information’ and ‘retrieval’ and ‘book’ would
+be returned because it includes our terms ‘information’ AND ‘retrieval.
+:::
+
+## Problems with Boolean Model
+
+-   Need to know the order (preference) the operators are processed by
+    the system
+-   Seems very simple to users but is really fairly complex
+-   May miss potentially relevant documents
+-   Does not rank retrieved documents
+-   Concepts within documents are difficult to show
+-   So why do we continue to use them?
+
+::: notes
+There are of course some problems with the Boolean model.
+
+One of which is that you need to know the order in which those operators
+are processed by the system.
+
+Depending upon the information retrieval system, some will use the AND
+operator relationship first, and then they will process the OR, followed
+by the NOT. Others have as first preference the OR, followed by AND, and
+then NOT. Depending upon how you construct your query and the order of
+operation, you can have some very interesting results as an impact of
+how the system processes those Boolean operators.
+
+Also, Boolean seems very simple to users, but as you saw, there were
+three types of relationships that are constructed in Boolean statements,
+and queries can really become very complex. People also misunderstand
+how OR or AND function within Boolean systems.
+
+A searcher may miss potentially relevant documents by using the NOT
+operator. If you filter out an entire set of documents based on
+particular terms, you’re then probably missing documents that might be
+useful. So, a cautionary note is to use NOT very sparingly, or to start
+without NOT in your statement and then you can use it later to filter
+out larger sets of documents.
+
+Boolean retrieval also does not rank documents, so all of the terms
+within the document are treated at an equal level, which in some cases
+may be appropriate and others, not. We’ll talk more about weighted
+retrieval in a few minutes.
+
+Concepts themselves as opposed to words are difficult to represent
+within the Boolean IR model, but if you use very advanced search
+techniques, such as nesting with Boolean operators--we can get closer to
+representation of concepts.
+
+The last thing that I wanted to mention about Boolean is with all of
+these difficulties, we continue to use this model because it has been
+part of our IR systems for many years, and it’s a very effective way of
+retrieving documents even with these different potential issues that
+I’ve just mentioned. And our users do like to use Boolean in the sense
+that they like to have more options in their retrieval. But we do have
+new models in current environments that allow better retrieval but with
+less control over what the system is doing or how it’s processing your
+terms.
+:::
+
+## Term Weighting {.smaller}
+
+-   `Weighted IR (probabilistic IR)`
+    -   makes use of inverted index and index terms
+    -   easier to assign weights if automatically indexed
+    -   each term in the index has a weight or value attached to it
+        -   weight reflects its relative importance in the document
+    -   weight is determined by use of term frequency
+        -   defined as the number of occurrences of a term in the
+            document
+        -   more frequently a term appears in a document, the more
+            likely it is to an important concept within the document
+
+::: notes
+Weighted information retrieval, what is oftentimes referred to
+probabilistic information retrieval, is another classical IR model that
+we’re going to talk briefly about.
+
+Weighted IR is usually in systems that have
+inverted indexes and index terms because what the system needs to do is
+have a set of terms to which it assigns weights, and it assigns weights
+based on the value of the word or the term within the document. So, what
+the system does is assign a weight to each term within the inverted
+index, and then within the searching process, the higher weighted
+documents or terms are retrieved. The weight is supposed to reflect the
+relative importance of a term within the document.
+
+There are different schemes that are used for weighting. The most
+frequently used is what’s called ‘term frequency’ or ‘co-occurrence’
+within a document. Basically, when we think about term frequency, it’s
+the number of occurrences of a term within a document, or how often a
+particular word appears within that document. We also can weight
+documents within sets. A system can examine how frequently a term occurs
+within the documents of a particular set. We also can look at term
+co-occurrence, as I mentioned, or how frequently the term appears within
+a document, but also in co-occurrence or in proximity to additional
+important or higher-weighted terms.
+
+The assumption behind a weighted system then, is that the more
+frequently a term appears in a document, the more likely that term is to
+be an important concept within the document, or that it represents the
+overall topics being discussed within the document. One problem with
+this, however, is if a term is used too much within a document or the
+terms are used too much within the document set, or within the database
+system, the term becomes un-useful. We call this distinctiveness within
+databases; for example, if we’re searching within a system that’s filled
+with computer-related documents, and this is a computer science
+database, the term ‘computer’ is of low value in both the indexing and
+retrieval processes because if every document in the set is related to
+computers, when you do a search with the term ‘computers,’ you’re going
+to return every single document in the collection. So, even though
+weighting can be really useful, you also have to take the context or the
+domain into account when you’re both selecting index terms as well as
+when you’re selecting terms for your retrieval.
+:::
+
+## Example of Weighted IR
+
+![](images/clipboard-4050955481.png)
+
+::: notes
+Let’s take a look at an example of weighted IR. 
+
+The topic of the document is ‘information’ and ‘data retrieval.’ Some of
+the terms in the index might include ‘information retrieval,’ ‘data,’
+‘retrieval,’ ‘information,’ ‘system,’ ‘index,’ and ‘representation,’ and
+you can see from this example that this inverted index has both word and
+phrase indexing as possible within its structure.
+
+The column on the right hand side seems to have some extraneous words,
+such as ‘book,’ ‘illusion,’ ‘yellow,’ ‘car,’ ‘green,’ ‘ball,’ and
+‘keys.’
+
+In a weighted information retrieval model, within this particular
+document, the terms in the left hand column are probably more frequently
+used within the document, and the terms in the right hand column are
+probably used as examples or illustrations, and they would probably have
+lower weights assigned.
+
+How that would impact retrieval then is if you do a search for
+‘information retrieval’ or ‘information AND data,’ ‘data retrieval,’
+‘system’ or ‘representation,’ you’re probably going to retrieve this
+document because it would have higher weights for those terms.
+
+If you’re doing a search for ‘book,’ or ‘yellow’ or ‘car’ within this
+particular system, you’re probably not going to retrieve this document
+because those terms would have lower weights assigned to them.
+:::
+
+## Term Weighting (Cont.) {.smaller}
+
+![](images/clipboard-1263592877.png)
+
+::: notes
+There are, of course, advantages and disadvantages to the term weighting
+model. The advantage is that it speeds up access because those lower
+weighted terms are not searched, nor are they retrieved for a user.
+Generally, it gives a user a smaller set of documents to evaluate.
+
+The problem, however, is that often it is not known what weights are
+based on, or what the system algorithms deem as important in the
+weighting scale of a document. The weights are based on the system
+designer’s criteria; the weights are based on that particular algorithm
+within the system. And those weights could be wrong, or within
+particular documents the weights might be wrong, or the user may think
+that those documents are relevant, but if the lower weighted documents
+are missing from their set, the user may potentially miss documents that
+are partially useful to their information need.
+:::
+
+## Other IR Models
+
+![](images/clipboard-588880613.png)
+
+[![](images/clipboard-3169439169.png){fig-align="center"
+width="515"}](https://www.osti.gov/servlets/purl/1055624#page=1.00&gsr=0)
+
+::: notes
+There are other information retrieval models, such as vector space
+modeling, or what has been known now more recently as ‘clustering,’
+Vector space modeling is one of the classical models that has been in
+development since the 1960s. Vector space modeling or clustering is a
+partial match technique, meaning that as long as part of your term is
+present within the document or within the document’s indexing, the
+document will be retrieved. It uses a weighted scheme, so the terms
+within the document are given weights, and what differs in a vector
+space model is that the queries terms are also given weights. So,
+documents within those sets or those clusters are ranked in decreasing
+order of the similarity to the query.
+
+What is nice about vector space models, or ‘VIRI’s,’ as we would call a
+visual information retrieval interface using the vector space model, is
+that both the document and the query are represented as term vectors, or
+points on the diagram, and then the user can manipulate how close they
+want those vectors to coincide. The term vectors for both the document
+and the query are then compared for similarity.
+:::
+
+## Clustering (such as faceted search, tag clouds) {.smaller}
+
+![](images/13.png){width="336"}
+
+::: notes
+There are not really any commercial systems that give the user all the
+features of the vector space model, though there are a lot of
+experimental systems that use this IR method. However, you can think of
+the social networking and the socially constructed information, such as
+tag clouds, as a clustering mechanism as well, but it’s more of a
+user-generated content system than one that’s being generated by the
+computer.
+:::
+
+## Clustering (Cont.)
+
+![](images/clipboard-3182139681.png){fig-align="center" width="30%"}
+
+::: notes
+So, to explain this further, you have a set of documents that are related
+to a specific topic, such as how to set up a habitat for lizards. In the
+system all of the documents in the collection on the topic of lizards
+are in one cluster. When the query is presented to the system, it only
+searches within the relevant cluster or within the vector space that’s
+related to that particular topic. So, those term vectors are compared
+for similarity. As long as the documents within each cluster accurately
+represent the subject of the information objects, then the search will
+be successful.
+
+There are some search engines, for example Clusty, that use clustering
+as its retrieval mechanism.
+:::
+
+## Topic Modeling: Clustering Approach {.smaller}
+
+-   Topic modeling itself is a *soft* clustering method but the output
+    of topic modeling can be used for classification in downstream tasks
+    such as information retrieval and improving recommendation systems
+
+-   It is used to infer the hidden themes in a collection of documents
+    and thus provides an automatic means to organize, understand and
+    summarize large collections of textual information
+
+-   It is based on statistical and machine learning techniques to mine
+    meaningful information from a vast corpus of unstructured data and
+    is used to mine document’s content
+
+-   It infers abstract topics based on ***“similar patterns of word
+    usage in each document”***. These topics are simply groups of words
+    from the collection of documents that represents the information in
+    the collection in the best way
+
+    ![](images/clipboard-1809129871.png){width="500"}
+
+:::notes
+Read slides
+:::
+
+## Other IR Models {.smaller}
+
+-   `Semantic or Linguistic Model`
+
+> attempts to get at the "concepts" contained in the information object
+> or the surrogate
+
+-   syntactic analysis
+
+-   free text searching
+
+-   paragraph indexing
+
+-   discourse analysis
+
+-   Passage Retrieval
+
+::: notes
+There are other IR models that were developed beginning in the sixties,
+but they really came into fruition in the nineties and in 2000s. One of
+these is are the
+semantic or linguistic model. 
+
+It’s a really complicated model. An example of systems that are using
+such model is Ask.com, the search engine. For the most part, it’s not used in
+a lot of commercial systems because it uses a lot of computing power,
+though that isn’t as much of an issue as it used to be, but it’s also
+subject to the foibles of human language.
+
+Semantic or linguistic models attempt to get at the
+concept levels, rather than the word levels, contained in the
+information documents or their surrogates. It is accomplished at
+various different levels depending on the system. Some systems using natural langauge model (NLP)
+do a syntactic analysis, where the system is looking at the meaning, or
+trying to extract the meaning of sentences, or even at the paragraph
+level if they’re doing paragraph indexing. Also, the system may be using
+a discourse analysis level, where the algorithm is looking at whole
+passages and trying to discern meaning and then matching queries with
+their semantic algorithms.
+
+Free text searching and full text searching also have elements of NLP
+associated with it, but again, NLP is not part of many commercial
+systems because it does require a lot of computer power to make it work,
+but it also is really dependent on human language and the language
+within documents. So, NLP systems tend to be within more
+subject-specific databases rather than, say, on the web. If they’re used
+on the web, such as in Ask.com, it’s usually for more factual kinds of
+questions, and their data sets tend to be more subject-specific as
+opposed to being able to search everything like you can with Google.
+:::
+
+## Newer IR Models {.smaller}
+
+::: columns
+::: {.column width="50%"}
+-   User Profiles
+
+    -   uses heuristics (rules of thumb)
+    -   uses process models
+
+-   Intelligent Agents (e.g. Windows Cortana)
+
+    -   autonomous
+    -   able to learn
+    -   customizable
+
+-   Web Search Engines
+
+-   Data Mining/Text Extraction Methods
+:::
+
+::: {.column width="50%"}
+![Example of Conversational Retrieval
+System](images/clipboard-1471905613.png){fig-align="center"}
+:::
+:::
+
+::: notes
+There are also some other, newer IR models that emerged in the
+70s, and now in the 90s with the web, and even in
+2000s with the use of, for example, user profiles that we see in
+Bing. Bing tracks what its users do and assembles profiles based upon
+the heuristics of the user searching and the whole search process when
+they’re using the Bing search engine. So, it uses what are called
+heuristics, or rules of thumb, basic rules that are present in the
+majority of search experiences. Bing also uses what are called process
+models, where the search engine looks at the entire process and tries to
+develop generic process models for users within the Web environment.
+
+Also coming out of the seventies and eighties is the idea of intelligent
+agents. These were, and still are, little software programs that are
+supposed to be autonomous. They are able to watch and learn what a user
+does when they’re searching or they’re using different database systems,
+and then they customize the system or help give the use helpful advice
+whenever they come to that particular system to do a search.
+
+Microsoft had an experiment with intelligent agents, with their ‘Bob’
+search and software user interface, which was probably about in ’93 and
+’94. You used to have that little paperclip that would pop up all the
+time and tell you, “Would you like to do this?” or “I can help you do
+this.” Bob was kind of similar to that, but Bob was a person, an agent,
+as opposed to a paperclip.
+
+But it’s, again, an idea. It’s a newer IR model than those classic
+models that we talked about, and it’s something that we do continue to
+still explore. Cortana in Windows 10 systems is an intelligent agent.
+Systems like Amazon’s Alexa use both user profiles and intelligent
+agents to develop a profile of the users of each Alexa device.
+
+Web search engines, of course, we’re all familiar with now, have really
+only been around since about 1993 when the World Wide Web graphical user
+interfaces were developed in Mosaic and in early Netscape. But web
+search engines, of course, are something people use every day. Web
+search engines don’t necessarily all work the same way. As I said, Bing
+has a different mechanism for searching than Google does.
+
+We also have what’s called data mining, text extraction, machine
+learning, knowledge representation models. A lot of data mining and text
+extraction are based upon term frequency counts and extracting and
+assigning weights to terms within documents, but then also it
+re-purposes documents and pulls them together in very dynamic ways based
+upon the parameters you set for these particular processes. So, within a
+data mining environment, we might tell the system that we need to find
+all the documents on a particular topic and it will extract them based
+upon the algorithms that have been set up in the system. Text extraction
+works in a similar manner; it’s really a way that we can analyze at a
+word level what’s in document. And we also use data mining and text
+extraction in some NLP systems as well to discern contextual patterns in
+the data.
+:::
+
+## Retrieval-Augmented Generation (RAG) {.smaller}
+
+`Retrieval-Augmented Generation (RAG) = Information Retrieval (IR) + Large Language Models (LLMs)`
+
+RAG is a technique that helps AI models generate better, more
+**accurate, and up-to-date** responses by **retrieving relevant
+information** from external sources before generating an answer
+
+`Why Do We Need RAG?`
+
+Traditional **LLMs (like GPT-4)** have a **fixed knowledge base** from
+training data. But:\
+- They **don’t know new information** after training.\
+- They **hallucinate** (make up facts).\
+- They **struggle with specific or niche knowledge** (e.g., latest
+research papers).
+
+-   **Solution: RAG helps by searching for relevant documents and using
+    them to generate accurate answers!**
+
+::: notes
+With the recent advancement in generative AI, we can use large language models for information retrieval.
+
+LLMs are trained on massive datasets, but once training stops, their knowledge is frozen in time. So, if something happens after their last update, like a new scientific discovery, they have no idea about it and they start hallucinating. 
+
+Hallucination is defined as when a model generates something that sounds convincing but isn’t actually true. This is a big problem in applications like medicine or law, where accuracy is crucial.
+
+So, how do we fix these issues? That’s where RAG comes in!
+
+Instead of just relying on pre-trained knowledge, a RAG model first retrieves relevant information from an external source—like a database, Wikipedia, or even real-time web searches—and then generates a response using that data.
+
+This means RAG models are:
+
+- More up-to-date: Because they pull in fresh, external knowledge.
+
+- More accurate: Since they ground their responses in retrieved facts.
+
+- Less prone to hallucination: Because they verify information before generating text.
+
+:::
+
+## How Does RAG Work?
+
+**Imagine you ask an AI:**
+
+🗣️ *"Who won the Nobel Prize in Physics this year?"*
+
+**Without RAG (LLM Only):**
+
+🤖 *"I don’t know. My training data only goes up to 2023."*
+
+**With RAG (LLM + IR):**
+
+🤖 *(Searches the web → Finds latest Nobel Prize winners → Summarizes
+the results)*
+
+*"The 2024 Nobel Prize in Physics was awarded to \[Winner’s Name\] for
+\[Reason\]."*
+
+::: notes
+This slide an example of searching information using RAG. 
+
+But RAG is still not perfect. The biggest challenges are:
+
+1. **Retrieval quality**: If the system fetches bad or irrelevant information, the response will also be wrong.
+
+2. **Latency**: Searching external sources takes time, which slows down response generation.
+
+3. **Security & Privacy**: Some sources might not be reliable, or the model could pull sensitive data.
+:::
+
+## IR systems You Use
+
+-   Online catalogs
+
+-   Online databases
+
+-   Web Search Engines
+
+::: notes
+There are a lot of different information retrieval systems that you as a
+user encounter every day: library online catalogs, online databases,
+such as OU Libraries database, but there are also databases on the web
+that you use and that are being used without you even knowing it–say,
+for example, Google Scholar is a database,–and of course, your search
+engines within the web. There’s a really good resource that you might at
+some point take a look at. It’s a little complicated because it’s trying
+to be everything to every type of user.
+
+And that’s the Search Engine Watch
+page--<https://searchenginewatch.com/>. It has news about what’s going
+on in search engine development, it talks about the mechanics of search
+engines and search engine optimization, etc. Social media sites are also
+an example of a system you may use.
+
+As you use different IR systems every day, think about
+
+-   How these different systems employ different IR methods and models?
+
+-   How is the system structured?
+
+-   What aspects of the system are hidden from the user?
+
+Try to determine the structure of the system and how you retrieve
+information by examining the interface features, such as a drop down
+options or field lists in an online database, or features designed to
+enable fielded searching in your online catalogs. For example, what
+fields are searchable? Can you conduct Boolean searches?
+:::
+
+## How Does this Relate to Searching?
+
+![](images/clipboard-158779916.png)
+
+::: notes
+Now that you have a basic introduction to information retrieval and some
+of the models that help in retrieval in different systems, let’s talk
+about how this relates to searching. It’s important that we understand
+how our different systems are structured and also what model of
+retrieval is running the algorithms behind the scenes or behind the
+interface, if you will. The organization of the record within the file
+is what holds the key as well as those algorithms.
+
+In earlier systems, our methods for finding the location of the record
+and for matching representations from the user, their search terms, and
+representations within the records was a sequential search of all the
+records in a file, and as you can imagine, this took a great deal of
+time. Most of our systems nowadays use either an inverted index file,
+which is an individual index for every field that is searchable within
+our system or they use keyword searching. In some of the newer systems,
+we might even have full text searching.
+
+So, there are different ways in which you can enact a query, but the
+system is generally searching an inverted index of those fields that
+have been deemed searchable. Within bibliographic records, especially
+those that have OPACs, we often have multiple indexes which provide
+searchable fields for our users.
+:::
+
+## Cautions
+
+-   We should take a more global view of IR
+-   Users (including information professionals) need to know which IR
+    model or technique the system is using for retrieval
+-   Users also need to know how information systems are structured and
+    how objects are represented in the system
+
+::: notes
+I want to mention just a few cautions when we’re thinking about
+information retrieval and information retrieval models. When we designed
+these systems, we were designing the models and the systems for local
+use. We didn’t have the networked connections that we have presently; we
+didn’t have the World Wide Web back in the sixties; so, we were
+designing systems that could be used in a local context.
+
+So, at this point, we really need to take more of a global perspective
+when we’re thinking about information retrieval. If we’re designing a
+system or we’re creating representations, we need to think about the
+global community that might be accessing this system.
+
+We also as users, and this includes information professionals, need to
+know which information model or technique the system is using for
+retrieval. What I mean here is that whenever you start using a database,
+it will save you a lot of time and effort if you familiarize yourself
+first with the different search functionalities that you have, if you
+can get a sense of the IR model that’s being used, and you can look for
+some of those more advanced search filters or functions, such as
+stemming and proximity searching, that might be present within that
+system.
+
+Also try to find out if it has a thesaurus function where you can have
+access as a searcher to the controlled vocabulary used by the system for
+its indexing. Using the thesaurus feature, if applicable in that system,
+will make your searching more precise to begin with.
+
+Users also need to know how information systems are structured, what the
+field structure is, what the indexing system is, and how their objects
+are represented within the system, which fields are searchable, if there
+is an inverted index that is being searched, is it both word and phrase
+searched, or indexed. Each of these elements of system structure are
+going to impact how you’re going to conduct your search queries but also
+how effective retrieval will be.
+
+In the second part of this week's lecture, we’re going to dig deeper and talk about some
+different search strategies and features you can use to make searching
+even more precise.
+
+This is the end of this lecture on information representation within the
+information retrieval arena. Now you should proceed to the optional
+lecture that will teach you more about searching and
+different search strategies that you might employ to become better
+searchers.
+:::
