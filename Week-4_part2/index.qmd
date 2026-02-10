@@ -1,5 +1,5 @@
 ---
-title: "Module 3.3: Searching Techniques and Process"
+title: "Searching Techniques and Process"
 subtitle: "LIS 5043: Organization of Information"
 author: 
   - Dr. Manika Lamba
@@ -38,14 +38,14 @@ editor:
             structure, etc.
 
 ::: notes
-In this module, we are going to look at some strategies and techniques
+In this lecture, we are going to look at some strategies and techniques
 that you can use for searching. We're going to primarily focus on
 searching within the database environment rather than on the web. You
-might recall in the earlier lecture in Module 3.2, we talked about
+might recall in the earlier lecture, we talked about
 database and information retrieval systems and the different models
 behind how these systems work.
 
-In this lecture we're going to continue the idea of searching and
+In this lecture, we're going to continue the idea of searching and
 retrieval, but we're going to look specifically at some different
 systems that you might use while you're in the program at OU and then
 some skills and techniques that you can use in other environments as
@@ -777,7 +777,7 @@ the computer instruction to look for more than just the root of a word.
 ![](images/paste-95C54B8B.png)
 
 ::: notes
-Slide 23 shows you the help screen for ProQuest related to wildcards and
+This slide shows you the help screen for ProQuest related to wildcards and
 truncation symbols to use in your searches. The two systems are quite
 similar.
 :::
