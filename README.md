@@ -5,4 +5,6 @@
 - [Week 3: Users & Information Seeking](https://manika-lamba.github.io/S26-LIS5043/Week-3/#/title-slide)
 - Week 4
   - [Information Retrieval and Representation](https://manika-lamba.github.io/S26-LIS5043/Week-4_part1/#/title-slide)
+      - [Natural Language Searching](https://manika-lamba.github.io/S26-LIS5043/Week-4_part3/#/title-slide)
   - [Search Strategies](https://manika-lamba.github.io/S26-LIS5043/Week-4_part2/#/title-slide)
+    
