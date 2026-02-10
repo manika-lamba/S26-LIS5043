@@ -32,9 +32,9 @@ information retrieval. Then we will look at some different information
 retrieval models that are present in today’s systems, as well as look at
 some of those in earlier systems.
 
-To begin our discussion, here is the recap of the model from previous module to
-help you think through the idea of multiple representations and how they
-interact to connect users to information.
+To begin our discussion, here is the recap of the model from previous
+module to help you think through the idea of multiple representations
+and how they interact to connect users to information.
 
 Representation A is the user’s information need, which the user enters
 into a system using terms that they believe represent this need.
@@ -68,9 +68,9 @@ their information need or not.
 
 ::: notes
 Next, let’s begin by defining ‘representation’ within the broader
-context. Now you’ll recall, we talked about representation in previous. module,
-but let’s look even more specifically at some of the issues related to
-representation within IR systems.
+context. Now you’ll recall, we talked about representation in previous.
+module, but let’s look even more specifically at some of the issues
+related to representation within IR systems.
 
 Representation can be thought of as a system for choosing or
 highlighting some characteristics, or attributes – or general
@@ -274,19 +274,19 @@ users as a potential source of topics or search terms.
 
 # 
 
-::: columns
+:::::: columns
 ::: {.column width="60%"}
 `Indexer has selected (perhaps among others) the concept that the patrons will want`
 :::
 
-::: {.column width="40%"}
+:::: {.column width="40%"}
 ::: r-stack
 ![](images/11.png){.fragment width="250" height="250"}
 
 ![](images/12.jpeg){.fragment width="500" height="400"}
 :::
-:::
-:::
+::::
+::::::
 
 ::: notes
 Image 1: It really becomes a bit of a guessing game for the indexer;
@@ -324,7 +324,7 @@ need.
 
 ## The Dance
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Indexer**
 
@@ -340,7 +340,7 @@ describes doc
 
 predicts doc
 :::
-:::
+:::::
 
 ::: notes
 The dance begins between the indexer and the patron.
@@ -371,9 +371,9 @@ then there can be problems in retrieving documents from the collection.
 -   `How can we use this knowledge to open the bottleneck between patrons in need and the documents that might be of use?`
 
 ::: notes
-In previous module, we talked about users and what we can know about users.
-So, at this point, let’s also consider “What patron attributes can we
-know?
+In previous module, we talked about users and what we can know about
+users. So, at this point, let’s also consider “What patron attributes
+can we know?
 
 We can know about their age, we can know about their economic status
 potentially, depending on where they’re accessing our collection. We can
@@ -395,7 +395,7 @@ documents that might be of use to them?
 
 ## Indexing Factors Affecting IR Performance {.smaller}
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 1.  [Indexing]{style="color: orange;"}
 
@@ -427,7 +427,7 @@ documents that might be of use to them?
 
 3.2 [Emotional State]{style="color: red;"}
 :::
-:::
+:::::
 
 ::: notes
 There are other indexing factors that do effect information retrieval
@@ -472,8 +472,8 @@ standards and rules, or what we might refer to as a code, that have to
 be followed when they create representations.
 
 We’ll be covering the codes or standards we use in library cataloging or
-indexing in more depth coming in future modules. Those standards
-and rules depend on the form of the index or the abstract or the record
+indexing in more depth coming in future modules. Those standards and
+rules depend on the form of the index or the abstract or the record
 being created; they also depend on criteria of employers, such as how
 many pages are allocated for an index, what format can be used, how will
 the information be structured and displayed to the users, what is the
@@ -652,8 +652,8 @@ out any other types of materials that might be related even though they
 could be potential matches.
 
 In a partial match model, this is where some matching occurs, the terms
-are not necessarily exactly the same, some of the documents may be
-exact matches to the query, but then others might be what we considered
+are not necessarily exactly the same, some of the documents may be exact
+matches to the query, but then others might be what we considered
 ‘partial’ or ‘low relevance matching.’ Both of these two techniques are
 still present in systems today.
 :::
@@ -733,8 +733,8 @@ meaning that those search operators of AND, OR, or NOT are treated in a
 specific order within that system.
 
 We’ll talk more about operator order and Boolean searching in the next
-lecture, when we look at specific search structures and
-creating good search strings within IR systems.
+lecture, when we look at specific search structures and creating good
+search strings within IR systems.
 
 Boolean also works with what is called ‘set theory,’ which is a binary
 approach – an item either belongs to a set or it doesn’t belong to a
@@ -852,14 +852,14 @@ Weighted information retrieval, what is oftentimes referred to
 probabilistic information retrieval, is another classical IR model that
 we’re going to talk briefly about.
 
-Weighted IR is usually in systems that have
-inverted indexes and index terms because what the system needs to do is
-have a set of terms to which it assigns weights, and it assigns weights
-based on the value of the word or the term within the document. So, what
-the system does is assign a weight to each term within the inverted
-index, and then within the searching process, the higher weighted
-documents or terms are retrieved. The weight is supposed to reflect the
-relative importance of a term within the document.
+Weighted IR is usually in systems that have inverted indexes and index
+terms because what the system needs to do is have a set of terms to
+which it assigns weights, and it assigns weights based on the value of
+the word or the term within the document. So, what the system does is
+assign a weight to each term within the inverted index, and then within
+the searching process, the higher weighted documents or terms are
+retrieved. The weight is supposed to reflect the relative importance of
+a term within the document.
 
 There are different schemes that are used for weighting. The most
 frequently used is what’s called ‘term frequency’ or ‘co-occurrence’
@@ -895,7 +895,7 @@ when you’re selecting terms for your retrieval.
 ![](images/clipboard-4050955481.png)
 
 ::: notes
-Let’s take a look at an example of weighted IR. 
+Let’s take a look at an example of weighted IR.
 
 The topic of the document is ‘information’ and ‘data retrieval.’ Some of
 the terms in the index might include ‘information retrieval,’ ‘data,’
@@ -991,15 +991,15 @@ computer.
 ![](images/clipboard-3182139681.png){fig-align="center" width="30%"}
 
 ::: notes
-So, to explain this further, you have a set of documents that are related
-to a specific topic, such as how to set up a habitat for lizards. In the
-system all of the documents in the collection on the topic of lizards
-are in one cluster. When the query is presented to the system, it only
-searches within the relevant cluster or within the vector space that’s
-related to that particular topic. So, those term vectors are compared
-for similarity. As long as the documents within each cluster accurately
-represent the subject of the information objects, then the search will
-be successful.
+So, to explain this further, you have a set of documents that are
+related to a specific topic, such as how to set up a habitat for
+lizards. In the system all of the documents in the collection on the
+topic of lizards are in one cluster. When the query is presented to the
+system, it only searches within the relevant cluster or within the
+vector space that’s related to that particular topic. So, those term
+vectors are compared for similarity. As long as the documents within
+each cluster accurately represent the subject of the information
+objects, then the search will be successful.
 
 There are some search engines, for example Clusty, that use clustering
 as its retrieval mechanism.
@@ -1026,7 +1026,7 @@ as its retrieval mechanism.
 
     ![](images/clipboard-1809129871.png){width="500"}
 
-:::notes
+::: notes
 Read slides
 :::
 
@@ -1050,19 +1050,18 @@ Read slides
 ::: notes
 There are other IR models that were developed beginning in the sixties,
 but they really came into fruition in the nineties and in 2000s. One of
-these is are the
-semantic or linguistic model. 
+these is are the semantic or linguistic model.
 
 It’s a really complicated model. An example of systems that are using
-such model is Ask.com, the search engine. For the most part, it’s not used in
-a lot of commercial systems because it uses a lot of computing power,
-though that isn’t as much of an issue as it used to be, but it’s also
-subject to the foibles of human language.
+such model is Ask.com, the search engine. For the most part, it’s not
+used in a lot of commercial systems because it uses a lot of computing
+power, though that isn’t as much of an issue as it used to be, but it’s
+also subject to the foibles of human language.
 
-Semantic or linguistic models attempt to get at the
-concept levels, rather than the word levels, contained in the
-information documents or their surrogates. It is accomplished at
-various different levels depending on the system. Some systems using natural langauge model (NLP)
+Semantic or linguistic models attempt to get at the concept levels,
+rather than the word levels, contained in the information documents or
+their surrogates. It is accomplished at various different levels
+depending on the system. Some systems using natural langauge model (NLP)
 do a syntactic analysis, where the system is looking at the meaning, or
 trying to extract the meaning of sentences, or even at the paragraph
 level if they’re doing paragraph indexing. Also, the system may be using
@@ -1083,7 +1082,7 @@ opposed to being able to search everything like you can with Google.
 
 ## Newer IR Models {.smaller}
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   User Profiles
 
@@ -1105,19 +1104,19 @@ opposed to being able to search everything like you can with Google.
 ![Example of Conversational Retrieval
 System](images/clipboard-1471905613.png){fig-align="center"}
 :::
-:::
+:::::
 
 ::: notes
-There are also some other, newer IR models that emerged in the
-70s, and now in the 90s with the web, and even in
-2000s with the use of, for example, user profiles that we see in
-Bing. Bing tracks what its users do and assembles profiles based upon
-the heuristics of the user searching and the whole search process when
-they’re using the Bing search engine. So, it uses what are called
-heuristics, or rules of thumb, basic rules that are present in the
-majority of search experiences. Bing also uses what are called process
-models, where the search engine looks at the entire process and tries to
-develop generic process models for users within the Web environment.
+There are also some other, newer IR models that emerged in the 70s, and
+now in the 90s with the web, and even in 2000s with the use of, for
+example, user profiles that we see in Bing. Bing tracks what its users
+do and assembles profiles based upon the heuristics of the user
+searching and the whole search process when they’re using the Bing
+search engine. So, it uses what are called heuristics, or rules of
+thumb, basic rules that are present in the majority of search
+experiences. Bing also uses what are called process models, where the
+search engine looks at the entire process and tries to develop generic
+process models for users within the Web environment.
 
 Also coming out of the seventies and eighties is the idea of intelligent
 agents. These were, and still are, little software programs that are
@@ -1182,24 +1181,33 @@ research papers).
     them to generate accurate answers!**
 
 ::: notes
-With the recent advancement in generative AI, we can use large language models for information retrieval.
+With the recent advancement in generative AI, we can use large language
+models for information retrieval.
 
-LLMs are trained on massive datasets, but once training stops, their knowledge is frozen in time. So, if something happens after their last update, like a new scientific discovery, they have no idea about it and they start hallucinating. 
+LLMs are trained on massive datasets, but once training stops, their
+knowledge is frozen in time. So, if something happens after their last
+update, like a new scientific discovery, they have no idea about it and
+they start hallucinating.
 
-Hallucination is defined as when a model generates something that sounds convincing but isn’t actually true. This is a big problem in applications like medicine or law, where accuracy is crucial.
+Hallucination is defined as when a model generates something that sounds
+convincing but isn’t actually true. This is a big problem in
+applications like medicine or law, where accuracy is crucial.
 
 So, how do we fix these issues? That’s where RAG comes in!
 
-Instead of just relying on pre-trained knowledge, a RAG model first retrieves relevant information from an external source—like a database, Wikipedia, or even real-time web searches—and then generates a response using that data.
+Instead of just relying on pre-trained knowledge, a RAG model first
+retrieves relevant information from an external source—like a database,
+Wikipedia, or even real-time web searches—and then generates a response
+using that data.
 
 This means RAG models are:
 
-- More up-to-date: Because they pull in fresh, external knowledge.
+-   More up-to-date: Because they pull in fresh, external knowledge.
 
-- More accurate: Since they ground their responses in retrieved facts.
+-   More accurate: Since they ground their responses in retrieved facts.
 
-- Less prone to hallucination: Because they verify information before generating text.
-
+-   Less prone to hallucination: Because they verify information before
+    generating text.
 :::
 
 ## How Does RAG Work?
@@ -1221,15 +1229,18 @@ the results)*
 \[Reason\]."*
 
 ::: notes
-This slide an example of searching information using RAG. 
+This slide an example of searching information using RAG.
 
 But RAG is still not perfect. The biggest challenges are:
 
-1. **Retrieval quality**: If the system fetches bad or irrelevant information, the response will also be wrong.
+1.  **Retrieval quality**: If the system fetches bad or irrelevant
+    information, the response will also be wrong.
 
-2. **Latency**: Searching external sources takes time, which slows down response generation.
+2.  **Latency**: Searching external sources takes time, which slows down
+    response generation.
 
-3. **Security & Privacy**: Some sources might not be reliable, or the model could pull sensitive data.
+3.  **Security & Privacy**: Some sources might not be reliable, or the
+    model could pull sensitive data.
 :::
 
 ## IR systems You Use
@@ -1344,13 +1355,12 @@ searched, or indexed. Each of these elements of system structure are
 going to impact how you’re going to conduct your search queries but also
 how effective retrieval will be.
 
-In the second part of this week's lecture, we’re going to dig deeper and talk about some
-different search strategies and features you can use to make searching
-even more precise.
+In the second part of this week's lecture, we’re going to dig deeper and
+talk about some different search strategies and features you can use to
+make searching even more precise.
 
 This is the end of this lecture on information representation within the
 information retrieval arena. Now you should proceed to the optional
-lecture that will teach you more about searching and
-different search strategies that you might employ to become better
-searchers.
+lecture that will teach you more about searching and different search
+strategies that you might employ to become better searchers.
 :::
