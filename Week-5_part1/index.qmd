@@ -1,0 +1,1199 @@
+---
+title: "Systems and Structures for Organizing Information"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+-   This week, we will examine different systems and how they are
+    designed.
+
+-   We will look at ways in which we evaluate IR systems.
+
+-   Also, you will be learning more about how system design
+    affects/impacts retrieval by users.
+
+-   Keep in mind that a user-centered system should be based on what we
+    know about how users search for and use information sources.
+
+-   Think about **HOW** systems elements, metadata schemes, interfaces
+    either enable or inhibit effective retrieval.
+
+::: notes
+In last module, we talked about users and information seeking studies and
+information behavior research– different ways in which our field and
+other fields have modeled users.
+
+This week, we’re going to talk about information systems and
+databases, database design, and database modeling. We’re going to look
+at information systems from a basic system analysis perspective. I’m
+going to introduce you to some terminology, so you can better understand
+the vocabulary you may encounter in the readings.
+
+We will not be getting into in-depth database design or system analysis
+in this module and will cover these topics on a very general level. If
+you are interested in these topics, I recommend you to enroll in LIS
+4683 Database Design for Information Organization course!
+
+But for this class, it’s important for us to understand how systems are
+structured and how that impacts some of the choices we make when we
+design our own systems or when we create representations within those
+systems.
+
+You will also learn more about systems in LIS 5063 Fundamentals of
+Information Technology. However, the data modeling that we will do in
+this lecture and in the accompanying lecture will give you a jump start
+in developing information systems.
+
+So, in this module, you’re going to be examining some different systems
+and how they’re designed. You’re going to be looking at different
+automated library systems. You’ll be looking at some digital library
+systems, and then using these different systems and evaluating them from
+a user’s perspective.
+
+You also are going to be learning more about how system design affects
+and impacts retrieval by our users. You will consider how the choices we
+make when we’re setting up a database can impact the search and
+retrieval of our users.
+
+I also want you to keep in mind that a user-centered system should be
+based on what we know about how users search for and use information
+sources. As you’re going through this part of the module, think about
+the last module and the information seeking studies that you encountered
+and learned about and the different models that LIS researchers have
+developed based upon how users interact with different systems.
+
+I also want you to think about how systems’ elements, or the different
+aspects within the system, the different features, and the metadata
+schemes and the interface features either enable or inhibit effective
+retrieval.
+:::
+
+## Information Systems
+
+`An information system comprises a set of resources for collecting, managing, and providing access to information`
+
+-   These resources may involve:
+    -   manual technologies
+    -   automated technologies
+
+::: notes
+To begin, a very basic definition of an information system is “an
+information system comprises a set of resources for collecting,
+managing, and providing access to information.”
+
+And these resources may involve manual technologies and automated
+technologies.
+
+So, we’re not just thinking about an online database when we’re talking
+about an information system.
+
+We could be talking about file cabinets in your office, or we could talk
+about file folder systems within a human resources department. All of
+these are different kinds of information systems.
+:::
+
+## Information Containers and Content
+
+-   Information in an information system is in some tangible form -- we
+    can manipulate it
+
+-   Information objects have two aspects:
+
+    -   `Information container`: [physical embodiment of
+        information]{style="color: orange;"}
+    -   `Information content`: [intellectual contents of information
+        object]{style="color: orange;"} recorded in some fashion
+
+-   Many information systems utilize representations or surrogates of
+    the information objects
+
+-   The surrogates are what get manipulated in most cases, but with Web,
+    digital libraries, etc. we now access the object as well
+
+::: notes
+We can also categorize information into two different buckets
+--containers and content–- we’ll revisit this idea several times
+throughout the semester.
+
+Information in an information system is in some tangible form, meaning
+that we can manipulate it, we can organize it, we can move it around or
+change it if necessary.
+
+*'In some tangible form'*, means it can be in any form of object,
+virtual, electronic, digitized, print–doesn’t matter. The information is
+also what Buckland calls *“information as thing”* in the Buckland
+reading.
+
+Information objects have two very basic aspects. They deal with the
+container aspects, or the physical aspects, of the information but they
+deal with the aspects of the object that describe the physical object
+rather than the other component, which is the content.
+
+When we talk about information content in libraries and information
+science, we deal with the intellectual content, or what the object is
+about. In other words, what subject or representation of the author’s
+ideas has been recorded in some fashion within the object.
+
+So, we have two buckets. We have a bucket for the **container aspect**
+and we have another bucket for the **content aspect**. In a few minutes
+we’ll talk about what would be included in each of those different
+areas.
+
+Many information systems utilize representations to connect users with
+the objects. For example, a library card catalog, whether it’s in a
+print form in a set of drawers or it may be an online catalog, you’re
+actually accessing a representation of an object rather than the object.
+
+So, a MARC catalog record or a library card catalog record are
+representations, or surrogates, of the object–not the actual object.
+
+However, with the Web and digital collections, we now can access more
+than just the surrogate; we can access the object.
+:::
+
+## Systems and Systems Thinking
+
+-   `System`: Consists of a number of components working together to
+    achieve some purpose
+-   Two important aspects
+    -   interacting components/subsystems
+    -   purposeful
+-   System concepts
+    -   Inputs
+    -   Transformation processes
+    -   Outputs
+    -   Feedback
+
+::: notes
+Now, when we think about systems from a system analysis perspective, we
+drill down to the different components of a system. A system is defined
+as “*consisting of a number of components that work together to achieve
+some purpose.”* And again, this doesn’t just have to apply to technical
+systems only; this concept can apply to any kind of a system.
+
+For example, in a school's science textbook, the authors describe how
+organisms must align with their environment for the ecosystem to
+function properly. I hadn't considered it as a system before, but
+suddenly, it clicks—like a lightbulb turning on.
+
+In library and information science the system we’re most concerned about
+is an information retrieval system, or even a library integrated system.
+They have different components that work together to achieve a purpose,
+or a set of purposes.
+
+Systems have different inputs, transformative processes, outputs, and
+feedback.
+:::
+
+## Four Components of an Information System
+
+![](images/1.png){fig-align="center"}
+
+::: notes
+An information system is an socio-technical system comprised of two
+sub-systems: a technical sub-system and a social sub-system.
+
+The technical sub-system encompasses the technology and process
+components, while the social sub-system encompasses the people and
+structure components.
+:::
+
+## Structure of Information System
+
+![](images/clipboard-2640168974.png)
+
+::: notes
+For instance, this is a model of the components of a system.
+
+The system has input from one side–people with problems and resulting
+information needs.
+
+On the other side, the system has input that’s created by a cataloger or
+an indexer, where information professionals describe or create
+surrogates of the objects in the collection.
+
+These representations are put into an information system, there’s a
+transformative process, or a retrieval matching process, and the output
+is information given back to the user that hopefully matches those two
+inputs.
+
+So, from a systems perspective, an information system has one or more
+goals and objectives to perform.
+:::
+
+## Information System As a *System*
+
+-   Considered from a systems perspective, an information system has:
+    -   one or more goals and objectives
+    -   an environment
+    -   resources available to the system
+    -   processes or system components
+    -   management
+-   One system may be a subsystem for another system
+    -   library system as subsystem in university system
+    -   library catalog as subsystem in library system
+
+::: notes
+A system exists within a specific environment, and it has specific
+resources allocated for its purposes. It has different processes and
+system components, and there’s always some kind of a management
+component–something that pulls everything together and makes sure the
+system works efficiently.
+
+But again, these components will be different depending on the
+environment, depending upon the system , and the goals and purposes of
+that system.
+
+Now, we can think of systems at many different levels, and they can also
+be part of a subsystem, meaning that a library is a subsystem in your
+university system or in your community–in your city or your county.
+
+A library catalog is a subsystem in a library system. And even within
+our catalog there are different subsystems, such as circulation
+components, reference components, cataloging components, personnel
+components, etc., all within one integrated library system. All of these
+components work together to achieve particular purposes or goals.
+:::
+
+## Functions of Information Systems
+
+-   Selection
+-   Collection
+-   Storage
+-   Document Analysis & Representation
+-   File Organization
+-   Search Strategy & Retrieval
+-   Service/Dissemination
+
+::: notes
+There are several functions for information systems. They can be used
+for selection purposes in the case of the library catalog. A user does
+some searching, finds a set of records, and selects items they find
+useful.
+
+Systems can be used for collection purposes. They can illustrate and
+help us organize collections of items. They can be used for storage
+purposes. We store records of various different kinds. Systems can be
+used for document analysis and representation.
+
+Our library catalogs can provide very useful information with reporting
+features. You can generate reports based on classification areas so you
+can weed your collections. The reports can be used for all kinds of
+different analyses. Systems can be used for file organization. And they
+can be used for search and retrieval, and service and dissemination.
+
+So, these are just a few functions that come to mind right now of
+information systems, and I’m sure you can think of others that you’ve
+encountered with different systems you’ve used.
+:::
+
+## Information Retrieval Systems
+
+-   `Components`
+    -   `Interface` - to allow user to communicate with system
+    -   `Database` - to store representations or info objects
+        -   text
+        -   images
+        -   numeric data
+    -   `Matching Component` - to match representations
+
+::: notes
+What we focus on in library and information science, as well as in this
+class, are information retrieval (IR) systems. Within an IR system,
+there are different components. The system has an interface, which
+allows our users to communicate with the system. The user has to know
+the language of the system–has to understand the messages that come back
+and also how to input information within the system.
+
+A system has a database behind the interface, and this is where the
+system stores the representations of our information objects.
+Information objects are not just necessarily textual based; they can be
+images, they can be sound files, they can be numeric data. Any kind of
+object we can house in our library, we can create a representation for.
+
+Also, an IR system has what is called a ‘matching component.’ This is
+the algorithms behind the scenes that make the information retrieval
+function work. The algorithms match the user’s search terms with the
+terms we’ve put in our library records or within our surrogates.
+:::
+
+## Database Terminology
+
+-   `Database`
+    -   Storage mechanism for data
+    -   Collection of logically related data
+-   `Database Management System (DBMS)`
+    -   Software for managing storage, organization, and retrieval of
+        records from datbase
+    -   Provides for creation and maintenance of one or more databases
+    -   Examples: Oracle, Access, dBase, MySQL
+
+::: notes
+Now let’s talk about databases. We’re going to examine the electronic
+kind of system that we use in libraries, that is behind the internet, or
+that is behind a lot of retrieval systems that we use today. A database
+is basically a storage mechanism for data. It has a collection of
+logically related data.
+
+A database doesn’t have to be electronic. It can be a phone directory.
+Think about it. A phone directory gives you information about people. It
+gives you their names, their address, their phone number, right? And the
+next record in the phone book gives you exactly the same kind of
+information but for a different person or entity.
+
+So, it contains logically related data about a particular set of
+individuals. It also provides business information and phone numbers for
+different businesses within a community. So, we can think of a database
+as being a phone directory. We can also about a file cabinet and all of
+its various different file folders as being a database–though if you
+look in my file cabinet, you would not see any kind of order at this
+point. It wouldn’t be a very logically related database.
+
+We are going to focus mainly on the electronic database. There’s some
+terminology I want to introduce to you as we go along.
+
+The first of those terms is what is called a ***‘Database Management
+System,’*** or a DBMS. The Bell readings give you some really nice
+examples and common language descriptions of various different kinds of
+databases that are available.
+
+But a database management system or DBMS is software that we use for
+managing, storage, organization, and retrieval of records from
+databases. It provides for the creation and the maintenance of one or
+more databases. A couple of proprietary examples would be Oracle and
+Microsoft Access; while MySQL would be an example of an open source
+DBMS.
+:::
+
+## Database Design
+
+-   Three Levels/Stages of Design as Models
+    -   Conceptual Model
+    -   Logical Model
+    -   Physical Model
+-   From conceptualization to actual implementation
+
+::: notes
+Database design involves what is called **‘data modelling’** or the
+process one engages in through the three stages of creation of a
+database structure or a metadata schema.
+
+In the database modelling process there are three different levels or
+stages that one works through – the conceptual model, the logical model,
+and the physical model.
+
+So, when we’re modeling a database generally you could be working with a
+group of people and have large pieces of paper out and modeling the
+whole structure of a database.
+
+But you go from a conceptualization of what needs to be modeled and how
+to represent the items that you need to describe in the modeling, to the
+actual implementation of your model within a database management system.
+
+So, let’s look at each of these stages individually.
+:::
+
+## Conceptual Level/Model {.smaller}
+
+-   `Conceptual Level`
+    -   Abstract view of real-world objects, processes or activities
+        relevant to users
+    -   Geared toward representations of entities and relationships
+-   `Entities`
+    -   Distinct types of objects, bodies, agents
+-   `Attributes`
+    -   Characteristics or properties of entities
+-   `Relationships`
+    -   Meaningful associations between entities
+
+::: notes
+At the **conceptual level,** this is where we start thinking about the
+collection; we start thinking about the objects in our collection. And
+we think about real world processes and activities that are relevant to
+the users of our particular collection and of the system we’re creating.
+
+So, if we’re creating a human resources database for a corporation,
+we’re going to think about who would use this system–probably the people
+in HR, possibly the people in your company. What would some of your uses
+be? Well, to look up individual personnel records, to look at profiles,
+to look at employment history.
+
+At the Conceptual level you start brainstorming about all the potential
+uses and users of a particular system. And you also try to get a really
+good idea of the different objects that are going to be present within
+that system or that collection.
+
+This level is geared more to representations of what we call entities
+and relationships. Now, an **‘entity’** can be defined as a distinct
+type of object, body, or agent–something that we’re representing within
+a system.
+
+**Attributes,** then, are very general characteristics or properties of
+the entities. So, if we’re working with a collection of books, the books
+themselves are the entities within our collection that we’re going to
+represent in some fashion. The attributes, then, are what we know–what
+the general characteristics are about those particular books. We’re
+going to come back to this in just a minute.
+
+And then we start to model the different relationships that exist within
+and between the different entities.
+:::
+
+## Information Object Model
+
+![](images/2.png){fig-align="center" width="60%"}
+
+::: notes
+Here is a book. It represents the potential objects in our collection.
+It has a set of attributes. It has one or more creators associated with
+it. It has a name. It has one or more subjects. These are general
+characteristics or attributes of an object. Now, those attributes
+dealing with creator or name go into the physical container bucket.
+Those attributes dealing with subject go into the content or
+intellectual content bucket. So, we’re representing both sides of our
+basic structure in a representation by showing container and content
+attributes of an object.
+
+This is just a basic example of how this would work. You obviously can
+think of other attributes that would be important to represent books
+within a collection.
+:::
+
+## Logical Level/Model
+
+-   Geared towards representation of entities as data
+-   `File`: collection of similarly structured records
+-   `Record`: basic unit within a file
+    -   Set of related data items, or information units
+-   `Field`: logical unit within a record
+    -   Spaces to receive data
+-   `Data`: information entered in fields
+-   `Data Value`: specific data entered in a field
+
+::: notes
+The second level is the **logical level;** this level is concerned with
+representation of entities as data within our system. At this level or
+stage we start setting up a field structure based upon the attributes
+we’ve identified.
+
+First, let’s introduce some more terminology relevant to this level.
+
+A **‘file’** is considered a collection of similarly related records, or
+similarly structured records, meaning that the database has a file and
+within that file it contains the same data for every entity in our
+collection.
+
+A **‘record’** is a basic unit within a file, and it has a set of
+related data items or information units. We have, again, very similar
+logically related data elements within a record. All of our records
+within our file contain the same elements. Then, within the record,
+there is a set of fields, and this is a logical unit within a record.
+The fields are the spaces that receive the data or where a
+cataloger/indexer records the data.
+
+The **‘data’** is the information that we enter into each of the fields.
+You might also hear data referred to as a ‘data value’ or even a
+‘value.’ It’s the specific data entered into a field.
+:::
+
+## Logical Model Example
+
+![](images/3.png){fig-align="center" width="80%"}
+
+::: notes
+So, for example, the database has a file. It contains four
+records–though this is a really small system with only four records.
+Within each of those records there is a similar structure. There are
+three fields–Title, Author, Subject,–but these fields are present in
+every record.
+
+And then I put in one data value, ‘Twain,’ in the Author field in one
+record, which is one aspect of this particular item represented within
+our record. So, for this object, for this book, the author is Twain. We
+would also fill in the title and the subject and then we would have a
+completed record within this system structure.
+:::
+
+## Parallel Concepts
+
+::: columns
+::: {.column width="30%"}
+-   `Real life`
+    -   Collection
+    -   Book
+    -   Author
+:::
+
+::: {.column width="30%"}
+-   `Conceptual`
+    -   Set of Entities
+    -   Entity
+    -   Attribute
+:::
+
+::: {.column width="30%"}
+-   `Logical`
+    -   File
+    -   Record
+    -   Field
+    -   Data value
+:::
+
+*The Organization of Information*
+
+*Arlene G. Taylor*
+:::
+
+::: notes
+Let’s look at the data model from another perspective. In real life we
+have a collection. At the conceptual level, we have a set of entities.
+Okay? Our collection represents a set of entities. At the logical level,
+those entities are then represented within a file in our system. In real
+life we have a book; that’s the entity .
+
+It’s represented in one or many records within a database. We have a
+creator or an author; this would be considered an attribute. It’s
+represented within one field, but could potentially be in many fields,
+within our system. And then the last entry on the slide, ‘The
+Organization of Information’ ‘Arlene G. Taylor,’ would be data or a data
+values within specific field(s).
+:::
+
+## Physical Level/Model
+
+-   Geared toward details of physical database implementation
+
+-   Includes specifications for fields, data, file organization and
+    access, etc.
+
+-   Applies only to specific database
+
+    -   Conceptual and logical models may be implemented in different
+        DBMS
+
+::: notes
+The third level is the **Physical Level.** This level is geared towards
+determining and setting up the details of physical database
+implementation.
+
+At this level we define each of the fields and the types of information
+they can include, any kind of structural exclusions that we want to
+make, and any kind of validation that we want to make as well.
+
+So, we start looking at specifications for each field, such as data
+type, file organization, and accessibility, etc. These specifications
+usually only apply to the specific system you’re designing.
+
+So, when you’re at this level, you’re thinking about how you’re going to
+implement the system within your database environment or DBMS.
+:::
+
+## Database Schema
+
+-   Defines a database’s structure
+-   Identifies details about the DB record:
+    -   fields
+    -   datatypes
+    -   value constraints
+-   Moves closer to the physical structure of the actual database
+    implementation
+
+::: notes
+The outcome of the physical level in the data modeling process is the
+creation of what is called a **‘database schema.’**
+
+The database schema defines the database’s structure; it determines very
+specific details about that particular database, which may be very
+different than other databases.
+
+It identifies details about the database record, in terms of what fields
+are part of the record, and what data types will be captured within each
+of the fields.
+
+So, for example, the designer would decide if the Author field is a text
+field. OR is it a field that will hold an image file or some other type
+of data?
+
+We also make decisions at this point about what are called ‘value
+constraints,’ and we’ll talk about those in just a few moments. But the
+database schema moves us closer to the actual physical structure of the
+database implementation.
+:::
+
+## Record Structure
+
+-   Record structure reflects the needs of the data model
+-   Attributes become structured into one or more fields
+-   Specifications for each field determined
+    -   Fixed length or variable length
+    -   Type of data in field
+    -   Required, multiple entry
+    -   Content validation
+
+::: notes
+At this point in the process, we have now what is considered the
+**‘record structure.’** The record structure reflects the needs that we
+interpreted based on the collection and the users that are now part of
+our data model. For example, you’ll see that your attributes now become
+structured into one or more fields as we looked at earlier.
+
+We also have to decide on what are called ‘specifications’ for each
+field at this point. We look at whether or not a field is of a fixed
+length or of a variable length, meaning that we set the limit of the
+amount of characters that can be included in that field. Or if we allow
+it to be a variable length field, it means that from one record to
+another record that length of characters in that field can vary.
+
+We also decide about the type of data that will be in the field as I
+mentioned a few minutes ago. We determine if it’s a text field, an image
+field, a numeric field, or if the field will hold some other type of
+data.
+
+We also make decisions about whether it’s a required field, meaning that
+there always has to be a value entered into that field or you will not
+be allowed to save the record. Then another additional decision would be
+whether it’s a multiple entry field, or if that field can have more than
+one value within it. And then lastly, we make decisions about content
+validation, or whether or not we have a prescribed set of content that
+can be listed within the database field.
+
+In the next few slides we’ll discuss each of these decisions in more
+depth.
+:::
+
+## We Make Decisions About ...
+
+-   `File type`: type of data that goes into a field
+    -   Text, image, numeric
+-   `Entry validation`: controls number of entries in field
+    -   Required, unique, single
+-   `Content Validation`: limits data values that can be input in field.
+    Often requires creation of list of authorized terms
+    -   Content validation list, controlled vocabulary, natural language
+
+::: notes
+So, at this point we make a lot of decisions. We make decisions about
+file type. We have to look at what kind of data goes into each field. Is
+it a text field, is it an image field, does it contain numeric data,
+does it contain a sound file? We have to assign this data type, or file
+type to each field in our system. But when we’re conducting data
+modeling, we have to also sketch this out as well.
+
+We make decisions about what’s called ‘entry validation.’ This is where
+we control the number of entries in a field. First of all, we have to
+decide “Is this field a required field?”–meaning that we always have to
+have a value in that field, or the system won’t save your record. There
+are very few fields that are actually required in systems, though if you
+have like an automatic ID number or something like that, that’s always a
+required field.
+
+You have to decide if the value in that field is a unique value to that
+field within that system. And you have to decide how many entries can
+actually be input within that field. Is it a single value or a multiple
+value field?
+
+We also make decisions about what’s called ‘content validation.’ This is
+where we can limit data values that can be input in the field. Now, in
+some systems you’ve seen a dropdown box or list when you’re searching
+that provides you with different types of publication or different
+formats. That’s an example of what might be content validation in the
+sense that you can only choose from those values for doing your
+searching. We can do the same thing when we’re setting up a field in a
+database.
+
+If, for example, we have a Format field in the database and we want to
+decide exactly how those formats will be entered, we would add a content
+validation list, meaning that we restrict the form of the word or
+content in that field.
+
+For example, if there are many different ways to spell out
+‘DVD’–capitalized or not? –same with CD-ROM, we decide ahead of time the
+form of the word or the terms that are allowed in the field That way we
+have consistency in records, and it’s also a nice shortcut for the
+person creating the record because they just have to choose from a
+dropdown list. That’s an example of what we call ‘content validation.’
+:::
+
+## We Also Make Decision About ...
+
+-   `Indexing`: adding values to the fields using specific criteria and
+    rules, deciding if a field is searchable or not
+    -   Indexing a field makes it a searchable field in the system
+    -   A searchable field is considered an **access point** through
+        which users can access the data in the fields of the records
+
+::: notes
+We also make decisions about indexing. Now, indexing is probably one of
+the overused terms in our field and in information science as well;
+indexing has many different definitions depending on the purpose. In a
+database environment, when we say that we’re indexing something, that
+means we’re making it a searchable field. We’re instructing the system
+to index that field. And then, behind the scenes, the system creates a
+separate index for that field with all the values you put into that
+field. I’ll show you an example of an inverted index in a minute.
+
+Now, in other contexts, indexing can mean subject representation; it can
+mean putting subject terms into a subject field in a database.
+
+So, at this point, we’re talking about indexing in the sense that we’re
+making it a searchable field in our system, and therefore, what we call
+an access point to our users.
+:::
+
+## Indexing {.smaller}
+
+-   `Indexing`: Process of creating index for purpose of representing
+    and providing access to information objects
+
+    -   May be performed by humans or computers
+    -   Determines how system searches field
+
+-   `Index Entry`: Any pointer or indicator included in an index
+
+-   Some choices:
+
+    -   `Word`: indexes and searches field by single words separately
+    -   `Term/phrase`: indexes and searches field by complete entry, all
+        words together
+    -   `Combination of Word/Phrase indexing`
+
+::: notes
+**‘Indexing’** is defined in most contexts as the process of creating an
+index for the purpose of representing and providing access to
+information objects. It can be performed by humans–say if we’re creating
+a back of the book index or if we’re indexing a record in an online
+database–or it can be done automatically by computers. The computer
+generates the inverted index or the field specific index that is behind
+the database. The `index entry` contains two components:
+
+1)  a ‘pointer,’ usually the record ID of the record that contains the
+    term or phrase, which directs the system to the record that includes
+    the specific term, and
+
+2)  the word or phrase (called the index term), that is the data or
+    value extracted from that field in each record. In the back of the
+    book index, the pointer would be the page number(s).
+
+The ‘indexing term,’ can be any word or phrase used for physical or
+subject description within the database fields. It can also be any word
+or phrase that a user inputs into a system to use for a search to
+retrieve documents. So, we use the term “indexing term” interchangeably.
+An ‘index term’ may also describe any attribute of the document, meaning
+it can be a value related to Author, Title, Year, Subject , etc.
+
+So, indexing a field in a database, determines whether or not a field is
+searchable in the system, as well as how the values in the field are
+extracted and added to the inverted index.
+
+There are two specifications a database designer will decide upon when
+setting up how a field will be indexed: Word and Phrase indexing.
+
+‘Word indexing’ means that the field’s index is indexed and searched by
+single words separately. Every word you enter in a field is then set out
+separately in your index record.
+
+If you set the field as ‘term or phrase,’ indexed that means the entry
+in the field is kept together as a phrase, at least as good as the
+system can determine that it’s a phrase. So, sometimes when a search
+results return hits that do not seem to match the query, this may be due
+to the indexing algorithm parsing apart an entry we meant to be a
+phrase.
+:::
+
+## Indexing Specification
+
+**Indexing Example**
+
+::: columns
+::: {.column width="50%"}
+-   `Phrase Index`
+
+    -   Complete User s Guide
+
+    -   Product Guide
+
+    -   Reference Manual
+:::
+
+::: {.column width="50%"}
+-   `Word Index`
+
+    -   complete
+
+    -   guide
+
+    -   manual
+
+    -   product
+
+    -   reference
+
+    -   s
+
+    -   user
+:::
+:::
+
+::: notes
+Here are some examples. Under the heading Phrase indexing: the inverted
+index would include the phrases ‘Complete User s Guide’–notice our
+punctuation has been stripped out. Systems doesn’t usually deal with
+punctuation–‘Product Guide,’ ‘Reference Guide.’
+
+And then under the heading Word Index, the inverted index would include
+‘complete,’ ‘guide,’ ‘manual,’ ‘product,’ ‘reference,’ ‘s,’ and ‘user’
+set out separately. Now, how an inverted index is constructed can really
+impact retrieval if you’re searching by a word-by-word or phrase indexed
+field because you can end up with some really strange results based upon
+how you structure your search query.
+
+But again, determining if a field is searchable or indexed, and the type
+of indexing, are choices we make when designing a database. We have to
+decide if we’re going to have a word or a phrase indexed field, and
+oftentimes we can do both.
+:::
+
+## Index File as Access Method
+
+> **Index File**: ordered (inverted) list of data entries drawn from one
+> field in record
+
+-   Each index entry contains pointer to its record\
+-   Index is specified during database creation
+-   Index entries are added automatically by database as data are
+    entered in record fields
+-   Index file is linked to main file that contains records
+
+::: notes
+So, to recap, an index file is an ordered or inverted list of data
+entries drawn from one field in the record.
+
+So, we may have an author index, a title index, and/or a subject index
+if we decided those fields would be searchable.
+
+Each index entry contains a pointer to a record, usually to the record
+ID. The index is specified during the database creation.
+
+Index entries are added automatically by the database as data are
+entered into the record fields, or some systems will compile or re-index
+as a backup process at a scheduled time. The Index file is then linked
+to the main file that contains the records that you’re creating.
+:::
+
+## Filing Order Specifications
+
+`Index Specifications`:
+
+-   Word by word: not letter by letter
+-   Ignore leading articles: *a, an, the*
+-   *Ignores stop words*
+-   Numbers file numerically: not alphabetically
+
+::: notes
+Okay, on the previous couple of slides we looked at how an inverted
+index works behind the system and how your query terms are connected to
+the terms that are in the inverted index or indexes, depending on how a
+system is set up, for the different fields.
+
+So, let’s talk now about some other additional index specifications,
+such as file ordering. These still remain important today even in full
+text systems, or full text IR systems, but they’re not quite as
+important as they used to be in flat file databases. We do, of course,
+have to specify when we create an index for a specific field whether we
+want it word-by-word or phrase-by-phrase, or our phrase index field.
+
+But we also have to talk about things like ignoring leading articles,
+such as a, an, and the, or how the system will treat these when
+searching or sorting records. The main reason for this is not searching,
+but how the records are displayed back to our users.
+
+So, we generally have within the index specifications that the field and
+the inverted index ignore the leading articles; basically, it just
+strips them out of a record. It also allows us to set up stop words.
+‘Stop words’ are common words that are used repeatedly within systems
+that have very low value, so they’re stripped out.
+
+They are words like prepositions; they’re words that are used so often
+that they lose any kind of retrieval value for a system. And so, stop
+words are generally ignored by a system. It’s a good idea as a searcher
+to see if you can locate the stop word list for a particular system,
+then you know to leave those words out of your query.
+
+Also, systems number files numerically, not alphabetically unless you
+can change the default. So, again, file order specifications are not as
+important for searching, though in terms of stop words and leading
+articles, they do impact the query terms that you enter in a system. But
+they’re also important instructions to the system on how to display the
+results back to the users.
+:::
+
+## So What?
+
+-   Database specifications tell the system ...
+    -   What types of data it contains
+    -   How to find data and records to retrieve
+    -   How to sort data
+-   Without specifications ...
+    -   Every field would accept every kind of data
+    -   Meaningful operations (e.g., calculations) could not be
+        performed on data
+    -   Retrieval would be slower and less effective
+
+::: notes
+So, why is it important to understand how a system is set up and the
+decisions a designer makes?
+
+The database specifications we mentioned earlier are instructions that
+we’re giving to the system. They tell the system about each individual
+field and the type of data that it contains so that the system can then
+know how to act on that data. It tells the system how to find data and
+records to retrieve by searching inverted indexes instead of a
+sequential search used in earlier systems. And it tells the system how
+to sort data.
+
+When we start looking at MARC records, we’ll parse these concepts apart
+even further because MARC records still include delimiters and subfield
+codes, numeric or character codes, which are instructions to a system
+telling it how to parse the values within the fields.
+
+So, even though these processes seem old, leftover from earlier days,
+they really are still very important to system functions. Without
+specification, every field would accept every kind of data. It would
+accept numeric data, text data, or image data.
+
+So, you have to set your field up and specify to the DBMS what type of
+data should be recorded in that field. Also, again, as I said,
+meaningful operations cannot be performed on the data unless the field
+specifications have been set up. And, of course, this will impact
+retrieval; retrieval will be slower and less effective because the
+system won’t know how to treat the data in each of the fields.
+:::
+
+## How Does this Relate to Retrieval?
+
+-   How do we get the data out of the database?
+-   The organization of records within a file holds the key!
+-   Some methods in finding location of record:
+    -   Sequential search of records in the file (old method)
+    -   Inverted index (most common)
+    -   Full text algorithms (common in many systems)
+-   For bibliographic records, we often have multiple inverted indexes
+    -- provides for searchable fields.
+
+::: notes
+How is this related to information retrieval or to the organization of
+information? The organization of records within a file is really the key
+to how information is accessible for the users. You will recall one of
+the specifications we have to decide about is whether or not a field is
+indexed. If you’ve indexed a field, then that field is searchable. So,
+organization of those records is really the key to retrieval.
+
+There are different methods that have been used in the past and those
+that are more common today for finding information within your records.
+In the past, it was a sequential search of records in the file.
+
+So, it would search every record in every field in every file, and as
+you can guess, that would take a very long time to retrieve information
+and to bring records back for the users.
+
+We have just discussed how an inverted index is created. And in a few
+minutes, I’ll show you an example of how the process of searching an
+index works. An inverted index within a relational database environment
+is the most common form of retrieval, though this is shifting now to
+more full text algorithms that search the entire text of the text fields
+in you document, well usually what is actually searched is the first 245
+significant characters; however, this is shifting now also as system
+algorithms become more powerful. So, it’s becoming more common to have
+full text searching in systems as well as inverted index searching.
+
+In bibliographic records we often have multiple inverted indexes which
+provides for many searchable fields. So, when you search in a library
+card catalog and you search within the Author field or the Title field,
+you are indeed searching the inverted index for that field. So, instead
+of searching every field in every record of that database–of the library
+catalog database,–you’re searching only those fields that you have
+chosen.
+:::
+
+## Index File Example {.smaller}
+
+![](images/clipboard-957459592.png){fig-align="center" width="50%"}
+
+Record structure: RecordID = key (linking) field
+
+::: notes
+Let’ look at an example of how searching an inverted index works.
+
+Here’s an example. This is an example of a basic representation in a
+card catalog record. There are four fields. There is a record ID, which
+tells the user “this is the ID for this record in this system.”
+
+There are also Title, Author, and Subject fields. The record ID system
+in most databases is generally what is called a ‘key’ or a ‘linking
+field.’
+
+In a database it also serves as the “pointer” in the inverted index.
+:::
+
+## Index File Example {.smaller}
+
+![](images/clipboard-2614085052.png){fig-align="center" width="60%"}
+
+::: notes
+In this system we have three records. These would be the representations
+of the items in the collection.
+
+When we do a search–say we’re looking for ‘Peters’ in the Author field,
+the search results bring us back the pointer number two, which is the IR
+for Users by E. Peters.
+
+So, our search is successful.
+:::
+
+## Index File Example {.smaller}
+
+![](images/clipboard-1066676244.png){fig-align="center" width="60%"}
+
+1.  Search term matches index entry (data value)
+2.  Index entry points/links to record using key field
+3.  Record is retrieved that contains data value
+
+::: notes
+Same thing for ‘Taylor’ or ‘Gorman’ if we’re searching in the Author
+index. If we’re searching in the Subject index and we search for ‘IR,’
+we should get back record two because IR is within the subject field in
+that record, and it doesn’t exist in the Subject field in the other
+records.
+
+This is a very basic example of how an inverted index works when
+searched within the system. Refer to the Bell readings for more
+examples.
+:::
+
+## Databases We Know
+
+![](images/4.png){fig-align="center" width="100%"}
+
+::: notes
+Now let’s look at some databases that you might know. I’m using as an
+example on this slide the University of Oklahoma Libraries, which you’ve
+probably already used at some point.
+
+What you can see on the screen here is an example of my book called
+*"Text Mining for Information Professionals: An Uncharted Territory".*
+
+If you look at the record, you can begin to see the underlying
+structure, or the database schema, behind this particular system. This
+has basic information, such as title, author, publication information,
+physical description, and even a contents field.
+
+You also can see that OU Libraries is using a particular vocabulary to
+assign subject terms to this particular resource in this system. There’s
+also additional information as to how we can find this resource within
+the collection, how many copies they own, what type of material it is,
+and whether or not it’s actually in use or available for check out.
+
+You can see from this particular record that you have a lot of options
+when you’re searching. You can search by author, title. You can search
+by publisher if you knew the publisher. You can search by contents or
+subject terms. If your system allows, you can even search by call number
+if you know the call number assigned to a particular resource.
+:::
+
+## MARC View
+
+![](images/5.png)
+
+::: notes
+This is the same book but with a different record structure.What you see
+here is the MARC record for this particular resource.
+
+In the earlier slide we saw the same resource, but we saw all of the
+MARC fields converted into more user-friendly field labels, which is an
+option you or your system admin will specify when you set up your OPAC
+system.
+
+You would still have probably the same functionality in terms of
+searching within the MARC system, but your search would be conducted
+differently than we saw in the OPAC because of the way that the system
+is structured. However, if you look closer, you can see that the same
+data has been entered into these fields.
+
+So, it’s the same structure underlying the OPAC record, but the user
+view is very different in the view on the previous slide than what we
+see in a MARC record structure on this slide.
+:::
+
+## Databases We Know: Amazon
+
+![](images/6.png){fig-align="center"}
+
+::: notes
+On this slide, I’m giving you another view of another object within a
+database. This record is within Amazon’s database.
+
+You have Product Description, or Details, such as your format which
+would be paperback, how many pages, publisher, language, ISBN numbers,
+dimensions, shipping weight, etc.
+
+In Amazon’s database, you have the title and the author information on
+an earlier portion of the webpage, which I’m not showing you here
+because I wanted to show you some additional features that we didn’t see
+in our other two records. This record has Editorial Reviews, Product
+Description, and links out to the author’s page, as well as additional
+customer reviews.
+
+Some newer generation OPACs are adding in some of these features, where
+a user can comment or review a particular resource, or add subject tags
+if they like to a particular resource’s record.
+
+Again, these options are in the newer OPACs, and not every library OPAC
+includes this information or the option for users to add reviews, tags,
+etc. But again, looking at this particular slide, you can see the field
+structure that is present within this database.
+
+And even though each system is describing the same resource, there is
+different kinds of information that is displayed back to the users. In
+effect, there are different search options for a user within this
+system.
+:::
+
+## What TO DO Next
+
+-   After reviewing this lecture, please proceed to the Data Modeling
+    lecture (Forever Frogs)
+
+-   Complete the data modeling exercise by working through the Data
+    Modeling (Forever Frogs) presentation & worksheet
+
+::: notes
+After you have completed this lecture, please review the Forever Frogs
+(FF) data modeling lecture in Canvas. The FF lecture will walk you
+through the data modeling process.
+
+The FF lecture will help you better understand how to move through the
+data modeling process to identify attributes of your objects, develop
+field names and make decisions of the types of data and any data
+requirements (required, unique, indexed).
+
+I hope you enjoy learning how systems are structured and how the
+decisions you make affect representations and retrieval.
+:::

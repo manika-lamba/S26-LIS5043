@@ -1,0 +1,668 @@
+---
+title: "Evaluation of Information Systems"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+::: notes
+In this module, we’re going to talk about information evaluation
+and how we evaluate systems. I’m going to introduce you to some of the
+metrics and some of the ideas that have been used in the past as well as
+talk about some of the usability issues that you might also address when
+evaluating information retrieval systems.
+:::
+
+## Approaches to IR Evaluation
+
+-   `Efficiency`
+    -   How economically the system is achieving its objective
+        -   IR system storage capacity, speed, costs
+-   `Effectiveness`
+    -   Level up to which the given system attains its stated
+        objective(s)
+    -   Usefulness of IR results, relevance of results, benefits to
+        users
+-   `Usability/user studies`
+
+::: notes
+There are several different approaches to information retrieval
+evaluation, and I’ve listed a few of them here. There are others that
+can be used to evaluate systems and to evaluate systems in different
+contexts. Probably the most prevalent that are in still in use today are
+those related to efficiency, effectiveness, and usability or user
+studies.
+
+Efficiency is defined as “how economically the system is achieving its
+objective or goals”. For every information retrieval system, or for any
+system in general, there are usually a set of achievable objectives. For
+example, in an IR system, evaluation would be to determine whether or
+not the system is retrieving documents back to the user effectively; if
+the system’s storage capacity is enough so that the users are getting
+good, quick retrieval; whether or not the inverted indexes are working
+correctly, etc. So, aspects like storage capacity, speed, and cost
+figure into the efficiency equation.
+
+Effectiveness, is defined as “the level to which the given system
+attains its stated objectives”. So, again, you would look at whether or
+not the system is attaining the goals most of the time, part of the
+time, etc. We measure this by looking at different kinds of data–for
+example, the usefulness of IR results. Are the system searches bringing
+back accurate results? Are the results relevant? And do the results
+match the search queries? And then are the results beneficial for our
+users?
+
+The third approach includes ‘usability’ and/or ‘user studies.’ These are
+studies where we examine people as they use systems and measure certain
+aspects of their system use, such as how many clicks they make to
+accomplish a task, how much time they spend in each task, or what
+features they use, etc.
+:::
+
+## Evaluation Criteria
+
+-   Extent to which the system meets both the expressed and latent needs
+    of its users
+-   The reasons for failure to meet user needs
+-   Cost-effectiveness of searches made by users versus those of
+    intermediaries
+-   Are services offered appropriate for user needs? Sources available
+    appropriate?
+-   Changes needed to meet users needs?
+    -   Search features/output, interface design, scope of collection,
+        indexing issues, etc.
+
+::: notes
+There are obviously lots of different criteria that we can use for
+evaluation. I have listed a few that are addressed on this slide. For
+example, the extent to which a system meets both the expressed and
+latent needs of its users. Remember that an information system does not
+exist in isolation. Usually when a library is getting ready to implement
+a new system, they’ve already talked to their users or they’ve done
+surveys to find out the needs of their users so they know the express
+needs, but also the latent needs can be determined by evaluating what’s
+going on with the system. Are people using the system? What features are
+they using? You can look at search logs. You can use logs to determine
+if the system is meeting both the expressed and latent needs of the
+users.
+
+Another evaluation criteria is the reasons for failure if the system is
+not meeting the user needs. In this case, you could track searches and
+system use. You could talk to the users themselves. You could look at
+the use logs to see how often people are using certain features of the
+system. Are they coming back to the system? These are some of the ways
+you can evaluate this criteria.
+
+You can also look at the cost effectiveness of searches made by users
+versus those of intermediaries, like reference librarians. You can have
+users and intermediaries run the same search in the system and look at
+the strategies they use, but also look at the time factor and the
+learning factors associated with that experience.
+
+Are services offered appropriate to your users’ needs? Are sources
+available that are appropriate as well? You might be evaluating an
+existing system and talk to users about whether or not they use your
+system. Are the services appropriate for the user? Are they meeting the
+needs of that community? But also are there appropriate sources
+available within the system itself?
+
+One other aspect is to determine what changes might be needed to meet
+user needs. You might look very closely at elements like search
+features. What’s available? Is there a basic and advanced search? What
+kind of output is sent back to users as a result of the search? How is
+the interface designed? What’s the scope of the collection? Even looking
+at indexing issues can be part of this evaluation criteria.
+:::
+
+## Evaluation Levels: Level I
+
+-   `Evaluation of Effectiveness`
+    -   consideration of user satisfaction
+
+A. Cost criteria
+
+```         
+1. Monetary cost to user    
+2. Other, less tangible, costs
+    a. Effort involved in learning to use system
+    b. Effort involved in access/ use
+    c. Effort involved in retrieving documents
+    d. Form of output provided by the system
+```
+
+::: notes
+Some researchers also look at evaluation from different levels, so let’s
+talk about some of these measures as well.
+
+At level one, we are evaluating effectiveness or consideration of user
+satisfaction with a particular retrieval system. Within this area we
+look at cost criteria, both the monetary cost to the user and other,
+less tangible costs to the user, such as efforts involved in learning to
+use the system, efforts involved in access and use of the system, what
+it takes to retrieve documents in the system, and whether the form of
+output provided by the system is appropriate for what the user may need
+to accomplish.
+
+For example, do users like just getting a one sentence description or do
+they want a small paragraph so that they can evaluate the document? How
+useful are, say, the bibliographic entries that a user gets back when
+searching in a database system? And then perhaps if a user can you link
+out to the article or do they have to follow a chain of related links in
+order to get to the article that they’re looking for? Cost criteria is
+not just based on the monetary cost to a user, but also these less
+tangible costs as well.
+:::
+
+## Evaluation Levels: Level I
+
+B. Time criteria
+
+```         
+1. Time from request to retrieval of references
+2. Time from request to retrieval of documents
+3. Other, e.g., waiting to use system—availability of computer/speed of connection
+```
+
+C. Quality criteria
+
+```         
+1. Coverage of database
+2. Completeness of output (recall measure)
+3. Relevance of output (precision measure)
+4. Novelty output
+5. Completeness and accuracy of data
+6. Access to full text documents or surrogates
+```
+
+::: notes
+We also look at time criteria, and time, of course, is related to many
+different aspects, for example, time from request to retrieval of
+references–so, from the time the user starts their search, runs their
+search, and then receives output from the system,–time from the request
+to the retrieval of documents–and what is the time involved. There are
+other metrics here as well, such as the availability of a computer or
+computers to use and waiting to use the system. So, if this system is in
+a public library environment, and people are waiting on the average half
+an hour to forty-five minutes or longer to use the system, you might
+consider purchasing more computers if possible.
+
+Speed of connection isn’t as much of an issue now as it used to be, but
+again, there are some systems that are only available through a slower
+line, as opposed to T1 lines that we see in a lot of universities and in
+a lot of public libraries as well. But these again are criteria that
+could factor into time.
+
+There are also quality criteria that we use to evaluate systems, such as
+the coverage of the database itself. What formats of articles are
+available? How many different types of disciplines are included? Is it a
+news database, or is it very subject specific, such as library
+literature? And also related to coverage is the year span. Can you get
+every possible document back to the beginning of publication, or are
+things embargoed for a time period, so something published over the last
+six to eight months might not be yet available in the online database.
+Issues of coverage are a problem as well.
+
+Completeness of output, is dealing with recall. If you’ll remember
+recall is the ability of the system to retrieve only the relevant
+documents, and we’ll talk about that more in a minute. But completeness
+of output includes what is returned back to the users. And then on the
+inverse of that, of course, is relevance of output. Is the system
+retrieving all of the documents that are relevant or match our search
+query, or what we call ‘precision’?
+
+There’s also another search measure called ‘novelty output,’ or whether
+there are documents that are new to the user, or if there are document
+that the user has not seen before.
+
+The completeness and accuracy of the data is also related to the quality
+of the data. Are the users getting accurate information? Are there typos
+in the citations? Are there incomplete or broken links? Aspects like
+completeness and accuracy are related to quality.
+
+A further aspect of quality is whether or not the user has access to the
+full document or just to a surrogate, which I know can be very
+frustrating for users. They’ll go to the trouble of finding a citation
+they want, and then they’ll find out that the particular system doesn’t
+have access to the full text document. This is happening less and less
+in our systems nowadays, but again, think of your own experiences using
+OU’s databases. Oftentimes you’ll find a citation you want, and then
+find that you have no way to retrieve the document unless you follow it
+all the way through and request it first via interlibrary loan. So
+again, this is another criteria related to quality.
+:::
+
+## Evaluation Levels: Level II
+
+-   `Evaluation of Cost-Effectiveness`
+    -   user satisfaction related to internal system efficiency and cost
+        considerations
+
+A. Unit cost per relevant citation retrieved
+
+B. Unit cost per new (previously unknown) relevant citation retrieved
+
+C. Unit cost per relevant document retrieved
+
+::: notes
+At level two we would look at cost-effectiveness, which is the user
+satisfaction related to internal system efficiency and cost
+considerations. We’re not just looking at cost from a monetary view,
+we’re looking at those intangible costs, such as how long it takes to
+learn a system or how frustrated a user becomes learning and/or using
+the system. But we can look at unit cost per relevant citations
+retrieved.
+
+We can look at unit cost per new or previously unknown document, or
+novelty items. Citations that are retrieved, and then also unit cost per
+relevant document retrieved are other factors we can evaluate. We don’t
+look at cost effectiveness as much as we used to, but this factor is
+definitely another way in which you can evaluate the effectiveness of
+the system.
+:::
+
+## Evaluation Levels: Level III
+
+-   Cost-Benefit Evaluation
+    -   value of system balanced against costs of operating or of using
+        it
+
+::: notes
+At evaluation level number three, we would be conducting a cost-benefit
+evaluation, This type of evaluation is a little bit more difficult
+because this measure has a lot of subjective aspects. We would evaluate
+the value of the system balanced against the cost of operating or using
+it.
+
+This form of evaluation is a combination of the factors we just
+discussed such as the quality criteria, the time criteria, the scope of
+a database, how long it takes to learn it, what search features are
+available and are they and the interface designed for effective use by
+the user, can users determine if there’s a controlled vocabulary with
+the system and how to use it if it’s available.
+
+These factors are balanced against a value the user places on the search
+experience. Was it a good experience? Did they find what they were
+looking for? Did they find the system easy to use? And other
+value-related metrics.
+:::
+
+## Traditional IR Effectiveness Measures
+
+-   Recall Assesses
+    -   Ability of system to retrieve all the relevant items it contains
+-   Precision assesses
+    -   Ability of system to retrieve only the relevant items
+
+::: notes
+There are also traditional information retrieval measures that are used
+to evaluate systems. In Chapter 14 of Chowdhury, you will read about
+some large-scale studies, such as MEDLARS and STAIRS and TREC. These
+studies, as well as those conducted today in many contexts, use
+effectiveness measures of recall and precision. Let’s talk about each of
+these in turn and how they can be useful in evaluating the effectiveness
+of IR systems.
+:::
+
+## Recall
+
+`RECALL = Relevant Documents in a IR Set/All relevant documents in the database`
+
+-   A measure of how good a system is at retrieving all the relevant
+    documents
+-   Inversely related to precision
+-   Dependent upon the users' expectations and objectives
+-   Difficult to estimate
+-   Need to know the number of relevant documents in the entire
+    collection
+
+::: notes
+Recall is the measure of how good a system is at retrieving all the
+relevant documents that are part of that system’s collection. The
+equation used to evaluate recall is included on the slide for you. We do
+know that in most cases and in most retrieval systems, recall is
+inversely related to precision. So, if you have a high level of recall,
+you have a low level of precision.
+
+So, you would need to know what’s more important to the user–high levels
+of precision, meaning they are getting exactly on topic documents, or
+high levels of recall, which means the user wants everything that might
+be even tangentially associated with the topic they are researching. Of
+course, recall and precision are dependent upon our users’ expectations
+and objectives for their searches, and it is in this way that this
+evaluation measure becomes very subjective. It’s also really difficult
+to estimate because we need to know the number of the relevant documents
+in the entire collection in order to run recall measures.
+:::
+
+## ![](images/clipboard-3837408382.png){width="100%"}
+
+::: notes
+An example of recall would be if we have a collection that has three
+items on a particular topic in the collection, and in this case I’m
+going to say these items are on frogs. I have run a query and the system
+retrieves two relevant documents and one document that is not relevant.
+
+So, this as a .66% recall rate because two of the three relevant
+documents were retrieved in the search.
+:::
+
+## Precision
+
+`PRECISION =  Relevant documents in a retrieved set/All documents in the retrieved set`
+
+-   Measures how good the system is at “not” retrieving non-relevant
+    documents
+-   Dependent upon user’s expectations and objectives
+
+::: notes
+Precision, then, measures how good the system is at not retrieving those
+non-relevant documents–in other words, bringing back documents that are
+only related to your query and nothing that’s irrelevant. This again, is
+a measurement that is dependent upon users’ expectations and objectives.
+The user is the only one that can really evaluate whether or not a
+document is useful to them. And again, it’s difficult to measure
+precision because we have to know how many documents in the collection
+are on particular topics or related to particular topics in a database.
+:::
+
+## ![](images/clipboard-3990879776.png){width="100%"}
+
+::: notes
+So, in terms of precision, again, let’s use our same collection of
+documents. Within that collection there are three documents we know are
+related to frogs. Our query then is also ‘frogs,’ and the system only
+returns one precise document, or one document that is precisely related
+to our query. And also it retrieves one document that is not related to
+our query. So, we have the equation of one document that is relevant
+with a return of two documents. So, our precision in this case is .50.
+
+Some of our large-scale studies run precision and recall measures by
+setting up document sets in which the researchers know every topic
+that’s included in that document set. And then they run queries that
+have been developed for those document sets against the collection using
+different kinds of search tools and different kinds of algorithms that
+the researchers developed in order to test precision and recall. The
+TREC studies are still conducted today. Researchers compete developing
+and using new algorithms to test the precision and recall of their
+system.
+
+They also share information with each other about how to improve
+retrieval metrics, such as precision and recall in IR systems. There are
+a lot of different TREC studies you can read online. And TREC deals not
+just with English language; it does also include cross language
+information retrieval as well, which is called CLIR. There is an entire
+community for just CLIR and competitions related to CLIR as well. TREC
+includes IR studies and competitions for not just text based documents,
+but also for images and multimedia and blogs and social networks using
+many different information retrieval systems. It is really interesting
+to see the problems and the issues that the researchers are trying to
+resolve by developing better retrieval mechanisms.
+:::
+
+## Other Measurement Issues
+
+-   `What about RELEVANCE?`
+
+    -   Defined: ???? Cannot be precisely defined.
+    -   Subjective
+    -   Unique between individual and a specific document
+    -   Can be dependent upon many factors
+    -   Can change over time, even within same IR session
+
+-   More practical or topical approach to relevance?
+
+    -   Usefulness?
+    -   Salience?
+
+::: notes
+What about this term ‘relevance’? We have a large body of research in
+our field related to relevance. It’s not easy to give you a precise
+definition of it because it is very subjective in nature. Relevance
+basically means that a retrieved document has been assessed by an
+individual to be something that they find on topic–that it is related to
+their search query.
+
+We can take this even a step further and say that it’s useful to them,
+but determining relevance is unique between the individual and the
+specific document or a specific retrieval set. So, the individual has to
+determine whether or not it’s relevant. Relevance can be determined
+depending upon many different factors. A user’s evaluation of relevance
+also changes over time, even within the same IR session. So, relevance
+is very dynamic in nature. A lot of LIS/IR research also looks at
+degrees of relevance within information seeking and information search
+sessions.
+
+We have been rethinking the idea of relevance to view it more as a
+practical or topical approach, such as usefulness or salience, meaning
+that a user can apply the information they learn within the document to
+the problem they are trying to solve or to something they are trying to
+work with. So, again, LIS/IR researchers have entertained this idea of
+more practical or topical approaches to relevance. But again, it’s very
+subjective, and only the user can determine whether or not something is
+relevant.
+:::
+
+## Other Measures to Consider
+
+-   `Fall Out Ratio`: proportion of non-relevant items returned in a
+    search to relevant items
+
+-   `Generality Ratio`: proportion of relevant items in a collection for
+    a given query
+
+::: notes
+Some other measures to consider are fall out ratio and generality ratio.
+Fall out ratio is the proportion of non-relevant items that are returned
+in the search to relevant items. So, we’re not just looking at the
+relevant items that a person found. We’re also interested in how many
+are also non-relevant.
+
+Generality ratio is the proportion of relevant items in a collection to
+a given query. You can see right away this one is a little harder to
+evaluate because we then have to know how many objects in our collection
+are related to specific topics and why or why not they were not
+retrieved when a search was conducted.
+:::
+
+## Indexing Factors Affecting IR Performance
+
+`Human Indexing`
+
+![](images/clipboard-2704263523.png){fig-align="center" width="60%"}
+
+::: notes
+We can also consider human factors, which can be associated with the
+indexing of the documents within the system, such as the human’s types
+and levels of knowledge, as well as affective and cognitive variables
+that affect humans on a daily basis.
+
+So, related to indexing, in an earlier module we discussed the measure
+of inter-indexer consistency and inter-indexer inconsistency. LIS/IR
+research has shown that there’s really at the highest level about 30% of
+consistency between any two indexers that are creating subject terms for
+the same document. So, consistency can be an issue. Also, subject
+expertise and indexing experience play into whether or not the index
+terms chosen are appropriate, accurate, and complete. If a person has a
+high degree of subject expertise, or domain knowledge, in a particular
+area, such as chemistry or ethnobotany, then they’re probably going to
+know the literature of the field and they’re going to know the
+appropriate levels of specificity and exhaustivity when they’re
+indexing.
+
+There are also, as I said, types of knowledge, for example, I just
+mentioned domain knowledge and the indexer’s understanding of the domain
+itself, but also their search experience. Generally people that have a
+lot of experience with different search systems and have looked at the
+different structures within them and also use different techniques for
+searching are better indexers because they understand the effects that
+their decisions play on retrieval.
+
+There are also factors related to motivation or emotional state of the
+indexer. We’ve done some research looking at motivation level of
+indexers and some of the errors they may if they’re unhappy in their
+job, or the emotional state of individuals and how that might impact
+their indexing as well. We don’t have any recent studies in this area,
+but we do know that motivation and emotional state do have an effect on
+indexing, so the decisions an indexer makes when choosing terms to
+represent a subject of a document can impact retrieval.
+:::
+
+## Indexing Factors Affecting IR Performance
+
+`System Factors`
+
+![](images/1.png){fig-align="center"}
+
+:::notes
+We had talked in an earlier lecture about some of the system indexing factors that affect information retrieval performance. These are also evaluation measures or metrics that we use when we evaluate information retrieval systems. Some of the system factors are related to, say, index language used and the indexing assignment within the system. 
+
+One aspect we can evaluate is if the indexer/cataloger is choosing the appropriate vocabulary to use within that system. And then also if they have chosen the appropriate levels of specificity in terms that they are using to assign subject terms to particular documents. Also of consideration is the level of coordination of terms within the system. Do you have similar concepts being represented with the same subject terms, for example? Or is the specificity level consistent throughout the system? And is the specificity level consistent with the users who are interacting with the system? 
+
+In terms of indexing assignment, we evaluate if the level of exhaustivity is appropriate. For example, how are we representing the items within the system? Are we representing a broad, overall subject, or are we representing multiple topics and subtopics for each document? Also, how many different terms are we using to represent the subjects within those different documents? Specificity is also part of this. Are we using the accurate level of specificity in our terms that meets the level of specificity in the documents themselves? Are accurate terms being assigned to represent those subjects? Are we representing the subjects themselves accurately and completely within the document? 
+:::
+
+## Other Measures to Consider {.smaller}
+
+- `Usability Measures`
+  - How are users interacting with system?
+  - What features used? Why or why not used?
+    - Different levels of search available?
+    - Are all features used or does system have unneeded features?
+  - Return to use same system again?
+  - Feedback mechanism? (relevance or other?)
+  - Interface design measures
+  - ADA Compliance issues
+
+:::notes
+The third type of metric that I mentioned on one of the earlier slides is called ‘usability.’ There are lots of books written on usability; there are websites devoted to usability. Usability looks more specifically at how users are interacting with information retrieval systems and with webpages or websites. 
+
+Usability studies look at a range of different things, like what features are being used on the site, and then the evaluator tries to determine why a feature is or is not being used. We also look at whether or not the system has extraneous features, or unneeded features on a website. Did you know that nobody ever clicks on the link up in the far left corner, because honestly, they don’t see it? We look at different levels of searching that are available. Does the site provide a site map? Does the site provide both a basic and an advanced search? Does the system have different functions for different types of users? 
+
+Evaluators also look at whether or not people come back and use the systems again. We can track the return rate with IP tracking online, but we can also track it in libraries if we require people to log on to systems with their password and user id; we can check it in our databases by just looking at search logs. 
+
+Another measure we look at in usability is the feedback mechanisms within the interface and retrieval system. What kind of messages do users get when they conduct a search? Remember that we talked that IR is a little bit like a conversation, where the user has their own language and the system has its language and somehow they have to be able to communicate with each other. 
+
+So, there’s lots of different feedback that happens between the user and the system, including messages like the return of search query results and how they’re displayed back to the user or whether or not a system has a spell check mechanism and asks the user, “Did you mean this instead?” Or whether or not the system will just correct the spelling for us. So, those messages are really important. But we also evaluate factors such as how easy it for a user to begin a new search. Is there a box that says “Back to Search” or “Edit Search” or some feature that allows the user to then go back to their search and revise it? 
+
+We also look at different design aspects of interfaces when evaluating usability. Are the colors appropriate? Are there flashing elements that are distractive and sometimes very dangerous, especially for special needs individuals? There are many different design-related measures that can be part of usability measures. 
+
+We also look at ADA compliance issues, or the American Disability Act compliance issues. There are specific criteria that are set out to make sure that users with disabilities have a good experience when using a system. For example, websites at a federal or a nationally funded level, or even some states have ADA compliance regulations. There are different criteria that websites have to follow. So, for example, if your website has images, it has to also include mouse over with the text tags that pop up.
+:::
+
+## Other Measures to Consider {.smaller}
+
+- `Satisfaction with system`
+  - Representation scheme known?
+  - Syntax for entering query evident?
+  - Possible IR technique(s) known?
+  - Output issues
+  - Comfort Level
+    - Ease of use/access
+    - Are instructions evident? Easy to use? Easy to understand?
+  - Speed of input/output
+
+:::notes
+One additional measure that we evaluate in usability but also in other evaluation studies I mentioned is the user’s satisfaction with the system. Satisfaction can obviously come from a lot of different interactions that they have had while using the system and also from the system structure itself. 
+
+For example, we might evaluate how transparent the representation aspects of search systems are to the user:
+
+  - Do they know what the representation scheme is? For example, what subject heading or controlled vocabularies are being used within the system? 
+  - Do they have access to the system’s controlled vocabulary? 
+  
+This is most often provided through a thesaurus feature, where a user can click a button or a link and then input their search term, and the system will convert it or give them a list of terms that the specific system is using to represent that topic. 
+
+Also, what fields are searchable within the system? 
+
+This is not as much of an issue anymore as it used to be since we have dropdown boxes that allow us to filter our searches or limit our searches into only specific inverted indexes. So, for example, when you click on the dropdown box and you can choose the author or the title field, what you’re in essence doing is limiting your search to that inverted index field. 
+
+Another factor of satisfaction is related to the user’s understanding of how to enter their query into the system. 
+
+For example, 
+
+  - Is there a specific syntax that has to be used for entering the query, and if so, is it explained to the user? 
+  - And how easy is it for them to implement? 
+
+Another aspect is whether or not the system makes the possible information retrieval techniques known. 
+
+  - Can you conduct Boolean searching, and if so, how does a user do so in this particular system? 
+  
+  - Are there ways to truncate search terms, or use the root of a term with a specific character assigned by the system, so that the system searches not just for that specific word, but for the root and all of its forms?
+  
+There are also output issues: 
+
+  - What type of output is returned back to the user? 
+  - Did the output only include a hyperlink out to a search result, or is there some little blurb that explains what they’re going to look at?
+  - How easily can the user then access the document once they have found it through search results? 
+
+There’s also comfort level issues: 
+
+  - How easy is it to use and to access the right database, and once you find something, how quickly can the user retrieve the document? 
+  - Is it in full text, or is the user taken to a citation and not to the article? Or 
+  - If the user needs to retrieve the item from interlibrary loan, can you link to the interlibrary loan interface from the search results or bibliographic record page? 
+  - What format is the item available in? 
+  - Is it in HTML, or is it in PDF? 
+  
+  So, there are lots of different ways of looking at ease of use and access:
+
+  - Also, are instructions and FAQs evident? 
+  - And how easy to use are these features? 
+  - Are the FAQs understandable? 
+  - What audience(s) are they written for? 
+  - Do the FAQs include the information that you really need to learn about using the system?
+  
+And then lastly, speed of input and output: 
+
+  - How long does it take you to use this system?
+  - How long does it take you to learn to use this system? 
+  - And are FAQS I mentioned earlier evident and easy to find and use?
+:::
+
+## Other Issues to Consider
+
+- Electronic versus Print
+- Subscription versus Web
+- Copyright Issues
+- Access Issues
+- Price and Subscription Issues
+- Vendor, Compatibility and Customization Issues
+
+:::notes
+There are also some additional issues to consider, and these are related to how the information is available, how the user can retrieve it from the system, such as is it electronic or print. If I’m using a library OPAC, can I link out to an electronic copy or an eBook? Or do I need to be able to physically access the materials by being in the library? Or can I link out to interlibrary loan or Sooner Express and request that it be pulled from the shelf for me to pick up?
+
+Also, there are issues of subscription databases versus the web. They both work very differently as you know. 
+
+There are copyright issues of how that information can be used once it’s retrieved, as well as those access issues I mentioned earlier about how do we go from a retrieval result directly to the article or item itself and what levels and mechanisms are involved in that. 
+
+Also, price and subscription issues. This is something that libraries deal with a lot -- reevaluating how to spend their money for extremely expensive databases. 
+
+And then we might also have vendor and compatibility and customization issues that can be part of system evaluation. For example, will our system work well with other systems that we’re also using in the library? Can we customize the system to fit our user needs better? Vendor relations can also be considered an aspect of system evaluation. A library or information professional has to be able to relate this information to the vendor. For example, how easy is it to get changes to the system made? Is it possible to make the various systems interoperate with each other. 
+
+This lecture has introduced you very briefly to some of the approaches to system evaluation that you may use in your library or information organization. Please refer to the readings for this module to learn more about these measures. If you have any questions, of course post your question and thoughts to the class discussion board for Module 4.
+:::
+
+## Also of Interest
+
+- Be sure you read Chowdhury Ch-14 to learn more about the large scale IR evaluation studies conducted through the years (MEDLARS, [TREC](https://trec.nist.gov/), etc.) and how results from these tests have improved IR
+
+:::notes
+If you are interested in learning more about the large-scale IR evaluation studies I mentioned in this lecture refer to the Chowdhury Ch-14, and also search the Web to find more information on the [TREC competition](https://trec.nist.gov/)
+:::
+
+
