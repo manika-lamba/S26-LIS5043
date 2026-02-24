@@ -10,3 +10,5 @@
  - Week 5
   - [Systems and Structures for Organizing Information](https://manika-lamba.github.io/S26-LIS5043/Week-5_part1/#/title-slide)
   - [Evaluation of Systems/Usability](https://manika-lamba.github.io/S26-LIS5043/Week-5_part2/#/title-slide)
+- [Week 6 Standards and Standardizations](https://manika-lamba.github.io/S26-LIS5043/Week-6/#/title-slide)
+
