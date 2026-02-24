@@ -1,0 +1,1112 @@
+---
+title: "Standards and Standardization"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+::: notes
+In this module, we’re going to shift gears a little bit and talk about
+standards and standardization.
+
+Structures for organizing knowledge are not developed in isolation, nor
+are they developed without a great deal of discussion and collaboration
+and trial and error by multiple different interested parties.
+
+Formalized structures for organizing knowledge, such as databases and
+bibliographic retrieval systems or even subject thesaurus are developed
+according to national, regional, and international standards.
+
+So, let’s talk about what standards are and the standard development
+process.
+:::
+
+## What is a “Standard”?
+
+-   A standard, according to the British Standards Institute, is
+
+"`an agreed, repeatable way of doing something. It is a published document that contains a technical specification or other precise criteria designed to be used consistently as a rule, guidance, or definition`"
+
+::: notes
+There are several different definitions for “standard” and you’ll see
+some of these in your readings, but the one that I think probably
+encapsulates this concept the best is one from the British Standards
+Institute, or the BSI.
+
+A ‘standard’ is defined according to the British Standards Institute as
+“an agreed, repeatable way of doing something. It is a published
+document that contains a technical specification or other precise
+criteria designed to be used consistently as a rule, guidance, or
+definition.”
+
+For example, when we start talking about bibliographic control and
+bibliographic cataloging in the next module, we’ll learn about the
+Anglo-American Cataloging Rules. The AACR2 is considered a standard.
+It’s a content standard. The holder of the cataloging information or the
+MARC record structure is what we might consider a technical standard.
+:::
+
+## Functions of Standards {.smaller}
+
+**ISO - What Standards Do (2009)**
+
+-   Make the development, manufacturing and supply of products and
+    services `more efficient, safer and cleaner`
+-   `Facilitate trade` between countries and make it `fairer` provide
+    governments with a technical base for
+    `health, safety and environmental legislation`, and conformity
+    assessment
+-   `Share` technological advances and good management practice
+-   Disseminate `innovation`
+-   `Safeguard consumers`, and users in general, of products and
+    services
+-   Make life simpler by `providing solutions` to common problems
+
+::: notes
+Standards serve many different functions and purposes depending upon the
+community in which they serve or that they’re developed within. For
+example, they make the development, manufacturing, and supply of
+products and services more efficient, safer, and cleaner. Having
+standards for the development of different products ensures users as
+well as governments that those services and products will be developed
+in a safe, clean environment and that the process will also be more
+efficient as the result of standards.
+
+Standards can also facilitate trade between countries and make it fairer
+because there are specific criteria that must be met. They can provide
+governments with a technical basis for health, safety, and environmental
+legislation, as well as conformity assessment, so that governments have
+guidelines in place for the development of products that ensure health
+and safety as well as environmental protections.
+
+Standards also help to share technological advances and good management
+practices. If you are developing bibliographic tools or retrieval tools
+but you’re not adhering to any specific standards, there may be
+difficulty in interoperability, meaning that the two systems may not be
+able to talk to each other or work together.
+
+Standards also help to disseminate innovation because they encourage the
+sharing of ideas as well as the following of guidelines to develop new
+products. In this way, they help to safeguard consumers and users in
+general because of the production of good, safe, efficient products and
+services.
+
+Overall, standards make life simpler by providing solutions to common
+problems. This synthesis of the function of standards is from the
+International Standards Organization, or what we call the ISO under
+their “What Standards Do” page.
+:::
+
+## Why Develop Standards?
+
+-   Standards can be voluntary or ad hoc and developed for specific
+    purposes or products
+
+-   Standards are developed and applied within a multitude of different
+    contexts, from manufacturing, information management, and
+    technology, to agriculture and the sciences
+
+::: notes
+Obviously, the functions also show some advantages as to why we would
+develop standards.
+
+Standards are developed through either an ad hoc or voluntary process
+and they can be developed for specific purposes or products.
+
+Standards are also developed and applied within a multitude of different
+contexts, from manufacturing and information management and technology
+to agriculture and the sciences.
+
+In our program–and in this class in particular–the standards we’re
+interested in most are the information management and technology
+standards, and we’ll look at some examples of those throughout the
+semester.
+:::
+
+## Who Develops Standards? {.smaller}
+
+-   Official standards organizations
+    -   NISO (National Information Standards Organization)
+-   ISO (International Standards Organization)
+-   Industry Consortia
+    -   Unicode Consortium
+    -   WC3 (Worldwide Web Consortium)
+-   Cooperative Consortia of Universities
+-   Other Research Organization, or Industrial Organizations or Business
+    Entities
+    -   Microsoft and Adobe
+
+::: notes
+So, who develops standards? There are several stakeholders or groups
+that develop standards. Those that we work with in libraries and
+information professions are developed by national and international
+organizations. So there are official standards organizations that
+develop our standards or those that are related to information
+management technology that we are most concerned with.
+
+The first of these organizations is the National Information Standards
+Organization, or NISO. The second is the International Standards
+Organization, or ISO. But there are also standards that are developed
+from industry consortia. An example of one of these is the Unicode
+Consortia, which developed the Unicode technical standard. Also, the
+WC3, or the Worldwide Web Consortium, who’ve been instrumental in
+developing the semantic web. The WC3, for example, is an industry
+consortia, but it’s also a host of volunteers around the world.
+
+We also have standards being developed from cooperative consortia or
+universities. If there’s a particular problem or issue that needs to be
+addressed, a consortia of universities might be the developing body of
+that standard.
+
+There are also research organizations or industrial organizations and
+even business entities that help to develop standards or they’re part of
+a standards development process. Microsoft, for example, or Adobe, have
+been very instrumental in developing the standards. Adobe, for example,
+has been at the forefront for developing a .jpeg standard and the PDF
+standards.
+:::
+
+## Who: American National Standards Institute (ANSI) {.smaller}
+
+**ANSI - Overview of ANSI (2009)**
+
+-   `Coordinates` the U.S. voluntary consensus standards system
+-   `Accredits` qualified organizations, whose standards development
+    process meets all of ANSI’s requirements, to develop American
+    National Standards
+-   `Represents` U.S. interests in regional and international
+    standardization activities while overseeing conformity assessment
+    activities that promote the global acceptance of U.S. products,
+    services, systems and personnel
+
+::: notes
+Another body that is instrumental in developing standards that we use in
+information management and technology is the American National Standards
+Institute, or ANSI. ANSI is a unique body because it serves as an
+accrediting body for standards and standards development. It coordinates
+the US voluntary consensus standards system. It coordinates all of the
+voluntary standards development processes in the United States.
+
+So, if a standard is being developed by an institution or an industry or
+a university consortia, those might be considered voluntary consensus
+standard builders, and ANSI is the body that coordinates all of those
+activities. It also accredits, or it gives its stamp of approval based
+on its own particular guidelines, to qualified organizations whose
+standards development processes meet all of ANSI’s requirements to
+develop American national standards. ANSI only applies to standards
+developed in the United States.
+
+It also represents US interests in regional and international
+standardization activities. So, it provides an oversight committee. It
+oversees conformity assessment activities and promotes global acceptance
+of US products and services, systems and personnel.
+
+So, ANSI might be the body that coordinates activities or represents the
+US interests in international standards development, such as that at the
+ISO level, or International Standards Organization level. So, ANSI is an
+interesting body. As I said, they serve as coordination, accrediting,
+and representative body for American standards.
+:::
+
+## Who: National Information Standards Organization (NISO) {.smaller}
+
+-   Non-profit association accredited by the American National Standards
+    Institute which "identifies, develops, maintains, and publishes
+    technical standards to manage information in our changing and
+    ever-more digital environment"
+
+-   NISO standards apply both traditional and new technologies to the
+    full range of information-related needs, including retrieval,
+    re-purposing, storage, metadata, and preservation
+
+-   NISO's Mission Statement emphasizes their commitment to standards
+    development
+
+-   "NISO fosters the development and maintenance of standards that
+    facilitate the creation, persistent management, and effective
+    interchange of information so that it can be trusted for use in
+    research and learning"
+
+-   NISO's voting members include industry leaders of over 70
+    organizations in the fields of publishing, libraries, IT, and media,
+    as well as experts and practitioners who serve on NISO working
+    groups, committees, and as officers of the association
+
+::: notes
+NISO, then, or the National Information Standards Organization, is a
+non-profit association accredited by ANSI, which “identifies, develops,
+maintains, and publishes technical standards to manage information in an
+ever-changing digital environment.” NISO is the standards institute that
+most of library and information profession standards are developed by,
+but again, it’s not the only one. But it is the primary one in the
+United States, and they don’t just focus on information management, they
+develop technical standards as well.
+
+“NISO standards apply both traditional and new technologies” to aid “the
+full range of information-related needs,” but they focus primarily on
+“retrieval, repurposing, storage, metadata, and preservation” issues.
+You can find that information and more about NISO at the NISO webpage
+listed on the Readings List.
+
+NISO’s primary mission, or their mission statement, emphasizes their
+commitment to standards development. As an information professional, you
+can become a member of NISO and have voting rights and get involved in
+the standards development process.
+
+“NISO \[also\] fosters the development and maintenance of standards that
+facilitate the creation, persistent management, and effective
+interchange of information so that it can be trusted for use in research
+and learning.”
+
+So, a NISO standard, generally if it’s stamped with NISO, allows people
+to trust that that standard is well-developed and that it can be used in
+research and in educational contexts without worry.
+
+But NISO really does foster the development and maintenance of
+standards, and that maintenance is an important component of a standards
+organization because if you develop a standard and then it’s never
+reviewed or maintained, it can become very ineffectual.
+
+NISO’s voting members are comprised of various different individuals.
+These can include people from industry, such as industry leaders, and
+over seventy different organizations in the field of publishing, in
+libraries, in information technology and media. There are also experts
+and practitioners, such as librarians, who serve on NISO working groups,
+committees, and as officers of the association.
+
+I myself personally have never served on NISO, but I’ve attended some of
+their meetings and their webinars. Developing standards is an
+interesting process to watch as they debate the minutiae of the
+technical and encoding standards that we just take for granted in our
+information retrieval systems. But this, again, is something that you as
+an information professional could become involved in.
+
+So, for example, you might be involved in creating standards for
+developing controlled vocabularies that are used in multiple contexts,
+or in bibliographic control structures, such as the new standard that we
+hope will replace MARC in the coming years. So, there are different ways
+in which you can become involved in this process.
+:::
+
+## Who: International Standards Organization (ISO)
+
+-   World's largest developer and publisher of international standards
+-   Founded in 1947
+-   ISO has published more than 21,840 International Standards, ranging
+    from standards for activities such as agriculture, construction, and
+    mechanical engineering, to medical devices, to the newest
+    information technology developments
+
+::: notes
+The International Standards Organization, or ISO, is the world’s largest
+developer and publisher of international standards. You’ll often find
+standards that have been developed at a national level are then further
+refined at an international level through the ISO community.
+
+ISO was founded in 1947, and they have published as of 2024, 25564
+international standards that range from “activities such as agriculture
+to construction, mechanical engineering, … medical devices,” to those
+we’re most concerned about, “information technology developments.” They
+have a whole host of different standards supporting each of these
+different areas and more.
+:::
+
+## ISO (Cont.) {.smaller}
+
+> "a non-governmental organization comprised of a network of national
+> standards institutes from 162 countries, as well as members from both
+> private sector entities, such as national partnerships of industry
+> associations, and member institutes that are part of the governmental
+> structure of their countries, or are mandated by their government"
+> (ISO, About ISO, 2020)
+
+-   ISO collaborates with international and regional partners
+
+-   `International partners` include, the International Electrotechnical
+    Commission (IEC), the International Telecommunication Union (ITU),
+    the World Trade Organization (WTO), or the United Nations (UN)
+    Organization
+
+-   `ISO's technical committees` have formal liaison relations with over
+    600 international and regional organizations
+
+-   `ISO's regional partners` include for example, the African Regional
+    Organization for Standardization (ARSO), the European Committee for
+    Standardization (CEN), and the Pan American Standards Commission
+    (COPANT)
+
+::: notes
+ISO is also what we call a ‘non-governmental organization,’ or an NGO,
+and they’re comprised of a network of national standards institutes from
+162 countries at this point, as well as members from both private sector
+entities–such as Microsoft, such as Adobe–also national partnerships of
+industry associations–such as the national recording organizations.
+People that have a stake in the development of a specific standard would
+be part of ISO.
+
+There are also member institutes that are part of governmental
+structures of their own countries or those structures that are mandated
+by their government.
+
+So, ISO is really a large community of stakeholders, meaning that each
+of the individuals or communities or people within that community–that
+standard community–have some stake in the development of the standard,
+whether it’s an economic, humanitarian, or environmental stake, they all
+have a voice in this process.
+
+As well as that community of ISO, members collaborate outside of the
+community with international and regional partners, and I’ve given you
+just a few examples of these partnerships on this slide.
+
+But if you look at ISO’s pages, you can see the entire list of different
+international or regional partners. For example, an international
+partner they might be working with is the International Electrotechnical
+Commission, or the International Telecommunication Union, the World
+Trade Organization, or even the United Nations.
+
+ISO also has what are called ‘technical committees’. These are the
+committees that develop the more technical-related standards, but
+they’re also, again, part of that structure we’ll talk about in a
+minute.
+
+Technical committees have formal liaison relationships with over 600
+international and regional organizations, meaning that as they’re
+developing a standard, they may ask for feedback on input on that
+standard. They may ask these different organizations to contribute to
+the process as well.
+
+Some of their regional partners include, for example, the African
+Regional Organization for Standardization, the European Committee for
+Standardization, and the Pan American Standards Commission. But as I
+said earlier, if you visit their webpage, you can look at the full list
+of partners, both international and regional.
+:::
+
+## How are Standards Developed? {.smaller}
+
+-   Standards are developed by a `community of experts` from relevant
+    industrial, technical, or business sectors
+
+-   Representatives from
+    `government agencies, consumer associations, non-governmental organizations and academics`
+    can also be members of the technical committees that develop,
+    review, and maintain standards
+
+-   Standards are first proposed by leaders from these stakeholder
+    groups when a need is found for either a new standard or to revise
+    an existing one.
+
+-   Stakeholders propose their requirement to the national or
+    international standards organization members, who in turn
+    communicate this need to the appropriate technical committee working
+    in the area of the needed standard.
+
+::: notes
+I was a member of [BIS (a National Standardization Organization in
+India) 2023-2024](https://www.iso.org/member/1794.html). BIS is a member
+of ISO.
+
+Let’s look now at how standards are developed. As I mentioned earlier,
+standards are developed by a community of experts from relevant
+industrial, technical, or business sectors, of course, that community is
+going to differ depending upon the standard being developed. There are
+also representatives from government agencies, consumer associations,
+non-governmental organizations (or NGOs), and also from academics.
+
+Any expert can be a member of the technical committees that first
+develop, and then review, and then also maintain standards. So, as I’ve
+mentioned, standards do not just sit idle. Once they’re developed and
+they’re implemented, they also have to be reviewed for currency to make
+sure they’re working as expected, and then to be maintained or edited so
+that they meet the needs of the community that they’ve been developed
+for.
+
+Now, how a standard is developed is that standards are first proposed by
+leaders from the different stakeholder groups, or from the different
+communities of experts. When a need is found or a new standard is needed
+because there wasn’t one in place or that an existing one needs to be
+revised, a technical committee is formed.
+
+So, for example, if a new technology were developed, such as an iPad,
+for example, there may be different standards that would relate to
+tablets that need to be developed. That’s just an example. But we in
+library and information studies are more concerned with those standards
+that relate to information retrieval systems, to information management
+systems, to bibliographic standards, to controlled vocabularies or
+thesaurus structures. So, we obviously have a lot of technical
+standards.
+
+Once someone proposes a standard to a national or international
+standards organization, the organization sets up a technical committee
+or a standards development committee or even a subcommittee, who would
+in turn communicate this need to the appropriate technical committee if
+they’re already working on that standard, or–as I said–they develop a
+new technical committee to work on a standard.
+:::
+
+## How are Standards Developed?
+
+![](images/clipboard-1834488092.png){fig-align="center" width="280"}
+
+::: notes
+This slide shows the standard development process for the ISO. There are
+two routes that standard development can be follow within ISO. One is
+the technical committee/ subcommittee, or the TC/SC route; there’s also
+the workshop route. Let’s look at how each of these work.
+
+Within the TC/SC route, generally there’s a new work item proposed, or a
+proposal is put forward to ISO. There is a building of expert consensus,
+meaning that the committee sends the proposal out to different experts
+within the community; there’s then consensus building within that
+technical committee, and they take into account any feedback that they
+get from the experts outside of the technical committee.
+
+You can see there are different deliverables that happen at each stage.
+Eventually a technical report is published that is then disseminated in
+draft form to stakeholders and stakeholder committees. Oftentimes in
+library and information professions, you can have input from a
+practitioner level or professional level into that standard when it’s
+being developed. Then there’s a formal vote that takes place. Then the
+publication of the international standard is produced and the new
+standard becomes an ISO international standard.
+
+There can also be a fast track within the technical committee or the
+subcommittee route, and it would begin with an existing standard–one
+that’s being evaluated or reviewed,–In this case the development would
+start at stage four as opposed to stage one.
+
+In the workshop route, it’s a quite different process. Generally there’s
+an international workshop put together to bring all the stakeholders
+together. They develop the standard during the process of the workshop.
+They produce, instead of a standard, what’s called an international
+workshop agreement. That agreement then can go back through the
+technical committee subcommittee route if necessary, or the community
+can vote to make it a standard.
+
+So again, this is the ISO standard development process. The ANSI or the
+NISO might be slightly different, but you need to keep in mind that it’s
+always a community of experts. The stakeholders are developing a
+proposal and then they’re reviewing it. They include outside people in
+the process, also in the review. Eventually what they produce or revise
+becomes a standard.
+
+It can take a long time to develop a standard. The controlled vocabulary
+standard for multilingual thesauri was just confirmed as reviewed in
+2017. This process of review began in 2009 and revision of the standard
+was completed in 2017.
+
+To see more about the process for this specific standard, you can visit:
+<https://www.iso.org/standard/53657.html> You can review the progress of
+a standard as it is being developed by visiting the standards
+organization’s website. You can find out where it is in committee–what’s
+going on, what the next step will be, etc. It’s a very interesting, but
+very complicated process as well.
+:::
+
+## Information Technology Standards {.smaller}
+
+-   can range from `network protocols`, to `formatting`, to
+    `content standards`
+
+-   can be of a `technical nature`, dealing with encoding standards
+    within specific technical standards (such as bibliographic databases
+    like MARC)
+
+-   can be concerned with all aspects of `record creation`
+
+    -   metadata schema (field structures)
+    -   technical infrastructure
+    -   content entry rules
+
+-   standard can be `dependent upon other related standards`
+
+    -   technical standards for the encoding of data within XML or other
+        data language.
+
+::: notes
+Let’s look at a few of the information technology standards that we deal
+with. As I mentioned earlier, they can range from network protocols to
+formatting of content and content standards. The standards that we are
+most concerned about in information and library science are generally of
+a technical nature, and they deal with encoding standards within
+specific technical standards, such as bibliographic databases or the
+MARC record structure that we use in library catalog records.
+
+They can also be concerned with all aspects of record creation, not just
+the metadata structure behind the MARC record, or what we might call a
+**‘metadata schema.’** You can also think of this as the **‘field
+structure’** within the database. But the standards are also concerned
+with the technical infrastructure issues, such as the type of system
+needed to support library catalogs, or the type of encoding structure
+that is used–components like subfield codes and delimiters and XML tags.
+XML is an example of a technical infrastructure standard.
+
+But then also there are content entry rules standards, such as the
+Resource Description and Access, or the RDA. So, standards are not just
+concerned with one aspect of record creation, but with all aspects of
+record creation. Another content entry rule standard might be controlled
+vocabulary standards, such as the development of multilingual thesauri
+that can be used for creating subject headings.
+
+Standards can also be dependent upon other related standards, and this
+is where it can get really confusing when you look at NISO and ISO
+standards–if the technical standards are related to other technical
+standards for development and carry, or encoding, of these different
+types of technical information. ISO is getting better about linking
+these related standards together, but still it’s a very complex web–if
+you will–of standards that need to be in place for creating a
+bibliographic structure, such as MARC.
+
+The technical standards for encoding of data within XML or other data
+languages are an example of that, where you might have–XML, is a
+metadata schema and the different tags within XML–but then you have to
+have a standard that actually makes it work within a system, as well as
+other types of data languages or content entry rules for creating the
+metadata or the values within those XML fields. So, again, some
+standards are dependent on other related standards. If you change one,
+oftentimes you have to change many.
+:::
+
+## Technical Standards {.smaller}
+
+-   `MARC and MARC 21`
+    -   Information exchange standard
+    -   First MARC standard developed in 1960’s by U.S. and U.K.
+    -   MARC21 developed in 2000, merger of USMARC and CANMARC
+    -   based on the ANSI NISO standard Z39.2, the American National
+        Standard for Bibliographic Information Exchange (1971,
+        revised 1985) and the ISO standard 2709:1996, Information
+        Documentation--Format for Information Exchange
+    -   LC’s Network Development and MARC Standards Office and Standards
+        Division at the Library and Archives Canada
+
+::: notes
+MARC and MARC21 is the metadata standard, or the technical standard,
+that we use to exchange information in libraries. MARC, or Machine
+Readable Cataloging, was first developed in the 1960’s by the US and the
+UK. MARC21 was developed in 2000, which is basically a merger of the US
+MARC and CANMARC to try to reconcile some of the issues within the MARC
+record structure. MARC is continually being updated, and with the
+development of the RDA, or Resource Description and Access, standard for
+descriptive cataloging, it has been revised continually over the last
+ten years.
+
+MARC is based on the ANSI NISO standard Z39.2, the American National
+Standard for Bibliographic Information Exchange, and the ISO standard
+2709. You will see, again, as we go further into the next module, that
+MARC is really the backbone for all library catalogs. There is an
+exciting development, however. MARC’s replacement, or what we’re calling
+BIBFRAME at this point, is currently under development and has been
+under development since 2011. The BIBFRAME, which we’ll address in the
+next module as well, is an open linked data standard, so that we can
+more freely share our library records outside of the library community.
+MARC is still maintained by the Library of Congress’ Network Development
+and MARC Standards Office as well as the Standards Division at the
+Library and Archives Canada.
+:::
+
+## Technical Standards {.smaller}
+
+-   MARC-based metadata schema
+    -   `MODs` (Metadata Object Description Schema), an XML metadata
+        schema which uses selected data from MARC records and extends
+        the records to include additional data elements;
+    -   `MADS` (Metadata Authority Description Schema), an XML schema
+        for authorities data;
+    -   `XMLMARC`, which translates the MARC record structure into an
+        XML schema;
+    -   numerous `metadata crosswalks` between MARC and other metadata
+        standards
+-   Revisions to MARC due to RDA work
+
+::: notes
+In Module 6, we will take a more in-depth look at MARC. I did, however,
+want to mention that there are other metadata structures that are used
+within MARC, such MODs and MADs and XMLMARC as well as numerous metadata
+crosswalks within MARC. For example, MARC is the machine readable
+cataloging standard we use in bibliographic records in library catalogs;
+however, there are XML versions of MARC that have slightly different
+metadata schema or fields within the structure.
+
+The scheme may use only selective data from MARC records and extend
+those records to include additional data elements. For example, MODs or
+MADs may be used in an archive in a finding aid or in a specialized
+collection, as opposed to only library catalog records.
+
+XMLMARC is a standard that translates the MARC record structure into an
+XML schema and makes it more portable into systems that support XML. So,
+your library OPAC isn’t necessarily going to have XML behind it, but
+there are some library OPACs that do have MARC XML, and those are
+generally in the open source community in systems like KOHA. Some of the
+newer systems in the open source community being developed for MARC
+record structures are in XML.
+
+Then there are also metadata crosswalks, which are the technical
+specifications you would develop when you take an existing metadata
+structure and map it to another metadata structure, such as Dublin Core.
+So, we might have a MARC record that has metadata crosswalks between the
+fields or the elements within the MARC record that are mapped into the
+metadata schema of Dublin Core. In Module 6.3, we will talk more about
+non-MARC metadata structures and crosswalks.
+:::
+
+## Technical Standards
+
+-   `UNIMARC`
+    -   developed in 1977 and has been revised as needed through the
+        years
+    -   most current version of UNIMARC includes updates through 2005
+    -   maintained by the International Federation of Library
+        Associations (IFLA) Universal Bibliographic Control and
+        International MARC Core Programme (UBCIM) (IFLA, 2008)
+    -   information exchange among national bibliographic agencies
+
+::: notes
+Another technical standard that we talk about is called UNIMARC. UNIMARC
+was developed in 1977 and it’s been revised as needed throughout the
+years. The most current version of UNIMARC contains updates through
+2005.
+
+So, this one has been on hold for a while as RDA has been developing, as
+FRSAD, which is the companion to FRBR but is for describing the subject
+aspects of bibliographic records, has been developing.
+
+UNIMARC is maintained by the International Federation of Library
+Associations, or IFLA, their Universal Bibliographic Control and
+International MARC Core Programme. UNIMARC is an information exchange
+standard that allows different national bibliographic agencies to share
+data.
+:::
+
+## Other Technical Standards {.smaller}
+
+-   ISO standard 1001:1996, Information Processing: `File Structure` and
+    `Labeling of Magnetic Tapes` for Information Interchange
+
+-   `SGML` (Standard Generalized Markup Language), ISO standard 8879:
+    1986, Information Processing--Text and Office Systems, which defines
+    the entities (objects) and attributes (general characteristics) of
+    the data structure used to encode data about a collection's objects
+
+-   `HTML` (HyperText Markup Language), a SGML application designed for
+    the creation of webpages
+
+-   `XML` (Extensible Markup Language), ISO standard 8879, which
+    implements SGML in the web environment
+
+-   `Universal Coded Character Set` (UCS or ISO/IEC 10646: 1998)
+    approved as a second encoding for MARC 21 records
+
+-   `Unicode`, ISO/IEC standard 10646, Universal Multiple-Octet Coded
+    Character Set, defines a universal character set for encoding the
+    characters in the scripts of the world's languages
+
+::: notes
+I have listed on this slide some other technical standards, which you
+have probably heard of, such as SGML–Standard Generalized Markup
+Language–or the precursor to HTML, which is used in most web
+development, and XML, as well as Universal Coded Character Sets and
+UNICODE, which is another universal character set for encoding the
+characters in the scripts of the worlds languages.
+
+But then there are some other ones you’ve probably not heard about, like
+ISO standard 1001:1996, which is an information process file structure
+and labeling of magnetic tapes for information interchange. It’s a file
+naming convention and file structure for information interchange of
+magnetic tapes. Earlier library backup systems stored data and records
+on magnetic tape.
+
+So, there are different technical standards that we have to deal with in
+information management and information organization. Some, like I said,
+that you’ve heard about and others that you have not, but that you’ve
+definitely used if you’ve used any retrieval system.
+:::
+
+## Content Creation Standards {.smaller}
+
+-   `International Standard Bibliographic Description (ISBD)`
+    -   serves as an international standard that defines a set of
+        descriptive elements to include in bibliographic records
+
+    -   There are ten specialized ISBDs related to:
+
+        ::::: columns
+        ::: {.column width="50%"}
+        -   ISBD(A), older monographic publications
+        -   ISBD(CF) computer files
+        -   ISBD(CM) cartographic materials
+        -   ISBD(CR) serials and continuing resources
+        -   ISBD(ER) electronic resources
+        :::
+
+        ::: {.column width="50%"}
+        -   ISBD(G) general
+        -   ISBD(M) monographic
+        -   ISBD(NBM) nonbook materials
+        -   ISBD(PM) printed music
+        -   ISBD(S) serials
+        :::
+        :::::
+
+    -   IFLA began work on the consolidated the ISBDs into one in 2003,
+        with publication in the consolidated ISBD in 2007
+
+::: notes
+As I mentioned earlier, we have standards for all aspects of record
+creation, and one set of those is what we call **‘content creation
+standards.’** A content creation standard is the ISBD, or the
+International Standard Bibliographic Description. This serves as an
+international standard that defines a set of descriptive elements that
+are included in bibliographic records, in MARC records.
+
+The ISBD standards are part of the AACR2, and now part of RDA. There are
+ten specialized ISBDs, and I’ve listed them all here on this slide. The
+one that we use is the general ISBD in bibliographic records primarily,
+but if you’re working in electronic resources, or you’re working in a
+music library, you’re going to use a different set of the ISBD for your
+bibliographic description.
+
+IFLA began their work on the consolidation of the ISBDs into one in
+2003, and they published the consolidated ISBD in 2007.
+:::
+
+## Content Creation Standards {.smaller}
+
+-   `Resource Description and Access (RDA)`
+    -   began work in 2003
+
+    -   the online tool for accessing the RDA was released in June 2010;
+        RDA was implemented in national libraries (Library of Congress,
+        NAL, NLM) in first quarter of 2013
+
+    -   The RDA is based on the conceptual metadata models, FRBR
+        (Functional Requirements for Bibliographic Records) and FRAD
+        (Functional Requirements for Authority Data), developed by IFLA
+        and the international cataloging community
+
+    -   Will replace the AACR2 as content creation standard when
+        adopted/implemented
+
+::: notes
+The Resource Description and Access, or the RDA is a content-creation
+standard for descriptive cataloging. If you want to learn how to catalog
+and learn more about the application of RDA, you would want to take the
+cataloging course which will be offered in the Spring.
+
+RDA is primarily an online tool that catalogers use. It was first
+released in final version in June 2010, and then the national libraries
+in the United States, as well as 26 other libraries throughout the US,
+went through a testing phase from June until December of 2010. They
+evaluated and analyzed that data, and the national libraries agreed to
+implement RDA.
+
+Many libraries around the world have begun using RDA instead of AACR2,
+including here in Oklahoma. RDA is also currently being revised. Some of
+the rules that people didn’t understand during the testing or that were
+confusing are being revised and additional rules added as necessary.
+
+So, it’s still being developed. RDA is based on what we call a
+‘conceptual metadata model,’ or FRBR, the Functional Requirements for
+Bibliographic Records. This model was developed as a result of user
+studies, where researchers talked to users about how they understand
+bibliographic records and what their uses for bibliographic records
+were, as well as what functions records need to provide a user.
+
+RDA is also based on FRAD, Function Requirements for Authority Data.
+Again, we’ll talk more about bibliographic records and authority records
+in the next module, but I want you to know that they are the basis for
+RDA.
+:::
+
+## Subject-Related Content Standards {.smaller}
+
+-   Controlled vocabulary development—thesauri
+    -   `ISO 2788: 1986, Documentation -- Guidelines for the establishment and development of monolingual thesauri`
+        -   was first published as an ISO standard in 1974. It was
+            revised in 1986. In 2017 it was combined with 5964 and
+            others as ISO 25964.
+    -   `ISO 5964: 1985, Documentation -- Guidelines for the establishment and development of multilingual thesauri`
+        -   Work was just completed in 2017 to revise and combine ISO
+            2788 and ISO 5964 into an updated ISO 25964, Information and
+            documentation -- Thesauri and interoperability with other
+            vocabularies. An international group of experts in indexing
+            representing 11 countries is currently reviewing 2788 and
+            5964 and aligning them with the new BS version.
+
+::: notes
+There are also subject-related content standards, and I’ve mentioned
+these just briefly. Here on the slide you can see some of the standards
+developed for controlled vocabularies or subject specific thesauri.
+
+The ISO 2788, which is the Guidelines for the Establishment and
+Development of Monolingual Thesauri, was first published as an ISO
+standard in 1974; it was revised in 1986 and in 2011 and combined with
+5964 and others in 2017 for multilingual thesauri.
+
+It was published as a new standard ISO 25964-1:2011. Now, that’s one of
+the problems is that the standards are developed, and as I said, they
+need to be reviewed and maintained.
+:::
+
+## Subject-Related Content Standards {.smaller}
+
+-   `BS 8723: 2008, Structured Vocabularies for Information Retrieval`
+    -   developed by the British Standards Institute, represents a
+        combination and complete revision of BS 5723 and 6723. BS 8723
+        is being used as the basis for the development of ISO 25964
+-   `ANSI/NISO Z39.19: 2005, Guidelines for the Construction, Format and Management of Monolingual Controlled Vocabularies`
+    -   presents guidelines and conventions for the contents, display,
+        construction, testing, maintenance, and management of
+        monolingual controlled vocabularies. It focuses on controlled
+        vocabularies that are used for the representation of content
+        objects in knowledge organization systems including lists,
+        synonym rings, taxonomies, and thesauri
+
+::: notes
+On this slide, again, are just some other standards that are related to
+the two on the other slide. The BS 8723 was developed at the British
+Standards Institute, and it revised earlier British standards that were
+used for the development of structured vocabularies and information
+retrieval systems.
+
+Also related is the ANSI NISO Z39.19, Guidelines for the Construction,
+Format, and Management of Monolingual Vocabularies. So, all of these are
+content standards that are related to subjects, creating of subject
+headings, or creating of subject heading lists–or thesauri–that we use
+within MARC record structures.
+:::
+
+## Subject Related Content Standards
+
+-   Library of Congress Subject Headings (LCSH)
+
+-   Sears List of Subject Headings
+
+-   Library of Congress Classification (LCC)
+
+-   Dewey Decimal Classification (DDC)
+
+-   Bliss Classification (B2C)
+
+-   Uniform Decimal Classification (UDC)
+
+-   LCSH and LCC (and others) were originally developed by members of
+    either national/international cataloging communities
+
+::: notes
+Other subject related content standards that you’re probably more
+familiar with are, for example, the Library of Congress Subject Headings
+(or what we shorthand as LCSH), Sears List of Subject Headings, which
+would provide us with subject headings that we then can use in the 600
+fields in MARC records.
+
+Also, classification systems in libraries tend to be based on subjects.
+So, we have Library of Congress Classification and Dewey Decimal
+Classification that are subject related content standards, but there are
+a whole host of others.
+
+LSCH and LCC as well as others on this list and not on this list were
+originally developed by members of either national or international
+cataloging communities, As catalogers, as practitioners, we can suggest
+updated subject headings.
+
+We can suggest removing antiquated or outdated subject headings. There
+is a process for doing so. Once a change is submitted the request is
+reviewed by a committee, and eventually the heading might get changed or
+added. But it’s a long process. It’s getting quicker with electronic
+communication than it used to, but it still takes a while for us to
+update subject headings.
+:::
+
+## World Wide Web Content Standards {.smaller}
+
+-   `Resource Description Framework (RDF)`
+    -   a language for representing information about resources in the
+        World Wide Web.... RDF provides a common framework for
+        expressing this information, so it can be exchanged between
+        applications without loss of meaning
+-   `SKOS (Simple Knowledge Organization)`
+    -   to support the use of knowledge organization systems (KOS) such
+        as thesauri, classification schemes, subject heading systems and
+        taxonomies within the framework of the Semantic Web
+    -   SKOS provides a standard way to represent knowledge organization
+        systems using the Resource Description Framework (RDF)
+
+::: notes
+There are also standards developed at the world level, such as the World
+Wide Web content standards that I have listed on the slide–one that
+you’ll hear of in the readings is the Resource Description framework, or
+the RDF. This is basically a language for representing information about
+resources in the World Wide Web. So, it’s a common framework that
+expresses this information so that it can be exchanged between different
+applications without loss of meaning. It’s a metadata scheme behind your
+webpages, but it’s a lot more than that.
+
+Then there’s SKOS–the Simple Knowledge Organization System. This is a
+metadata structure to support the use of knowledge organization systems,
+or KOS, such as thesauri, classification schemes, subject heading
+systems, and taxonomies within the framework of the semantic web. We’ll
+talk more about the semantic web in the coming weeks, but basically it’s
+a volunteer effort to organize and catalog the web.
+
+SKOS also provides a standard way to represent knowledge organizations
+using the RDF framework. There are multiple organizations online that
+are using SKOS and developing controlled vocabulary structures and
+databases using this as their metadata structure. I’ve listed a few of
+those on your readings page that you can take a look at their websites.
+:::
+
+## Metadata Schemes {.smaller}
+
+-   Many developed since mid to late 1990’s
+-   Developed for multiple purposes/environments/collections
+    -   general purpose
+    -   cultural objects and visual resources
+    -   educational purposes--discipline specific or - general
+        application
+        -   LOM
+        -   Darwin Core
+    -   archival and preservation metadata
+    -   metadata registries
+
+::: notes
+It is also important to mention here that many different efforts,
+consortia, library and information professional communities, as well as
+many non-LIS communities are developing specialized metadata schemes to
+support their digital collections.
+
+Metadata schemes are basically the record structure. It could be the
+field structure in a database; it could be the XML structure in an
+organized set of records online. It could be developed for a specialized
+collection or it can also be used for general purpose.
+
+There are multiple different metadata schemes that have been developed
+since mid- to late- 1990’s. The one that you’re probably most familiar
+with is the Dublin Core, which is a very generic metadata scheme that’s
+used behind a lot of digital library records. One in particular is the
+National Science Digital Library. It uses the Dublin Core and the Dublin
+Core registries for the development of its records.
+
+Metadata schemes are developed for multiple purposes in different
+environments and they’re used for various different collections. Some of
+them are very general purpose, and they can be extended to lots of
+different uses and environments. Some metadata schemes are very
+specialized, such as those developed for cultural objects and visual
+resources.
+
+There are quite a few developed for educational purposes, such as GEM or
+LOM–such a Learning Object Metadata – which are developed for discipline
+specific or general application. Another example would be like the
+Darwin Core, which is developed by the biodiversity community, which is
+really an interesting effort to watch.
+
+It’s a very complicated XML schema for representing records such as
+those in herbaria and in other biodiversity collections. There are
+metadata schemes for archival and preservation data. There also
+‘metadata registries,’ which deal with the subject content within these
+communities.
+:::
+
+## Issues Related to Standards {.smaller}
+
+-   a standard may be in conflict with other standards
+
+-   the standardized practice may be contrary to how the user would
+    represent and/or search for the information object being described
+    in the knowledge system
+
+-   the reasons or principles underlying the standard and the community
+    may become obscured. Is the rationale for the standard lost in the
+    development process and the practice? Are all standards necessary or
+    do they continue to be needed?
+
+-   over standardization may inhibit change
+
+-   standards should be dynamic and reviewed periodically to make sure
+    they still work as projected, or if revisions are needed
+
+::: notes
+There are, of course, issues related to developing standards and
+implementing and using standards as well. For example, a standard may be
+in conflict with other standards.
+
+As I mentioned earlier, it’s really a complex, interconnected web of
+different standards that make our systems work. If you change one
+standard, chances are it’s going to affect another standard.
+
+So, you have to also review and alter related standards. One has to have
+a good feel for which standards are in place, which are important, and
+which need to be reviewed. Standards organizations have to know which
+standards are connected to particular standards, so they make sure they
+review them all.
+
+The standardization practice may be contrary, or the application of that
+standard may be contrary to how the individual user would represent
+and/or search for information objects in your knowledge system, in your
+organization system. For example, the MARC record structure has been
+maligned for years of not really being user-centered and not really
+representing the elements that users would want in bibliographic
+records.
+
+The reasons or principles underlying the standard and the community may
+become obscured, meaning that when we developed the standard the first
+time, we had a specific purpose or goal in mind, and through the years,
+that reason or principle for that standard may have been lost or may
+have been redefined or reviewed, and it may be obscured.
+
+The rationale for the standard may also be lost during that development
+process, as well as application within practice. So, again, we might
+have developed a standard to meet a specific need and to serve a certain
+purpose, but as it’s developed, and as it’s put into practice, that
+might be lost.
+
+As I mentioned, we need to be constantly reviewing standards, and there
+may be some standards that are no longer necessary, and they could be
+deleted or no longer followed, but again, we’d have to also look at the
+standards related to that standard if we’re going to stop using a
+different standard.
+
+There are people that think that over-standardization may inhibit change
+and innovation because there are so many different guidelines, so many
+standards that you have to be aware of, that you can’t possibly follow
+them all.
+
+Standards should also be dynamic – as I keep saying–and reviewed
+periodically to make sure they still work as you originally planned them
+to or if revisions are needed. They should continually be reviewed and
+they should be refined based on the current environment as well as
+current uses.
+
+This module has given you a snapshot into the standards development
+process, as well as introduced you to multiple different standards. I
+focused more specifically on those that library and information
+professionals would need to deal with. If you’re thinking of developing
+database structures or metadata schema, you have a whole other host of
+standards that you have to be aware of.
+
+As I mentioned, standards are used in probably every different industry
+and environment in the world. Standards are an essential part of the
+fabric of our world community.
+
+So, take some time to look at the ones that I have on these slides and
+that also I’ve listed on the Readings list. If you have any questions or
+comments you can post them on the Module 5 discussion board forum. Also
+check out the SeeingStandards info graphic and key that are on Module 5.
+:::
