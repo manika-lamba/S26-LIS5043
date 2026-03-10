@@ -12,4 +12,7 @@
   - [Evaluation of Systems/Usability](https://manika-lamba.github.io/S26-LIS5043/Week-5_part2/#/title-slide)
 - [Week 6: Standards and Standardizations](https://manika-lamba.github.io/S26-LIS5043/Week-6/#/title-slide)
 - [Week 7: Ethics, Diversity, and Access within Information Organization](https://manika-lamba.github.io/S26-LIS5043/Week-7/#/title-slide)
-
+- Week 8
+  - [PART 1: Conceptual Models](https://manika-lamba.github.io/S26-LIS5043/Week-8_part1/#/title-slide)
+  - [PART 2: Conceptual Models](https://manika-lamba.github.io/S26-LIS5043/Week-8_part2/#/title-slide)
+  - [PART 3: Bibliographic Access](https://manika-lamba.github.io/S26-LIS5043/Week-8_part3/#/title-slide)
