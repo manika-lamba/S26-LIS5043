@@ -16,3 +16,5 @@
   - [PART 1: Conceptual Models](https://manika-lamba.github.io/S26-LIS5043/Week-8_part1/#/title-slide)
   - [PART 2: Conceptual Models](https://manika-lamba.github.io/S26-LIS5043/Week-8_part2/#/title-slide)
   - [PART 3: Bibliographic Access](https://manika-lamba.github.io/S26-LIS5043/Week-8_part3/#/title-slide)
+- WEEK 9: SPRING BREAK!
+- [Week 10: Bibliographic Access, MARC, and Authority Control](https://manika-lamba.github.io/S26-LIS5043/Week-10/#/title-slide)
