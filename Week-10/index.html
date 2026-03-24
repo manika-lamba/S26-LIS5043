@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
+
+  <meta name="author" content="Dr.&nbsp;Manika Lamba">
+  <title>Bibliographic Access, MARC, and Authority Control</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Bibliographic Access, MARC, and Authority Control</h1>
+  <p class="subtitle">LIS 5043: Organization of Information</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Dr.&nbsp;Manika Lamba 
+</div>
+</div>
+</div>
+
+</section>
+<section>
+<section id="overview" class="title-slide slide level1 center">
+<h1>Overview</h1>
+<ul>
+<li>MARC record standard</li>
+<li>Deconstructing MARC records</li>
+<li>MARC and RDA</li>
+<li>Authorized Access points and authority control</li>
+<li>Definitions</li>
+<li>Purpose of authority control</li>
+<li>Authority work</li>
+<li>Establishing an authorized access point</li>
+</ul>
+<aside class="notes">
+<p>In this lecture, we will be discussing two topics: 1) MARC record standard and MARC records, and 2) Authority Control (AC), how we effect AC in our organization systems (library catalogs), and the purpose it plays in representation and retrieval of bibliographic records.</p>
+<p>We will cover the following aspects:</p>
+<ol type="1">
+<li><p>MARC record standard</p></li>
+<li><p>Deconstruction of MARC records</p></li>
+<li><p>MARC and RDA</p></li>
+<li><p>What is authority control and access control?</p></li>
+<li><p>What do we consider “access points” and what is their function in our library systems?</p></li>
+<li><p>We will review useful definitions for a.Access Points b.Headings c.Authority control d.Authority work</p></li>
+</ol>
+<p>We will discuss the purpose of authority control and how it works in the bibliographic catalog.</p>
+<p>Lastly, we will learn about the practice of Authority Work and how libraries create systems to hold local authority records, and we will take a look at authority systems developed at the Library of Congress and OCLC.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-machine-readable-cataloging" class="slide level2">
+<h2>MARC: Machine-Readable Cataloging</h2>
+<ul>
+<li>Digital record format</li>
+<li>Developed in late 60’s, early 70’s</li>
+<li>Encodes representations of information to be processed by computers</li>
+<li>Originally designed for bibliographic data</li>
+<li>Can be used for many types of data</li>
+</ul>
+<aside class="notes">
+<p>So, what is MARC?</p>
+<p>MARC stands for Machine Readable Cataloging and represents a hugely significant development in the history of libraries and bibliographic control.</p>
+<p>It was developed by Henriette Avram in the late 1960’s and became more widely accepted in the early 1970s.</p>
+<p>MARC was and still is the digital structure and encoding standard used by libraries and other information organizations around the world to create and share bib records.</p>
+<p>There are other formats of MARC also, such as Authority records, Holdings records, Community database records, etc. so it really is a fairly flexible standard.</p>
+<p>One of the main criticisms of MARC is that it does not play well with the representation needs of objects created in the digital environment.</p>
+<p>Keep this thought in mind as you look at MARC records.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="data-sharing" class="slide level2">
+<h2>Data Sharing</h2>
+<p><code>MARC allows libraries to...</code></p>
+<ul>
+<li>Share bibliographic data</li>
+<li>Avoid duplication of cataloging effort</li>
+<li>Obtain predictable, reliable data</li>
+<li>Integrate cataloging for all materials</li>
+<li>Edit records to suit local needs<br>
+</li>
+<li>Implement standard online catalog software</li>
+<li>Support a variety of retrieval mechanisms</li>
+<li>Support a variety of online display options</li>
+</ul>
+<aside class="notes">
+<p>So, what does MARC do?</p>
+<ul>
+<li>MARC (Machine-Readable Cataloging) facilitates efficient data sharing among libraries by enabling them to exchange bibliographic information seamlessly.</li>
+<li>It allows libraries to share standardized data, thereby reducing the need for duplicative cataloging efforts.</li>
+<li>By using MARC, libraries can obtain consistent and reliable records, ensuring that the data is accurate and predictable.</li>
+<li>It also supports the integration of cataloging for diverse types of materials, making it easier to manage different collections under one system.</li>
+<li>Additionally, libraries can customize MARC records to meet specific local requirements.</li>
+<li>MARC supports the implementation of standard online catalog software, allowing for a wide range of retrieval mechanisms and display options, ensuring flexible and user-friendly access to library materials.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-standards" class="slide level2">
+<h2>Record Structure Standards</h2>
+<p><code>MARC standards are related to:</code></p>
+<ul>
+<li><code>ANSI/NISO Z39.2</code>: American National Standard for Information Interchange (1971)
+<ul>
+<li>provides structure</li>
+<li>does NOT address content or content designation</li>
+</ul></li>
+<li><code>ISO 2709</code>: International Organization for Standardization Documentation; Format for Bibliographic Information Interchange
+<ol start="1973" type="1">
+<li></li>
+</ol></li>
+</ul>
+<aside class="notes">
+<p>MARC standards have been developed by ANSI/NISO and ISO, two standards organizations that we discussed in Module 5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="multiple-standards" class="slide level2">
+<h2>Multiple Standards</h2>
+<p><code>National and International MARC</code></p>
+<ul>
+<li><code>MARC 21</code>: harmonized USMARC (U.S.) and CANMARC (Canada)</li>
+<li>UNIMARC: Eastern Europe, other parts of world</li>
+<li>UKMARC: Great Britain and Europe</li>
+<li>IBERMARC: Spain</li>
+<li>Others</li>
+</ul>
+<aside class="notes">
+<p>MARC is used all over the world and is actually multiple standards.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="multiple-standards-1" class="slide level2">
+<h2>Multiple Standards</h2>
+<p><code>MARC 21 is really a family of formats</code></p>
+<p><em>Each carries specific kinds of data</em></p>
+<p><em>Structure of each is same; semantics differ</em></p>
+<ul>
+<li>MARC 21 Format for Bibliographic Data</li>
+<li>MARC 21 Format for Authority Data</li>
+<li>MARC 21 Format for Holdings Data</li>
+<li>MARC 21 Format for Classification Data</li>
+<li>MARC 21 Format for Community Information</li>
+</ul>
+<aside class="notes">
+<p>As mentioned earlier, it is really a family of formats, meaning we can use the MARC metadata structure to represent MORE than just bibliographic records for libraries.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-of-multiple-standards" class="slide level2 smaller">
+<h2>Example of Multiple Standards</h2>
+<p><code>MARC 21 bibliographic format field groups</code></p>
+<p>0XX – Control information, numbers, codes</p>
+<p>1XX – Main entry</p>
+<p>2XX – Titles, edition, imprint</p>
+<p>3XX – Physical description, etc.</p>
+<p>4XX – Series statement</p>
+<p>5XX – Notes</p>
+<p>6XX – Subject access fields</p>
+<p>7XX – Added entries, linking fields</p>
+<p>8XX – Series added entries, holdings, etc.</p>
+<p>9XX – Local implementation fields</p>
+<aside class="notes">
+<p>Here is an example of the MARC field structure for bibliographic records.</p>
+<p>Note that we do not use field labels that are words, we use numbers.</p>
+<p>For example, title information is included in the 2XX fields. Subject information is in the 6XX fields.</p>
+<p>You will be exploring the MARC structure further in AE#5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-parts" class="slide level2">
+<h2>Record Structure Parts</h2>
+<p><em>These fields are used by programmers</em></p>
+<ul>
+<li><p><code>Leader</code>: fixed-length field containing data about record itself</p></li>
+<li><p><code>Directory</code>: series of fixed-length entries containing index data describing each variable-length data field in the record and its length and position</p></li>
+</ul>
+<aside class="notes">
+<p>Behind the interface, MARC records are structured in four parts: Leader, Directory, Control fields and Data fields. Each are described on the next slides.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-parts-1" class="slide level2">
+<h2>Record Structure Parts</h2>
+
+<img data-src="images/clipboard-178668331.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>The leader (in green on the slide), directory (in red), and data fields (in black) each include important instructions to the computer on how to process the record and the data in the record.</p>
+<p>Believe it or not we used to actually show the raw leader and directory data to users in very early library catalogs. The information in the leader is encoded by the cataloger when developing the control fields in the record, such as the 008 field.</p>
+<p>The directory is developed by the computer and the cataloger as the program extracts and builds the coding based on the values the cataloger enters in the fixed and variable length fields. The data fields are developed by the cataloger when they create a new catalog record for an item in the collection.</p>
+<p>This record is for a book by Ronald Hagler entitled “The bibliographic record and information technology.”</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-parts-2" class="slide level2">
+<h2>Record Structure Parts</h2>
+<p><em>These fields are created and used by catalogers</em></p>
+<ul>
+<li><code>Control Fields</code>: mostly variable-length fields containing data necessary for processing record and representing content
+<ul>
+<li>tagged (labeled) 0xx</li>
+</ul></li>
+<li><code>Field 008</code>: fixed-length control field containing coded data describing books (<em>year, type of publication, illustrations, audience, literary form, language, etc.</em>)</li>
+</ul>
+<aside class="notes">
+<p>Control fields hold data that the computer needs to help it process the record but they also hold numeric data such as classification numbers and ISBN codes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-parts-3" class="slide level2">
+<h2>Record Structure Parts</h2>
+<p><em>These fields are seen by catalog users</em></p>
+<ul>
+<li><code>Data Fields</code>: variable-length fields containing substantive data representing an information object
+<ul>
+<li>tagged 1xx – 9xx
+<ul>
+<li>also called tagged fields</li>
+<li>often contain subfields</li>
+</ul></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>Data fields hold the data that describes the information object.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="record-structure-parts-4" class="slide level2">
+<h2>Record Structure Parts</h2>
+
+<img data-src="images/clipboard-1360851256.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>This slide shows you an example of which fields are <em>Control fields</em> and which are <em>Data fields</em>.</p>
+<p>This is the view a cataloger sees and also what the MARC record looks like as the cataloger develops the metadata within the fields.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="content-designation" class="slide level2">
+<h2>Content Designation</h2>
+
+<img data-src="images/clipboard-27254238.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Let’s take a closer look at a MARC record.</p>
+<p>This slide decodes it a bit for you. For example, the Title of the object is included in the 245 field. The 245 is called a field tag. The 1 and 4 are what are called indicators. They give instructions to the computer on how to process the data that follows in the record.</p>
+<p>For example, the 1 (first indicator), tells the computer that there is an added entry (in this case there is other title information) to look for also when searching. The second indicator (4) tells the computer how many spaces to drop when sorting.</p>
+<p>The computer would then sort on the word “bibliographic” INSTEAD of “The”. How useful would it be to sort on “the” when displaying titles to the users?</p>
+<p>Each field may have one or more subfields that hold yet different data about the item. Subfields are indicated by a symbol, such as the $ or | (called subfield delimiters) in records, followed by an alphanumeric subfield code, usually a one alpha or numeric character such as the $a, $b, $c examples shown on the slide.</p>
+<p>You will be using an online tool called the MARC Bibliographic Format to decode the different field tags/subfields, indicators, etc. in AE#5.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-bibliographic-format" class="slide level2">
+<h2>MARC Bibliographic Format</h2>
+<ul>
+<li>To determine what each “tag” includes in a MARC record, we use an online source called the MARC Bibliographic Format. It is available at:</li>
+</ul>
+<ol type="1">
+<li>Library of Congress at: <a href="http://www.loc.gov/marc/" class="uri">http://www.loc.gov/marc/</a> , then click on Bibliographic Format link or go directly to: <a href="http://www.loc.gov/marc/bibliographic/" class="uri">http://www.loc.gov/marc/bibliographic/</a></li>
+</ol>
+<aside class="notes">
+<p>Here is the link out to the MARC Bibliographic Format you can use to learn more about how MARC records are structured.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-bibliographic-format-1" class="slide level2">
+<h2>MARC Bibliographic Format</h2>
+
+<img data-src="images/clipboard-3545545295.png" class="r-stretch"><aside class="notes">
+<p>Input conventions on the Bib Format for the 245 (title) field.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="data-content" class="slide level2">
+<h2>Data Content</h2>
+
+<img data-src="images/clipboard-791185969.png" class="r-stretch"><aside class="notes">
+<p>And, here is the result from a user view after a cataloger using the MARC record structure and MARC Bibliographic Format to develop a catalog record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-does-a-marc-record-look-like" class="slide level2">
+<h2>What does a MARC record look like?</h2>
+
+<img data-src="images/1.png" class="quarto-figure quarto-figure-center r-stretch" width="359"><aside class="notes">
+<p>To develop MARC records libraries use different tools. The one used most often in libraries, is the OCLC Connexion web interface.</p>
+<p>OCLC is a large, world-wide nonprofit consortium (also called a bibliographic utility) that catalogers use to develop MARC records.</p>
+<p>You must be a member of OCLC to copy, develop, or edit records in Connexion. Connexion is the cataloger’s view of MARC records.</p>
+<p>You may already be using the user’s view of OCLC’s Connexion database. It is called WorldCat. The WorldCat database is developed by catalogers around the world who belong to the OCLC consortium.</p>
+<p>The slide shows you what the web access page to Connexion looks like. If you take the Cataloging and Classification course you will use Connexion to develop MARC records.</p>
+<p>In this class we will not be developing records but will instead use the Library of Congress Catalog to examine MARC record components in depth.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-record-in-oclc-connexion-marc-text-view" class="slide level2">
+<h2>MARC record in OCLC Connexion: MARC Text View</h2>
+
+<img data-src="images/clipboard-68117440.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>There are several different views a cataloger may use to develop MARC records.</p>
+<p>The Text View is shown on this screen. This view basically works like a word processor. The cataloger determines which fields to add to the record, and then encodes the record using the MARC Bibliographic Format instructions, including all tags, indicators, subfield delimiters and codes, as well as the data values that describe the object.</p>
+<p>Each field or subfield holds the data values for either descriptive cataloging (as we discussed in Module 6.1.1 and 6.1.2) and the subject cataloging (we will discuss in Module 7) and classification (Module 8).</p>
+<p>Combining all of these elements results in one bibliographic record in our library catalog.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-record-display-mode" class="slide level2">
+<h2>MARC Record: Display Mode</h2>
+
+<img data-src="images/clipboard-3599742608.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>This slide shows the Display Mode that a cataloger uses to check their work once they have developed the record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="marc-record-editing-modetemplate-view" class="slide level2">
+<h2>MARC Record: Editing Mode/Template View</h2>
+
+<img data-src="images/clipboard-3586036773.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>And this slide shows the Editing Mode or Template View.</p>
+<p>Catalogers can use this view to either edit a record or to develop a record, using a template, with boxes, rather than the Text View shown on slide 19.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="new-bibliographic-framework-initiative" class="slide level2">
+<h2>New Bibliographic Framework Initiative</h2>
+<ul>
+<li>The Library of Congress has begun development of a new bibliographic framework that will replace the MARC record structure.</li>
+<li>For more information of this effort, go to: <a href="https://www.loc.gov/bibframe/" class="uri">https://www.loc.gov/bibframe/</a></li>
+<li>For list of changes to MARC to accommodate RDA, go to: <a href="http://www.loc.gov/marc/RDAinMARC.html" class="uri">http://www.loc.gov/marc/RDAinMARC.html</a></li>
+</ul>
+<aside class="notes">
+<p>Initiated by the Library of Congress, BIBFRAME provides a foundation for the future of bibliographic description, both on the web, and in the broader networked world.</p>
+<p>Follow the link on the slide to the LoC site which presents general information about the project, including presentations, FAQs, and links to working documents.</p>
+<p>In addition to being a replacement for MARC, BIBFRAME serves as a general model for expressing and connecting bibliographic data.</p>
+<p>A major focus of the initiative will be to determine a transition path for the MARC 21 formats while preserving a robust data exchange that has supported resource sharing and cataloging cost savings in recent decades. As you will see on the next slide, BIBFRAME uses a basic FRBR model to represent items.</p>
+<p>The second link on this slide will show you a list of changes made to the MARC record structure to accommodate the new descriptive cataloging standard, RDA, that we discussed earlier in this module.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bibframe-model" class="slide level2">
+<h2>BIBFRAME Model</h2>
+
+<img data-src="images/clipboard-2085396036.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>This slide shows the BIBFRAME model being developed by the world wide cataloging community. You can see how the FRBR conceptual model has influenced its development.</p>
+<p>To learn more about the model and BIBFRAME go to: <a href="http://www.loc.gov/bibframe/docs/model.html" class="uri">http://www.loc.gov/bibframe/docs/model.html</a> to read about developments and see early implementation of BIBFRAME. There is also an update at each ALA conference.</p>
+<p>BIBFRAME represents an important change for libraries and the way we think about and represent data in our catalogs.</p>
+<p>As part of linked open data, we will be able to share our data outside of the library catalog with others, such as vendors, publishers, Amazon, etc. The inter-connectivity of linked library open data will also enable our library catalogs to collocate our records in many new ways, as we saw in the Module 7.1.1 and 7.1.2 lectures.</p>
+<p>What do you think about this exciting but very frightening (for some) change to bibliographic records? Post your thoughts on the Module 10 discussion board.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="useful-definitions-authority-control" class="slide level2 smaller">
+<h2>Useful Definitions: Authority Control</h2>
+<ul>
+<li>Broad concept for establishing/maintaining consistency in records
+<ul>
+<li><p>maintains consistency of names and other terms occurring in selected access points</p></li>
+<li><p>shows relationships between an “authorized” or “controlled” term and variants or related terms</p></li>
+<li><p>Three forms:</p>
+<ul>
+<li><p>name authority control</p></li>
+<li><p>title authority control</p></li>
+<li><p>subject authority control</p></li>
+</ul></li>
+</ul></li>
+<li>Certain fields may be under authority control, typically the fields that serve as access points</li>
+</ul>
+<aside class="notes">
+<p>Let’s leave the discussion about bibliographic records for a while, though we will come back to it later in this lecture. Now let’s address Authority Control and the role it plays in developing bibliographic records.</p>
+<p>First let me present some definitions that will be useful to our discussion:</p>
+<p><strong>Authority control (AC)</strong> – this is a very broad concept that we use to describe the practice of making choices about what we consider to be the authorized or preferred form of a name, title, or subject in our bibliographic system.</p>
+<p>Using AC allows us to maintain a consistent form that is used every time we represent that particular person’s name in our system, or every time we use that title or subject term.</p>
+<p>For example, when we wish to identify an author in our bibliographic records we consult what we call an authority file to find the authorized form of that individual’s name.</p>
+<p>We then use this form of the name, and only this form of the name in the 1XX and/or 7XX fields of our MARC records. We will discuss AC further in a few moments.</p>
+<p>Typically only certain fields in our bibliographic records are under AC. These are the fields that we have determined will be searchable or, in other words, those fields we deem as “access points”.</p>
+<p>The next slide presents definitions you might encounter in the readings.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="authority-control-defined" class="slide level2">
+<h2>Authority Control Defined</h2>
+<ul>
+<li><p>“the process of pulling together into a single authority record all the forms of a name that apply to a single name; all the variant titles that apply to a single work; all the synonyms, related terms, broader terms, and narrow terms that apply to a particular subject heading” (Taylor, 1999 p.&nbsp;20).</p></li>
+<li><p>“the determination of the standardized forms of subject terms and names” (Chan, 1996 p.&nbsp;12).</p></li>
+</ul>
+<aside class="notes">
+<p>See slide for other definitions of authority control as defined by Taylor and Chan.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="useful-definitions-access-points" class="slide level2">
+<h2>Useful Definitions: Access Points</h2>
+<ul>
+<li><p>“almost any word in a record when keyword searching is used. However, the term access point is usually applied to a particular name, title, or subject” (Taylor, 1999 p.&nbsp;20).</p></li>
+<li><p>“A name, term, code, etc. under which a bibliographic record may be searched and identified. Also called a “heading” (Chan, 1996 p. 479).</p></li>
+<li><p>database application: any field you designate as a searchable field becomes an access point to user</p></li>
+<li><p>“a name, term, code, etc., under which information pertaining to a specific entity will be found” (RDA, glossary)</p></li>
+</ul>
+<aside class="notes">
+<p>In library systems, such as OPACs, the fields that are searchable serve as access points for your users. Another example of this concept would be when you use databases to find articles. You are generally given a dropdown list of fields that are searchable in the system.</p>
+<p>In this manner you can tell the system which field or fields you wish to search within for the terms you enter. When the database was created, choices had to be made about which fields will be searchable.</p>
+<p>Typically the fields that become access points are those that the system designer thinks will be used more frequently during the search by the users.</p>
+<p>The slide also presents definitions you might encounter in your textbook or the readings. Depending on the specific application as well as perspective, we see there is a different definition related to the term.</p>
+<p>RDA does not change the meaning or use of this term, but in many ways, it makes it a central aspect of bibliographic records. RDA allows for the creation of many more access points than has previously been the practice using AACR2.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="useful-definitionsaccess-points" class="slide level2">
+<h2>Useful Definitions—Access Points</h2>
+<ul>
+<li>Authorized access point– “the standardized access point representing an entity” (RDA glossary)</li>
+<li>Variant access point – “an alternative to the authorized access point representing an entity” (RDA glossary)
+<ul>
+<li>Can be authorized for use or NOT authorized for use</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>RDA also includes the concepts of “authorized access point” and “variant access point”.</p>
+<p>See the slide for the definitions of each.</p>
+<p>Authorized access points are the forms of name, title, or subject that have been established as the form to use in the fields of the bibliographic record (1XX, 2XX, 490, 6XX, 7XX).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="useful-definitions-headings" class="slide level2">
+<h2>Useful Definitions: Headings</h2>
+<ul>
+<li><p>When you use name authority control in bibliographic records, in the 1XX fields, we use what are called Main Headings, or Authorized Name, Authorized Headings.</p></li>
+<li><p>“A name, word, or phrase placed at the head of a catalog entry to provide an access point” (Chan, 1996 p.&nbsp;485: AACR2R, 1998 p.&nbsp;618).</p></li>
+<li><p>“An access point printed at the top of a surrogate record or at the top of a listing of related works in an online resource” (Taylor, 1999 p.&nbsp;243).</p></li>
+</ul>
+<aside class="notes">
+<p>A further related term is Heading. This term is actually a hold over from print library card catalogs. The “heading” was the entry at the top of the card that also instructed the cataloger about which section of the catalog the card should be filed. Usually a card set would have a card for Author, one for Title, and one card for each Subject term that was assigned to the object.</p>
+<p>So a card set would include at a minimum three cards. At the top of each card would be the “heading”. It would be either the author’s name, the title, or the subject. (see next slide for an example).</p>
+<p>In MARC records, we use “headings” for personal or corporate names (1XX fields), for titles and series titles (2XX and 4XX fields), for subject headings (6XX fields), and for added entries for additional personal or corporate names (7XX fields).</p>
+<p>There are two types of sources we use to determine the authorized heading: 1) we use what is called an authority file, or 2) we create or “establish” an authorized heading. We will address authority files, authority control, and establishing headings later.</p>
+<p>So, you can see that headings typically are created for the fields that we have determined as main access points (name, title, subject). We know through years of research that these fields are also the fields most often used by our users to look for objects in our catalogs.</p>
+<p>In RDA, the term heading is being phased out. In fact, you will not find this term in the glossary. I have included it in the lecture because you will still see it used in the literature and discussions about access points.</p>
+<p>In RDA access point is used to referred to what we used to call the authorized or variant HEADING or term, name, code, except that we have decided will represent the name, subject, title, etc. in the bibliographic record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-of-author-heading" class="slide level2">
+<h2>Example of Author Heading</h2>
+
+<img data-src="images/clipboard-2367329.png" class="r-stretch"><aside class="notes">
+<p>This slide shows the example of what a Author Heading would look like on a paper card catalog card.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="providing-access-to-record" class="slide level2">
+<h2>Providing Access to Record</h2>
+<ul>
+<li>Two separate, but related concepts
+<ul>
+<li>Searchable Fields</li>
+<li>Access Points</li>
+</ul></li>
+<li>Distinguishing between
+<ul>
+<li>structure in the record that can be searched (e.g., field)</li>
+<li>data that is held in that structure</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>So to quickly review, when we talk about authority control in library systems we also must discuss what we call access points or access control.</p>
+<p>These two concepts are separate but also related, as they are how we provide collocation and access to the records within our system.</p>
+<p>A further distinction between the two is that access points are related to the structure of the record (e.g.&nbsp;the choices made about which fields will be searchable) AND using RDA, they are the name, term, code, etc. that we enter into specific fields in a bibliographic record.</p>
+<p>Authority work is the process we use to create the access points (used to be referred to as headings) we enter within the fields that will serve as access points in our bibliographic records.</p>
+<p>Now let’s talk about authority records and the process we use to create these records, authority work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="authority-work-process" class="slide level2">
+<h2>Authority Work Process</h2>
+<ul>
+<li>Create authority records</li>
+<li>Gather the records into an authority file</li>
+<li>Link that file to a bibliographic file</li>
+<li>Maintain the authority file and system</li>
+<li>Evaluate the file and system</li>
+</ul>
+<aside class="notes">
+<p>Authority Work is the process we undertake in libraries to create a system that holds our decisions about authorized access points. The process includes:</p>
+<ol type="1">
+<li><p>Creating authority records using the information we gathered and decisions we made when establishing authorized access points.</p></li>
+<li><p>Gathering the records into an authority file that we use as the source of information for access points in MARC records.</p></li>
+<li><p>Link that file to a bibliographic file. This part of the process is done by the library’s catalog and the algorithms of the integrated library system. This linking is also established when the cataloger uses a specific authorized name, title, or subject heading in a bibliographic record.</p></li>
+<li><p>Maintain the authority file and system by continually updating authority records when changes are required due to name changes.</p></li>
+<li><p>Evaluate the file and system to make sure it is up to date and working properly within the OPAC.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="elements-of-an-authority-records" class="slide level2">
+<h2>Elements of an Authority Records</h2>
+<ul>
+<li>Establish the authorized form of the name, title or subject (used to be called heading, now is called authorized access point)</li>
+<li>Once the authorized access point is determined, identify variant forms of the name, title, subject</li>
+<li>Link the variants to the authorized access point</li>
+<li>Document the decisions and sources used for these activities</li>
+<li>Record all in an authority record</li>
+</ul>
+<aside class="notes">
+<p>Authority Control Files hold the authority records we create during the process of authority work. Each record holds the decisions we made when we established the authorized access point for the names, title, and subject headings used within our collection.</p>
+<p>Many libraries have their own local authority systems that catalogers have created through the years. <em>(Many of these are still in card catalog format)</em></p>
+<p>Now we also have access to the Library of Congress’ Authority File (located at: <a href="http://www.authorities.loc.gov" class="uri">http://www.authorities.loc.gov</a>). This system is free to anyone with an internet connection. It did not used to be freely accessible.</p>
+<p>In fact libraries developed their own authority control files because it was expensive to use this system in prior years. Members of OCLC also have access to their Authorities file (located at connexion.oclc.org). This system is only available to OCLC members and there is a fee for searching and using the records, similar to their WorldCat cataloging system.</p>
+<p>The structure of the MARC Authority Format is the same as the Bibliographic Format you have been using up to this point (0XX – 9XX fields), but the data that fits into each field is different. Go to <a href="http://loc.gov/marc/authority/" class="uri">http://loc.gov/marc/authority/</a> to review the MARC Authorities Format.</p>
+<p>The elements within an authority record include:</p>
+<ol type="1">
+<li><p>The authorized form of the name (now referred to as authorized access point). This entry is in the 100 field using the MARC Authorities Format.</p></li>
+<li><p>The variant forms of the name you found while researching to establish the authorized heading. There are two forms of variants you will see in the 4XX and 5XX fields of an authority record:</p>
+<ol type="a">
+<li>authorized variants (these include names for pseudonyms and are located in the 5XX fields).</li>
+<li>unauthorized variants (these are other forms of the name that are not authorized for use in bibliographic records. These forms may include foreign language spellings, alternate spellings, shorter or longer forms of the name, etc.). You will find these unauthorized variants in the 4XX fields of the authority record. NOTE: Variants are often identified when they occur on the current item or subsequent items.</li>
+</ol></li>
+<li><p>The final element of the authority record is your documentation of the decisions and sources used to establish the authorized forms of the name, as well as any other sources used to find variants. You will find decisions and sources documented in the 670, 6XX fields in the authority record.</p></li>
+</ol>
+<p>These three elements are essential in a good authority record. You may not, however, always have variants, so this element may not be included if not applicable. There are also many new elements included in authority records due to RDA changes. Authority records now include information related to gender, geographic location of author, etc. Review the MARC Authority Format to learn more.</p>
+<p>See the next two slides for examples of Authority records.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-authority-record" class="slide level2">
+<h2>Example Authority Record</h2>
+
+<img data-src="images/clipboard-3270919457.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>This is an example of a printed card catalog authority record. Note that several sources such as the title page (t.p.) and the jacket (jkt.) were consulted to determine the authorized and variant forms of the name.</p>
+<p>Variants are indicated with an X preceding the name.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-usmarc-authority-record" class="slide level2">
+<h2>Example USMARC Authority Record</h2>
+
+<img data-src="images/clipboard-2160806366.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>This is the same person’s authority record but in a MARC authority format.</p>
+<p>Refer to the MARC Authorities Format to figure out which tags hold the authorized and variant forms of the name.</p>
+<p>Which tag holds the decisions?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-does-it-work" class="slide level2">
+<h2>How Does It Work?</h2>
+<ul>
+<li>Search example</li>
+<li>Author is: Heim, Kathleen
+<ul>
+<li>Look at results</li>
+<li>Explanation for getting records with the following names listed as author
+<ul>
+<li>Heim, Kathleen M.</li>
+<li>McCook, Kathleen de la Pena</li>
+</ul></li>
+<li>Are these the same person?</li>
+</ul></li>
+<li>Search OCLC, <em>LC’s Name Authority File</em></li>
+</ul>
+<aside class="notes">
+<p>Here is one to try using either LC’s Authority File or OCLC’s Authorities.</p>
+<p>This person has had several name changes due to marital status. See if you can find her authority record and track her history.</p>
+<p>Go to: <a href="http://authorities.loc.gov" class="uri">http://authorities.loc.gov</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="name-authority-record-for-heim" class="slide level2">
+<h2>Name Authority Record for Heim</h2>
+
+<img data-src="images/clipboard-4176708737.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Example of Heim printed card name authority record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="name-authority-record-for-heim-marc" class="slide level2">
+<h2>Name Authority Record for Heim (MARC)</h2>
+
+<img data-src="images/clipboard-414044883.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
+<p>Example of Heim MARC name authority record.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section" class="slide level2">
+<h2><img data-src="images/clipboard-3331064574.png"></h2>
+<aside class="notes">
+<p>This slide shows the authority record for McCook, Kathleen in OCLC’s Authorities.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-access-points-in-bib-records" class="slide level2">
+<h2>Using Access Points in BiB Records</h2>
+<p>Once we either construct an authorized access point OR we use an authority file to determine the authorized access point, we would use this name, title, or subject term in the appropriate field in our MARC bibliographic record.</p>
+<aside class="notes">
+<p>Once we either construct an authorized access point OR we use an authority file to determine the authorized access point, we would use this name, title, or subject term in the appropriate field in our MARC bibliographic record.</p>
+<p>The next slide shows how this works.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2">
+<h2><img data-src="images/clipboard-2082505141.png" width="1200"></h2>
+<aside class="notes">
+<p>This is the record for McCook, Kathleen’s work entitled “The status of women in librarianship”.</p>
+<p>The authorized form of her name is used in the 700 field of this bibliographic record. She is an editor on this work so there is no 100 field in this record.</p>
+<p>The cataloger has taken the authorized form of her name (authorized access point for her name) and entered this value into the appropriate field in the MARC record, in this example, in the 700 field.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="putting-it-all-together" class="slide level2">
+<h2>Putting It All Together</h2>
+<ul>
+<li>Descriptive cataloging using AACR2R or RDA</li>
+<li>Combined with subject analysis and selection of controlled terms from controlled vocabularies like: LCSH, MESH, Sears, ERIC</li>
+<li>Classification added, based on subject of object (LCC, DDC, faceted schemes)</li>
+<li>Implemented in different formats/tools:
+<ul>
+<li>In past: manual card catalog</li>
+<li>Presently: MARC records (OCLC), metadata schemes (Dublin Core), XML Marc</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p>In conclusion, in this module you are going to learn more about how bib records are structured, the standards that guide cataloger/record creators, and the tools we use to create the descriptive aspects of the records.</p>
+<p>In the next module, we will look at subject authority control and how it is used in bib records.</p>
+<p>I hope you enjoy exploring MARC and other standards used in libraries and information organizations to develop bibliographic records!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<div class="quarto-auto-generated-content">
+<p><img src="images/ou.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true,"theme":"whiteboard"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: "separate-page",
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
