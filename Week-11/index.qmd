@@ -1,0 +1,256 @@
+---
+title: "Other Metadata Schemes"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+::: notes
+Let’s take a look beyond MARC and review some of the other
+record structures used in libraries, archives, or diverse information
+environments. While MARC is indeed the backbone of library catalog
+records, there are other metadata schema that play an important role in
+digital collections that you find online in libraries, museums,
+archives, and other contexts.
+
+Academic libraries in particular may use more than one metadata scheme,
+as appropriate, to represent their digital collections. OU, for example,
+uses MODs to represent the digital Galileo Online collection. Still
+others use Dublin Core (DC) when describing online collections. In this
+lecture, you will be introduced to a variety of different metadata
+schemes to explore further in your readings or on the web.
+:::
+
+## Metadata Schemes {.smaller}
+
+-   Many developed since mid to late 1990’s
+-   Developed for multiple purposes/environments/collections
+    -   general purpose
+    -   cultural objects and visual resources
+    -   educational purposes--discipline specific or general application
+        -   LOM
+        -   Darwin Core
+    -   archival and preservation metadata
+    -   metadata registries
+
+::: notes
+It is also important to mention here that many different efforts,
+consortia, library and information professional communities, as well as
+many non-LIS communities are developing specialized metadata schemes to
+support their digital collections.
+
+Metadata schemes are basically the record structure. It could be the
+field structure in a database; it could be the XML structure in an
+organized set of records online. It could be developed for a specialized
+collection or it can also be used for general purpose.
+
+There are multiple different metadata schemes that have been developed
+since mid- to late- 1990’s. The one that you’re probably most familiar
+with is the Dublin Core, which is a very generic metadata scheme that’s
+used behind a lot of digital library records. One in particular is the
+National Science Digital Library. It uses the Dublin Core and the Dublin
+Core registries for the development of its records.
+
+Metadata schemes are developed for multiple purposes in different
+environments and they’re used for various different collections. Some of
+them are very general purpose, and they can be extended to lots of
+different uses and environments.
+
+Some metadata schemes are very specialized, such as those developed for
+cultural objects and visual resources. There are quite a few developed
+for educational purposes, such as LOM–the Learning Object Metadata –
+which are developed for discipline specific or general application.
+Another example would be the Darwin Core, which is developed by the
+biodiversity community, which is really an interesting effort to watch.
+
+It’s a very complicated XML schema for representing records such as
+those in herbaria and in other biodiversity collections. There are
+metadata schemes for archival and preservation data.
+
+There are also what are called ‘metadata registries,’ which oftentimes
+deal with the subject content within these different communities.
+
+In this presentation, we will take a closer look at the non-MARC
+metadata schemes you may use in your information organization.
+:::
+
+## Metadata Schemes - General {.smaller}
+
+`Dublin Core Element Set (DC)`
+
+-   Development of the DC began in 1995 during a workshop in Dublin, OH
+-   Group of international experts from various fields (publishers,
+    computer scientists, librarians, software developers, etc.) met with
+    the goal of developing a general metadata standard that could be
+    used by content creators of electronic documents
+-   The core element set of the DC includes 15 general elements based on
+    the principles of: simplicity, compatibility, extensibility and
+    interoperability, which makes the element set general enough so that
+    it can be used within many different contexts and for a variety of
+    different applications.
+
+::: notes
+Dublin Core is probably the most well-known and used standard world
+wide. The Dublin Core standard began development in 1995 during a
+workshop in Dublin, Ohio. It was developed by a group of international
+experts from various different fields, and I’ve listed those here on
+this slide.
+
+The Unqualified Dublin Core has a core element set of fifteen general
+elements. But it continues to be revised and refined and customized for
+use in specific applications.
+
+The Qualified Dublin Core has expanded on each of the 15 elements into
+multiple more sub-elements under each of the 15 core.
+
+Dublin core is based on the principles of simplicity, compatibility,
+extendibility, and interoperability, which basically means that the
+element set is general enough that it can be applied to multiple
+different contexts and in a variety of different applications, but it
+can also be interoperable or it can work with other existing systems and
+metadata schemes. It can be mapped between different metadata schemes.
+:::
+
+## Metadata Scheme: Dublin Core
+
+-   15 elements to represent digital resources
+-   Also used for analog resources
+
+![](images/clipboard-1053265700.png){fig-align="center" width="302"}
+
+:::notes
+Dublin Core includes a core set of 15 generic elements at its base, though there are now many more that have been added to the scheme. As you can see DC is generic enough to be extensible to many different purposes and uses. The slide shows the Unqualified DC. 
+
+The Qualified DC includes many more elements. You can learn more about DC online at dublincore.org for the full DCMI site or <http://dublincore.org/documents/dces/> to look specifically at DC.
+:::
+
+## Metadata Schemes--Cultural {.smaller}
+
+`CDWA (Categories for the Description of Works of Art) and its companion data content standard, the CCO (Cataloging of Cultural Objects)`
+
+- data structures and semantics standard
+- developed in the 1990s by members of the Art Information Task Force (AITF)
+- developed for the needs of those in the cultural heritage community who record, maintain, and retrieve information about art information, including the academic researcher and scholar
+- includes 532 categories and subcategories
+- provides a framework for mapping existing art information systems and for developing new ones
+- guides users to additional resources for vocabulary control and provides guidelines for describing art resources
+- has been mapped to other metadata standards including for example the Dublin Core, MARC, VRA 4.0 XML, and MODS
+
+:::notes
+There are several different metadata schemes that you’ll hear about in this program, and each is applied in various different contexts. 
+
+For example the Categories for the Description of Works of Art (CDWA) is used in the cultural heritage communities, and then also the CCO, Cataloging of Cultural Objects.  
+
+I’ve given you a little bit of background information here. You can also read more about these in some of the readings on metadata, and there are some wonderful books available that describe some of these in more depth as well as their individual websites. 
+:::
+
+## Metadata Schemes--Cultural 
+
+`VRA Core (Visual Resources Association Core Categories)`
+
+- developed by the Visual Resources Association, Data Standards Committee
+- VRA Core 4.0 was released in 2007
+includes 17 elements that can be used to describe resources at three levels: work, image, or collection level
+
+:::notes
+Another one in heavy use in cultural communities is the VRA Core, which is the Visual Resources Association Core Categories; it’s developed by the Visual Resources Association and their Data Standards Committee. The fourth release of this standard was in 2007, and it’s continually being revised based upon use. 
+
+It includes seventeen elements that can be used to describe visual resources at three different levels–work level, image level, and even collection level. VRA Core is a metadata scheme that you may be using to describe visual cultural artifacts. 
+:::
+
+## Metadata Schemes--Archival
+
+`EAD (Encoded Archival Description)`
+
+- data structure that defines the elements to include in the finding aid
+- mid 1990s a research project at the University of California Berkeley (EAD Working Group)
+- metadata schema for encoding finding aids into digital form
+- maintained by the Network Development and MARC Standards Office of the Library of Congress
+
+:::notes
+Another standard that is used in archive communities is called DACS, or Describing Archives: A Content Standard. This content creation standard is used in archives. It’s accepted by most of the US archival community. It’s also based on another standard called ISAD, which is the General International Standard Archival Description. 
+
+ISAD is incorporated into DACS, and this standard is used for creating any level of content records in archives, whether it’s an item level, a work level, or a collection level, including creation of finding aids as well as catalog records. 
+:::
+
+## Metadata Registries {.smaller}
+
+- provide information for all metadata elements, schemas, and application profiles relevant to the application domain or domains
+- mappings of elements across standards and schemas
+- search and browse interface for discovering and locating metadata elements, value spaces, and schemas
+- Metadata registries serve as registration authority for a specific domain, project community, or other standards creators
+- ISO/IEC 11179, Information Technology--Specification and Standardization of Data Elements, is the international standard that establishes a data element registry and gives guidance on how to classify, describe, name, identify and maintain both the data element descriptions and the metadata created using the schema 
+
+:::notes
+Metadata registries also are used in various contexts and have been developed to support specific applications. Metadata registries are systems that provide information that can be used for all metadata elements, schemas, and application profiles relevant to the application domain or domains. 
+
+So, for example, the Dublin Core includes its own metadata registry, which includes all the information related to “what is the element?” “how do we define that element?” “what’s the metadata schema?” “what are the application profiles?” or “how can this be applied in different systems?” 
+
+The metadata registry also includes mapping of elements across different standards and schemas. So, if we want a map from MARC to MAD or to MODs or XMLMARC, the information to do so would be part of this registry. 
+
+Registries also help you to search and browse interfaces for discovering and locating metadata elements, value spaces, and schemas. 
+
+Then metadata registries also serve as a registration authority for a specific domain, project community, or other standards creators. So we have the Dublin Core metadata registry, which serves as this registration authority for the Dublin Core metadata community. 
+
+An example of this beyond the Dublin Core might be the ISO/ IEC 11179, or Information Technology Metadata Registry, which is a specification and standardization of data elements standard. This registry was developed at the international level, since it’s an ISO standard and establishes a data element registry and gives guidance on how to classify, describe, name, identify, and maintain both the data element descriptions and the metadata created using that schema. 
+:::
+
+## Metadata Registries {.smaller}
+
+- `SchemaWeb`, which includes a directory of RDF schema being used on the Web. It also gathers information about non-RDF schema used on the Web
+
+- `Agricultural Information Management Standards (AIMS)` of the Food and Agricultural Organization of the United Nations metadata registry of knowledge organizing systems (KOS), which gathers into one interface agricultural-related thesauri, ontologies, classification schemes, etc. 
+
+- `National Center for Biomedical Ontology's BioPortal Ontology` registry, which is BioPortal is a Web-based application for accessing and sharing biomedical ontologies
+
+:::notes
+Of course, I would be remiss if I didn’t give you some examples to look at, SchemaWeb is a directory–which includes the RDF schema.
+
+SchemaWeb also has a lot of other different RDF schemas that are being used in different ways around the web. This site also has information of non-RDF schema that are in use on the web. 
+
+Another one to review is the Agricultural Information Management Standards, or the AIMS, which is part of the Food and Agricultural Organization of the United Nations. They’re using the SKOS (simple knowledge organization systems.
+This site also gathers together in one place the agriculture-related thesauri, ontologies, classification schemes, etc. It’s really a one-stop shop for all things agricultural that are being used in different nations. 
+
+Then there’s the National Center for Biomedical Ontologies BioPortal Ontology, for use in biomedical applications. The site shows web-based applications for accessing and sharing biomedical ontologies. 
+
+Take some time to explore some non-MARC metadata schema this week. While DC is the one that many libraries have used for their digital collections, there are others for subject-specific and project-specific uses that you will enjoy reviewing. 
+
+For example, check out the NSDL (National Science Digital Library) at <https://nsdl.oercommons.org/>, a wonderful resource for everyone but especially for K-12 educators. The Digital Public Library of American is a ground breaking effort to curate digital collections of the US library community into one digital library. It uses Dublin Core as its metadata scheme and works with libraries all over the US to “harvest” their digital records into their system. Check it out at dpla.org.
+:::
+
+## Check These Out!
+
+- [National Science Digital Library](https://oercommons.org/hubs/NSDL)
+- [Digital Public Library of America](https://dp.la/)
+- [HathiTrust](https://www.hathitrust.org/)
+- [Internet Archive](https://archive.org/)
+- [OU’s Galileo Online](https://galileo.ou.edu/index.html)
+
+:::notes
+Take some time to explore some non-MARC metadata schema this week. While DC is the one that many libraries have used for their digital collections, there are others for subject-specific and project-specific uses that you will enjoy reviewing. For example, check out the NSDL (National Science Digital Library) at <https://nsdl.oercommons.org/>, a wonderful resource for everyone but especially for K-12 educators. 
+
+The Digital Public Library of American is a ground breaking effort to curate digital collections of the US library community into one digital library. It uses Dublin Core as its metadata scheme and works with libraries all over the US to “harvest” their digital records into their system. Check it out at <http://dp.la>. 
+
+Another wonderful source of free e-books is the Internet Archive. This open source project of Brewster Kahl hopes to provide free access to the world’s greatest collection of literature and digital books. 
+
+Check it out at <https://archive.org/index.php>. Last, but not least, is OU’s Galileo’s World available at <https://galileo.ou.edu/>. This online collection showcases OU’s amazing collection of works by and related to Galileo. 
+
+The world of digital collections using non-MARC schemes if vast and wonderful. I hope you enjoy taking some time to explore some of these collections and non-MARC metadata schema this week.
+:::
