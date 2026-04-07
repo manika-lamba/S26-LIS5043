@@ -1051,8 +1051,7 @@ entries from free text.
 Currently we have seen a large amount of professional and research
 literature discussing an emerging form of indexing language,
 **User-defined or User-Supplied terms**. While I say it is emerging,
-this concept is really not a new idea to LIS. Myself and others have
-been conducting research into this area since the 1990s. It has recently
+this concept is really not a new idea to LIS. It has recently
 become the buzz on the Web with the emergence of blogs and media sharing
 sites like Blogger, Flickr, YouTube, etc.
 
