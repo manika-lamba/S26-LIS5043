@@ -19,3 +19,4 @@
 - WEEK 9: SPRING BREAK!
 - [Week 10: Bibliographic Access, MARC, and Authority Control](https://manika-lamba.github.io/S26-LIS5043/Week-10/#/title-slide)
 - [Week 11: Other Metadata Schemes](https://manika-lamba.github.io/S26-LIS5043/Week-11/#/title-slide)
+- [Week 12: Subject Access/Controlled Vocabularies](https://manika-lamba.github.io/S26-LIS5043/Week-12/#/title-slide)
