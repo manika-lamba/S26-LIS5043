@@ -20,3 +20,4 @@
 - [Week 10: Bibliographic Access, MARC, and Authority Control](https://manika-lamba.github.io/S26-LIS5043/Week-10/#/title-slide)
 - [Week 11: Other Metadata Schemes](https://manika-lamba.github.io/S26-LIS5043/Week-11/#/title-slide)
 - [Week 12: Subject Access/Controlled Vocabularies](https://manika-lamba.github.io/S26-LIS5043/Week-12/#/title-slide)
+- [Week 13: Classification Schemes, Ontologies, Taxonomies](https://manika-lamba.github.io/S26-LIS5043/Week-13/#/title-slide)
