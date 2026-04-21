@@ -1,0 +1,324 @@
+---
+title: "Module 10 -- Data Stewardship and Visualization"
+subtitle: "LIS 5043: Organization of Information"
+author: 
+  - Dr. Manika Lamba
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      theme: whiteboard
+      buttons: true
+    preview-links: true
+    controls: true
+    progress: true
+    show-notes: separate-page
+    logo: images/ou.png
+    css: styles.css
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Introduction
+
+::: notes
+In Module 10 let’s address two relatively new topics that have become an
+important focus in the organization of information and knowledge, data
+stewardship and visualization. You have of course all heard “BIG DATA”
+and perhaps even more about its potentials in business, government,
+security, and other contexts.
+
+Libraries and information organizations have been dealing with BIG DATA
+(and small data) for many years, but as more is produced each year, it
+has also become the focus of many library and data science efforts.
+
+The world is virtually drowning in data, in many forms, produced through
+research, scholarship, governance, business, etc. Managing and curating
+the data is essential for its use or re-use. Libraries and information
+organizations are also using data visualization tools to analyze data as
+well as for outreach and public relationship purposes.
+
+Data visualization is opening up new ways for libraries, archives,
+special libraries, and businesses to communicate research outcomes,
+value propositions, and even business statistics to stakeholders.
+
+In this module we will briefly explore data stewardship and
+visualization and the role that information professionals play in
+today’s data saturated world. We will also briefly look at data
+visualization as a means to help others make sense of their data.
+:::
+
+## We are Data {.smaller}
+
+::: columns
+::: {.column width="50%"}
+#### [***We are filled with data in today's networked society***]{style="color: blue;"}
+
+-   through our web activity, we are assigned *gender, ethnicity, class,
+    age, education level, and potential status of parent with x no. of
+    children* ([digital trace data/digital footprint/digital
+    breadcrumbs]{style="color: orange;"})
+
+-   if internet metadata identifies a user as foreigner than they lose
+    right to privacy afforded to U.S. citizens
+
+-   who would have thought that [*class status, citizenship,
+    ethnicity*]{.underline} could be algorithmically understood?
+:::
+
+::: {.column width="50%"}
+![](images/clipboard-1302120039.png){fig-align="center" width="300"}
+:::
+:::
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of
+our digital selves. New York University Press.
+:::
+
+::: notes
+Read the Slides
+:::
+
+## We are Data (Cont.) {.smaller}
+
+#### [***We live in a world of ubiquitous networked communication***]{style="color: blue;"}
+
+-   technologies that constituent the Internet are so woven into the
+    fabric of our daily lives, where for most of us, existing without
+    seems unimaginable
+
+#### [***We also live in a world of ubiquitous surveillance***]{style="color: blue;"}
+
+-   same technologies have helped spawn an impressive network of
+    governmental, commercial, and unaffiliated infrastructures of mass
+    observation and control
+-   most of what we do in this world has at least the **capacity** to be
+    *observed, recorded, analyzed, and stored* in a databank
+    -   HOW?
+        -   storage is cheap
+        -   computers are fast to analyze information in both real time
+            & retrospective
+        -   our daily activities that are mediated with software can be
+            easily configured to record and report everything it sees
+            upstream
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of
+our digital selves. New York University Press.
+:::
+
+::: notes
+Read the Slides
+:::
+
+## We are Data (Cont.) {.smaller}
+
+#### [***We call people 'terrorists' based on metadata***]{style="color: blue;"}*; [**We kill people based on metadata**]{style="color: blue;"}*
+
+-   data-based attack is a *'signature strike'*
+
+    -   a strike that requires no *'target identification'* but rather
+        an identification of groups of men who bear certain signatures
+        or defining characteristics associated with terrorists activity
+        but whose identities are unknown
+
+-   US drone program in early 2000s, strikes were *"targeted"*
+
+-   US does not publicly differentiate between its *"targeted"* and
+    *"signature"* strikes
+
+    -   shift in spike in frequency of drone attacks from 49 between
+        2004 and 2008 to 372 between 2009 and 2015
+
+::: footer
+John Cheney-Lippold. (2017). We are Data: algorithms and the making of
+our digital selves. New York University Press.
+:::
+
+::: notes
+So, as you have read in the last 3 slides, metadata can be incredibly
+revealing. In particular, the type of metadata known as *use metadata*
+captures a great deal of data about individuals and individual's
+behaviors.
+
+Further, not only can *use metadata* reveal information about
+individuals, it can also provide rich data about social networks, and
+the connections between individuals, places, and organizations.
+:::
+
+## Algorithmic Confounding/Biasness {.smaller}
+
+> It occurs when a computer system reflects the implicit values of the
+> humans who are involved in collecting, selecting, or using data
+
+![](images/clipboard-4129531906.png){fig-align="center" width="700"}
+
+::: footer
+Source:
+<https://www.weforum.org/agenda/2021/07/ai-machine-learning-bias-discrimination/>
+:::
+
+::: notes
+Data does not naturally appear in the wild but rather it is collected by
+humans, manipulated by researchers and ultimately used by theoreticians
+to explain a phenomenon.
+
+Data plays a key role at every stage of the project lifecycle. It can be
+used to train, validate, and test an AI model, thereby shaping the type
+of AI system produced.
+
+Algorithms assemble, and control our datafied selves which can lead to
+algorithmic confounding/biasness.
+:::
+
+## Algorithmic Confounding/Biasness (Cont.) {.smaller}
+
+-   Algorithms might disseminate social biases against certain groups of
+    sociodemographic factors (such as race, gender, geography)
+-   The output of these algorithms is primarily dependent on the
+    [annotated datasets and is sensitive to social bias created by
+    humans]{style="color: blue;"}
+-   An algorithm that uses [both text and metadata to learn is likely to
+    be highly biased]{style="color: blue;"} as metadata consists of the
+    author’s nationality, discipline, etc., when compared to an
+    algorithm with text-only data
+-   Even with text-only data, algorithms will still learn bias due to
+    the language problems generated by [second-order
+    effects]{style="color: blue;"} for text-based machine learning
+-   Additionally, when using chatbots (*such as ChatGPT*) to provide
+    realtime recommendations, the dialogue of chatbot can be modelled
+    with available metadata to adjust the features of the replier in
+    terms of gender, age, and mood *`(Metaphors in HCI)`*
+
+::: footer
+Lamba, M., Madhusudhan, M. (2022). Text Data and Mining Ethics. In: Text
+Mining for Information Professionals. Springer, Cham.
+https://doi.org/10.1007/978-3-030-85085-2_11
+:::
+
+::: notes
+Read the Slides
+:::
+
+## Ways to Mitigate Biases {.smaller}
+
+-   Understanding how the data was generated
+-   Using tools that identify bias in models and algorithms such as
+    `FairML`, `IBM AI Fairness 360`,
+    `Accenture’s “Teach and Test” Methodology,` `Google’s What-If Tool`,
+    and `Microsoft’s Fairlearn`
+-   Making the data, process, and outcome open, thus making it
+    transparent and helping us to judge
+-   Creating algorithms and standards that can be adapted from one
+    application to another
+-   Following the set of standards proposed by the Association for
+    Computing Machinery US Public Policy Council and applying them at
+    every stage in the algorithm creation process
+-   Enforcing accountability in policies during [*auditing in pre-and
+    post-processing as well as standardized assessment*]{.underline} as
+    algorithms do not make mistakes, but humans do
+
+::: footer
+Lamba, M., Madhusudhan, M. (2022). Text Data and Mining Ethics. In: Text
+Mining for Information Professionals. Springer, Cham.
+https://doi.org/10.1007/978-3-030-85085-2_11
+:::
+
+::: notes
+Once we mitigate the biases from our data using the methods shown on the
+slide. We can move to the data management step.
+:::
+
+## Data Lifecycle
+
+![](images/clipboard-2779466639.png){fig-align="center" width="700"}
+
+::: footer
+[Digital Curation Centre (DCC) Lifecycle Model
+(UK)](https://www.dcc.ac.uk/%20guidance/curation-lifecycle-model)
+:::
+
+::: notes
+The data lifecycle refers to the numerous phases of data as it is
+collected, curated, analysed, used, decommissioned, and iteratively
+reviewed within the larger AI project lifecycle to ensure accurate,
+secure, and robust performance of an AI/ML system. Integral to every
+stage of the data lifecycle is responsible data stewardship.
+
+The Digital Curation Center has developed the curation lifecycle model
+shown on the slide. The model illustrates the processes as data are
+created. The outermost ring illustrates the research process, which can
+be extended to other contexts as well. For example, a research project
+is conceptualized. Data is created or received, appraised and selected,
+ingested into a system, preserved and stored in a database or other
+computerized storage. Later it is accessed and re-used by the original
+creators or by other audiences. Finally it is transformed into other
+data or publication.
+
+Library and information professionals can provide the essential
+processes for organizing the data within the cycle. For example, they
+can help manage the data by setting up metadata schemes that will allow
+the researcher/developer to create metadata to organize the data in a
+specific system. They can also suggest selection criteria for evaluating
+the data to keep as part of an institutional archive or storage plan.
+:::
+
+## Data Management Across Research Lifecycle
+
+![](images/clipboard-3439982391.png){fig-align="center" width="700"}
+
+::: notes
+In a typical research data lifecycle, data undergo the subsequent stages
+of processing, analyzing, preserving, accessing, and reusing as shown on
+the slide.
+:::
+
+## Data Visualization
+
+`Why Create Visualizations Generally?`
+
+![](images/clipboard-2612812196.png){fig-align="center" width="1000"}
+
+:::notes
+Data visualization is a new service that academic and special libraries are providing to their user communities. Data visualization helps the user make sense of large (and often times small) amounts of data using computational and analytic tools. In academic and special libraries data visualization helps researchers and business users recognize and understand the “patterns” in the data to assist them in decision making, research, product development, marketing, and other uses not yet realized. Along with the emergence of “big data” came the need for more visual means to analyze and make sense of the data. Visualization also allows for re-purposing of datasets beyond their original use.
+
+There are many tools that are used to analyze the datasets. I have included a list of the tools for you to try on the next two slides.
+
+Information professionals assist in data visualization but managing and preparing the data for use as described throughout this lecture, but also in conducting the data visualization/analysis for users or training them to conduct the data visualization themselves. An academic library may title these professionals as Data analysis librarian, Data manager, Digital Projects librarian/specialist, etc. The titles are emerging as fast as the visualization tools themselves. As noted earlier special librarians have always conducted data analysis and competitive intelligence for their companies. Data visualization is an extension of this service to their user community. 
+
+Information professionals also use data visualization themselves for innovative ways to present information to users, to market their library services, and to synthesize data for stakeholders. 
+:::
+
+## Tools {.smaller}
+
+::: columns
+::: {.column width="50%"}
+- Tableau
+- Infogram
+- Datawrapper
+- RAWGraphs
+- Palladio
+- Chart Studio
+- Microsoft Power BI
+- RapidMiner
+- Orange
+:::
+
+
+::: {.column width="50%"}
+- WEKA
+- Vyont Tools
+- LancsBox
+- ConText
+- Sci2 Tool
+- Gephi
+:::
+:::
+
+:::notes
+To learn more about information visualization and how it can be used to organize and present data in new, innovative ways and the new services libraries/librarians can provide I recommend you enroll in SLIS’ Information Visualization course. 
+
+I hope you have enjoyed learning more about these new vital roles for information professionals. Each role takes the traditional skills you have learned throughout this class and puts them to use in the digital data life cycle to manage, clean, store, preserve, and re-purpose data in new ways to advance science, research, learning, and business enterprises.
+:::
