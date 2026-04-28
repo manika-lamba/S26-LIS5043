@@ -1,5 +1,5 @@
 ---
-title: "Module 10 -- Data Stewardship and Visualization"
+title: "Data Stewardship and Visualization"
 subtitle: "LIS 5043: Organization of Information"
 author: 
   - Dr. Manika Lamba
@@ -23,7 +23,7 @@ editor:
 # Introduction
 
 ::: notes
-In Module 10 let’s address two relatively new topics that have become an
+This week, let’s address two relatively new topics that have become an
 important focus in the organization of information and knowledge, data
 stewardship and visualization. You have of course all heard “BIG DATA”
 and perhaps even more about its potentials in business, government,
@@ -43,7 +43,7 @@ Data visualization is opening up new ways for libraries, archives,
 special libraries, and businesses to communicate research outcomes,
 value propositions, and even business statistics to stakeholders.
 
-In this module we will briefly explore data stewardship and
+In this module, we will briefly explore data stewardship and
 visualization and the role that information professionals play in
 today’s data saturated world. We will also briefly look at data
 visualization as a means to help others make sense of their data.
