@@ -24,3 +24,4 @@
 - Week 14
   - [PART 1: Personal and Professional Contexts](https://manika-lamba.github.io/S26-LIS5043/Week-14_part1/#/title-slide)
   - [PART 2: Socially-constructed Spaces](https://manika-lamba.github.io/S26-LIS5043/Week-14_part2/#/title-slide)
+- [Week 15: Data Stewardship and Visualization](https://manika-lamba.github.io/S26-LIS5043/Week-15/#/title-slide)
